@@ -6,5 +6,5 @@ I will manage this also on the project.
 
 You can find:
 
-- [Main text](main.md)
+- [Main text](main.Rmd)
 - [Brain storming](brainstrom.md)

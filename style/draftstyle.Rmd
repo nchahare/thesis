@@ -1,0 +1,27 @@
+---
+title: "draftstyle"
+author: "Nimesh Chahare"
+date: "16/09/2022"
+output: word_document
+bibliography: references.bib
+csl: apa.csl
+---
+
+# Mechanics of epithelial layers subjected to controlled pressure and tension
+
+## Abstract
+
+Epithelial sheets form specialized 3D structures suited to their physiological roles, such as branched alveoli in the lungs, tubes in the kidney, and villi in the intestine [@R-base].
+
+1. lists 
+2. with more list
+  a. sub list
+  b. uski sub list
+
+### things 
+
+#### with subthings
+
+## References
+
+<div id="refs"></div>
