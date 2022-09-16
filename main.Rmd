@@ -1,0 +1,40 @@
+---
+title: "Mechanics of epithelial layers subjected to controlled pressure and tension"
+author: "Nimesh Chahare"
+date: "16/09/2022"
+output:
+  word_document:
+    reference_docx: word-styles-reference-01.docx
+---
+
+# Mechanics of epithelial layers subjected to controlled pressure and tension
+
+## Abstract
+
+Epithelial sheets form specialized 3D structures suited to their physiological roles, such as branched alveoli in the lungs, tubes in the kidney, and villi in the intestine. To generate and maintain these structures, epithelia must undergo complex 3D deformations across length and time scales. How epithelial shape arises from active stresses, viscoelasticity and luminal pressure remains poorly understood. To address this question, we developed a microfluidic chip and a computational framework to engineer 3D epithelial tissues with controlled shape and pressure. In the setup, an epithelial monolayer is grown on a porous surface with circular low adhesion zones. On applying hydrostatic pressure, the monolayer delaminates into a spherical cap from the circular zone. This simple shape allows us to calculate epithelial tension using Laplace’s law. Through this approach, we subject the monolayer to a range of lumen pressures at different rates and hence probe the relation between strain and tension in different regimes, while computationally tracking actin dynamics and their mechanical effect at the tissue scale. Slow pressure changes relative to the actin dynamics allow the tissue to accommodate large strain variations. However, under sudden pressure reductions, the tissue develops buckling patterns and folds with different degrees of symmetry-breaking to store excess tissue area. These insights allow us to pattern epithelial folds by rationally directed buckling. Our study establishes a new approach for engineering epithelial morphogenetic events.
+
+## Aims of the thesis
+
+### General aim of the thesis
+Study the mechanics of epithelial layers subjected to controlled pressure and tension.
+
+### Specific aims of the thesis
+1. Review the literature on engineering epithelia, and effect of physical forces such as pressure and tension on morphogenesis.
+2. Develop a new technology to control shape, size, and forces in three dimensional epithelial monolayer.
+  a. Invent a microfluidic system for forming domes, blisters like epithelial structures, with aid of controlled lumen pressure and protein patterning.
+  b. Verify the functioning of the device.
+  c. Optimize an imaging technique to capture fast dynamics of large epithelial structures enabling its rheological characterization.
+3. Study the rheology of pressurized epithelial structure.
+  a. Obtain the material response of the tissue by subjecting different regimes of cyclic pressure.
+  b. Analyse the stress and strain relation and understand it in context of computational framework developed in close collaboration by Adam Ouzeri.
+4. Investigate the buckling phenomena
+
+
+## Introduction
+
+```{r child = 'introduction/epithelialtissue.md'}
+```
+1. [Epithelial tissue](introduction/epithelialtissue.md)
+2. [Epithelial mechanics](introduction/mechanics.md)
+3. [Morphogenesis](introduction/morphogensis.md)
+4. [Engineering](introduction/engineering.md)
