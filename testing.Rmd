@@ -1,5 +1,27 @@
 # Testing equations
 
+```{r child = '_introduction/epithelialtissue.Rmd'}
+```
+```{r child = '_introduction/mechanics.Rmd'}
+```
+```{r child = '_introduction/morphogenesis.Rmd'}
+```
+```{r child = '_introduction/engineering.Rmd'}
+```
+\newpage
+
+```{r child = 'testing.Rmd'}
+```
+
+
+
+
+
+
+
+
+
+
 
 
 ```{r echo=FALSE, fig.align='center', out.width='20%', fig.cap='Caption for this figure 1'}

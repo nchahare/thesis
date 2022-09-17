@@ -2,10 +2,14 @@
 title: "Mechanics of epithelial layers subjected to controlled pressure and tension"
 author: "Nimesh Chahare"
 bibliography: bibliography/references.bib
-csl: style/apa.csl
 output:
   word_document:
     reference_docx: style/word-styles-reference-01.docx
+  pdf_document: 
+    number_sections: yes
+    toc: yes
+    toc_depth: 2
+csl: style/apa.csl
 ---
 
 ```{r setup, include=FALSE}
@@ -32,7 +36,7 @@ Study the mechanics of epithelial layers subjected to controlled pressure and te
 
 ### Specific aims of the thesis
 
-Here's the way to do citations: [@dumortier_hydraulic_2019]
+General aims are divided into specific goals:
 
 1. Review the literature on engineering epithelia, and effect of physical forces such as pressure and tension on morphogenesis.
 2. Develop a new technology to control shape, size, and forces in three dimensional epithelial monolayer.
@@ -48,7 +52,6 @@ Here's the way to do citations: [@dumortier_hydraulic_2019]
 
 # Introduction
 
-
 ```{r child = '_introduction/epithelialtissue.Rmd'}
 ```
 ```{r child = '_introduction/mechanics.Rmd'}
@@ -57,11 +60,6 @@ Here's the way to do citations: [@dumortier_hydraulic_2019]
 ```
 ```{r child = '_introduction/engineering.Rmd'}
 ```
-\newpage
-
-```{r child = 'testing.Rmd'}
-```
-
 \newpage
 
 # References
