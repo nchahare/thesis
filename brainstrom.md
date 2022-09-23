@@ -1,10 +1,29 @@
 # Brainstorming about the flow
 
+## Aims of the thesis
+
+### General aim of the thesis
+
+Study the mechanics of epithelial layers subjected to controlled pressure and tension.
+
+### Specific aims of the thesis
+
+General aims are divided into specific goals:
+
+1. Review the literature on engineering epithelia, and effect of physical forces such as pressure and tension on morphogenesis.
+2. Develop a new technology to control shape, size, and forces in three dimensional epithelial monolayer.
+  a. Invent a microfluidic system for forming domes, blisters like epithelial structures, with aid of controlled lumen pressure and protein patterning.
+  b. Verify the functioning of the device.
+  c. Optimize an imaging technique to capture fast dynamics of large epithelial structures enabling its rheological characterization.
+3. Study the rheology of pressurized epithelial structure.
+  a. Obtain the material response of the tissue by subjecting different regimes of cyclic pressure.
+  b. Analyse the stress and strain relation and understand it in context of computational framework developed in close collaboration by Adam Ouzeri.
+4. Investigate the buckling phenomena
+
 ## Introduction
 
 1. Epithelia is important in disease and development.
-2. Mechanics plays a key role in all of this. 
-simple mechanics like role of forces and mechanobiology on single cells and transcription factors.
+2. Mechanics plays a key role in all of this. Simple mechanics like role of forces and mechanobiology on single cells and transcription factors.
 3. Actin cortex is so so important
 4. Pressure and stretching is also important.
 5. Emergent phenomena and collective behavior. buckling.
