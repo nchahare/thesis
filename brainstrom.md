@@ -12,11 +12,13 @@ simple mechanics like role of forces and mechanobiology on single cells and tran
 
 ## Results
 
-1. Device itself
-2. Rheology and actin gel stuff
-3. Buckling phenomena
-4. Programmed buckling
-
+1. Developed a novel device to create 3D pressure controlled epithelia.
+2. Constitutive relation of the domes is dependent on the geometry.
+3. Actin cortex drives epithelial tissue stretching.
+4. Rheological studies show the viscoelastic nature of actin cortex in the epithelia.
+5. Rapid deflation produces a buckling instability leading to form epithelial folds.
+6. Buckling occurs across different length scales to overcome compressive stresses.
+7. Epithelial buckling of different shape and size domes creates programmed epithelial folds.
 
 ## List of experiments
 
@@ -25,21 +27,28 @@ simple mechanics like role of forces and mechanobiology on single cells and tran
 3. Optimization of the cell seeding.
 4. Calibration of the pressure setup.
 5. Flow experiments.
+---
 
 6. Inflating domes at constant pressure.
 7. Optimization of the rapid imaging of the domes.
 8. Repeatated pressure cycles after 5min interval gives same results.
 9. LAT-A, Y27 experiments to identify the role of the cortex.
 10. Slow deflation with steps to identify constitutive relation.
+---
 
 11. Cyclic stretching at three different rates to probe the dynamic viscoelasticity.
+---
 
 12. Subjecting domes to the negative pressure to produce buckling.
 13. Identifying deflation rates and hold periods producing buckling.
+---
 
 14. Developing a light sheet microscopy compatible setup for imaging domes faster.
 15. Visualized buckling in light sheet microscope.
 16. Used sir-actin staining to visualize cortex buckling.
+---
 
 17. Produced post-buckling patterns in the domes of circular footprint of different size.
 18. Produced post-buckling patterns in the domes of different shaped footprint.
+
+
