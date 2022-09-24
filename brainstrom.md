@@ -65,7 +65,7 @@ General aims are divided into specific goals:
 * Funding
 
 * Methods
-- 1. Creating presurized epithelia.
+- \1. Creating presurized epithelia.
   1. Fabrication of microfluidic devices. 
   2. Patterning protein on the device.
   3. Cell culture in the device.
@@ -74,7 +74,7 @@ General aims are divided into specific goals:
   6. Device protein patterning and cell culture in Light-Sheet device.
   7. Confocal Microscopy.
   8. Light-sheet microscopy.
-- 2. Quantitative analysis of the domes.
+- \2. Quantitative analysis of the domes.
   1. Quantification of the dome areal strain and tension.
   2. Analysis of the kymographs.
   3. Qualitative analysis of the buckling events.
