@@ -32,11 +32,11 @@ General aims are divided into specific goals:
 ## Results
 
 1. Developed a novel device to create 3D pressure controlled epithelia.
-_1.1. Introduction to organ on chips and motivation for the device.
-_1.2. Summary of failed and attempted methods to construct the devices.
-_1.3. Protein patterning to create 3D epithelia.
-_1.4. Pressure control for the device and method adopted.
-_1.5. Optimization of the imaging large epithelial structures.
+  * 1.1. Introduction to organ on chips and motivation for the device.
+  * 1.2. Summary of failed and attempted methods to construct the devices.
+  * 1.3. Protein patterning to create 3D epithelia.
+  * 1.4. Pressure control for the device and method adopted.
+  * 1.5. Optimization of the imaging large epithelial structures.
 
 ---
 
