@@ -32,11 +32,23 @@ General aims are divided into specific goals:
 ## Results
 
 1. Developed a novel device to create 3D pressure controlled epithelia.
+_1.1. Introduction to organ on chips and motivation for the device.
+_1.2. Summary of failed and attempted methods to construct the devices.
+_1.3. Protein patterning to create 3D epithelia.
+_1.4. Pressure control for the device and method adopted.
+_1.5. Optimization of the imaging large epithelial structures.
+
+---
+
 2. Constitutive relation of the domes is dependent on the geometry.
 3. Actin cortex drives epithelial tissue stretching.
 4. Rheological studies show the viscoelastic nature of actin cortex in the epithelia.
+---
+
 5. Rapid deflation produces a buckling instability leading to form epithelial folds.
 6. Buckling occurs across different length scales to overcome compressive stresses.
+---
+
 7. Epithelial buckling of different shape and size domes creates programmed epithelial folds.
 
 ## List of experiments
