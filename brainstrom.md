@@ -63,6 +63,13 @@ General aims are divided into specific goals:
 2. Patterning protein on the device.
 3. Cell culture in the device.
 4. Application and measurement of the pressure.
+5. Fabrication method for the Light-Sheet device
+6. Device protein patterning and cell culture in Light-Sheet device
+7. Confocal Microscopy
+8. Light-sheet microscopy
+9. Quantification of the dome areal strain and tension
+10. Analysis of the kymographs
+11. Qualitative analysis of the buckling event
 
 * Detailed protocols
 1. Protocol: Fabrication microfludic device.
