@@ -85,10 +85,9 @@ General aims are divided into specific goals:
 
 * Publications and conferences
 
+* Advised readings
 
-
-## List of experiments
-
+* List of experiments and data repository
 1. Fabrication of the device with different materials.
 2. Optimization of the protien patterning.
 3. Optimization of the cell seeding.
