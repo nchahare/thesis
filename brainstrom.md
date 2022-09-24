@@ -1,6 +1,6 @@
 # Brainstorming about the flow
 
-(https://bibliotecnica.upc.edu/en/investigadors/elaborar-articles-cientifics-tesis-doctorals#publicar-tesi-compendi)[UPC guidelines]
+[UPC guidelines](https://bibliotecnica.upc.edu/en/investigadors/elaborar-articles-cientifics-tesis-doctorals#publicar-tesi-compendi)
 ## Acknowledgements
 
 ## Contents 
