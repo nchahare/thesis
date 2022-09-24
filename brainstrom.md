@@ -24,10 +24,10 @@ General aims are divided into specific goals:
 
 1. Epithelia is important in disease and development.
 2. Mechanics plays a key role in all of this. Simple mechanics like role of forces and mechanobiology on single cells and transcription factors.
-3. Actin cortex is so so important
+3. Emergent phenomena and collective behavior.
 4. Pressure and stretching is also important.
-5. Emergent phenomena and collective behavior. buckling.
-6. Engineering epithelia or learn by building
+5. Actin cortex is so so important.
+6. Engineering epithelia or learn by building.
 
 ## Results
 
@@ -38,19 +38,20 @@ General aims are divided into specific goals:
   * 1.4. Pressure control for the device and method adopted.
   * 1.5. Optimization of the imaging large epithelial structures.
 
----
+2. Actin cortex drives epithelial tissue stretching.
+  * 2.1. Constitutive relation of the domes is dependent on the geometry.
+  * 2.2. Computational framework developed in close collaboration by Adam Ouzeri
+  * 2.3. Rheological studies show the viscoelastic nature of actin cortex in the epithelia.
 
-2. Constitutive relation of the domes is dependent on the geometry.
-3. Actin cortex drives epithelial tissue stretching.
-4. Rheological studies show the viscoelastic nature of actin cortex in the epithelia.
----
+3. Epithelial buckling
+  * 3.1. Rapid deflation produces a buckling instability leading to form epithelial folds.
+  * 3.2. Buckling occurs across different length scales to overcome compressive stresses.
 
-5. Rapid deflation produces a buckling instability leading to form epithelial folds.
-6. Buckling occurs across different length scales to overcome compressive stresses.
----
-
-7. Epithelial buckling of different shape and size domes creates programmed epithelial folds.
-
+4. Programmed epithelial folds
+  * 4.1 Epithelial buckling lead to formation of wrinkles.
+  * 4.2 Folding patterns become more complex with the increasing size.
+  * 4.3 Patterns are guided by control of shape and size.
+  
 ## List of experiments
 
 1. Fabrication of the device with different materials.
