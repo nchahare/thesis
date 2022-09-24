@@ -12,18 +12,13 @@ General aims are divided into specific goals:
 
 1. Review the literature on engineering epithelia, and effect of physical forces such as pressure and tension on morphogenesis.
 2. Develop a new technology to control shape, size, and forces in three dimensional epithelial monolayer.
-  a. Invent a microfluidic system for forming domes, blisters like epithelial structures, with aid of controlled lumen pressure and protein patterning.
-  b. Verify the functioning of the device.
-  c. Optimize an imaging technique to capture fast dynamics of large epithelial structures enabling its rheological characterization.
 3. Study the rheology of pressurized epithelial structure.
-  a. Obtain the material response of the tissue by subjecting different regimes of cyclic pressure.
-  b. Analyse the stress and strain relation and understand it in context of computational framework developed in close collaboration by Adam Ouzeri.
-4. Investigate the buckling phenomena
+4. Explore role of mechanics in formation of epithelial folds.
 
 ## Introduction
 
-1. Epithelia is important in disease and development.
-2. Mechanics plays a key role in all of this. Simple mechanics like role of forces and mechanobiology on single cells and transcription factors.
+1. Epithelia is important in disease and development. (very brief)
+2. Role of forces and mechanobiology on single cells and transcription factors.
 3. Emergent phenomena and collective behavior.
 4. Pressure and stretching is also important.
 5. Actin cortex is so so important.
@@ -31,14 +26,14 @@ General aims are divided into specific goals:
 
 ## Results
 
-1. Developed a novel device to create 3D pressure controlled epithelia.
+1. Building three-dimensional epithelia with controlled lumen pressure.
   * 1.1. Introduction to organ on chips and motivation for the device.
   * 1.2. Summary of failed and attempted methods to construct the devices.
   * 1.3. Protein patterning to create 3D epithelia.
   * 1.4. Pressure control for the device and method adopted.
   * 1.5. Optimization of the imaging large epithelial structures.
 
-2. Actin cortex drives epithelial tissue stretching.
+2. Characterization of epithelial mechanics.
   * 2.1. Constitutive relation of the domes is dependent on the geometry.
   * 2.2. Computational framework developed in close collaboration by Adam Ouzeri
   * 2.3. Rheological studies show the viscoelastic nature of actin cortex in the epithelia.
@@ -52,6 +47,34 @@ General aims are divided into specific goals:
   * 4.2 Folding patterns become more complex with the increasing size.
   * 4.3 Patterns are guided by control of shape and size.
   
+## Conclusions and Discussion.
+
+1. Developed a novel device to create 3D pressure controlled epithelia.
+2. Actin cortex drives epithelial tissue stretching.
+3. Rapid deflation leads to buckling.
+4. Controlling 3D patterns of epithelial sheets.
+
+## Appendix
+
+* Funding
+
+* Methods
+1. Fabrication of microfluidic devices. 
+2. Patterning protein on the device.
+3. Cell culture in the device.
+4. Application and measurement of the pressure.
+
+* Detailed protocols
+1. Protocol: Fabrication microfludic device.
+2. Protocol: Protein patterning of the substrate.
+3. Protocol: Fast imaging of large 3D structures.
+
+* Codes
+
+* Publications and conferences
+
+
+
 ## List of experiments
 
 1. Fabrication of the device with different materials.
