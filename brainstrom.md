@@ -1,6 +1,9 @@
 # Brainstorming about the flow
 
+[https://bibliotecnica.upc.edu/en/investigadors/elaborar-articles-cientifics-tesis-doctorals#publicar-tesi-compendi](UPC guidelines)
 ## Acknowledgements
+
+## Contents 
 
 ## Preface
 
@@ -107,4 +110,10 @@ General aims are divided into specific goals:
 17. Produced post-buckling patterns in the domes of circular footprint of different size.
 18. Produced post-buckling patterns in the domes of different shaped footprint.
 
+## List of illustrations and tables
 
+## List of abbreviations and symbols
+
+## Glossary 
+
+## References
