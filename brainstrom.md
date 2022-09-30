@@ -32,26 +32,24 @@ General aims are divided into specific goals:
 
 ## Results
 
-1. Building three-dimensional epithelia with controlled lumen pressure.
+Part 1. Novel microfluidic system for generating 3D epithelia with controlled pressure and shape.
   * 1.1. Introduction to organ on chips and motivation for the device.
   * 1.2. Summary of failed and attempted methods to construct the devices.
   * 1.3. Protein patterning to create 3D epithelia.
   * 1.4. Pressure control for the device and method adopted.
   * 1.5. Optimization of the imaging large epithelial structures.
 
-2. Characterization of epithelial mechanics.
+Part 2. Epithelial stretching is driven by viscoelasticity of actomyosin cortex.
   * 2.1. Constitutive relation of the domes is dependent on the geometry.
   * 2.2. Computational framework developed in close collaboration by Adam Ouzeri
   * 2.3. Rheological studies show the viscoelastic nature of actin cortex in the epithelia.
 
-3. Epithelial buckling
+Part 3. Epithelial buckling produces predictable folds.
   * 3.1. Rapid deflation produces a buckling instability leading to form epithelial folds.
   * 3.2. Buckling occurs across different length scales to overcome compressive stresses.
-
-4. Programmed epithelial folds
-  * 4.1 Epithelial buckling lead to formation of wrinkles.
-  * 4.2 Folding patterns become more complex with the increasing size.
-  * 4.3 Patterns are guided by control of shape and size.
+  * 3.3. Epithelial buckling lead to formation of wrinkles.
+  * 3.4. Folding patterns become more complex with the increasing size.
+  * 3.5. Patterns are guided by control of shape and size.
   
 ## Conclusions and Discussion.
 
