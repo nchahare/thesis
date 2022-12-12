@@ -4,7 +4,8 @@ Writing my thesis. Online draft in markdown. I will use the pandoc to convert th
 I will manage this also on the project.
 
 ```
-pandoc --reference-doc 'style\word-styles-reference-01.docx' -o main.docx chapter01.md
+pandoc --reference-doc '.\style\word-styles-reference-01.docx' -o main.docx -s '.\_introduction\chapter01epithelialtissue.md' '.\_introduction\chapter02morphogenesis.md'
+
 ```
 
 You can find:
