@@ -1,5 +1,4 @@
-
-## 2. Morphogenesis
+# Morphogenesis
 
 During embryonic development, epithelia forms transient structures, such as the neural tube, somites, and the precardiac epithelium, that serve as progenitors for the development of more complex organs. Different epithelia acquire diverse morphological forms and performs their specific functions, such as the thyroid follicles, the kidney tubules, the interconnected bile canaliculi and sinusoids in the liver, and the complex branching structures found in the lung and salivary glands (Gumbiner, B.M., 1992). Owing to its multifaceted regulation and hierarchical organization, epithelial morphogenesis is a complex phenomenon dependent on factors at multi spatial-temporal scales.  
 

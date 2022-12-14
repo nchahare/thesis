@@ -14,7 +14,6 @@
 2. Morphogenesis: Co-ordinated movement at local and global scale. Form and function dialectics. Forces and forms. Molecular machinery combining forces and form together with mechanosensing.
 3. Active tissue mechanics: Actin cortex mechanobiology. Rheology. Viscoelasticity and active gel models.
 4. Bottom up biophysics: Reconstructing biological systems. Buckling and folding.
-5. 
 
 ## Aims of the thesis
 
@@ -95,7 +94,7 @@ B. Quantitative analysis of the domes.
 
 * List of experiments and data repository
 1. Fabrication of the device with different materials.
-2. Optimization of the protien patterning.
+2. Optimization of the protein patterning.
 3. Optimization of the cell seeding.
 4. Calibration of the pressure setup.
 5. Flow experiments.

@@ -1,8 +1,4 @@
-# Part I: Introduction
-
-The center focus of this thesis is epithelial monolayers. From the materialist perspective, these monolayers are endlessly fascinating. They are shape changing, self healing, continuously deform or jam depending on the requirement. They are the simplest system conceptually to understand the wider world of morphogenesis. This introduction is a primer to all the topics relevant to the thesis. First I will give a brief introduction to the epithelial tissue itself and its key components along side a snippet of its role in disease and development. Then I will give a summary of morphogenesis and how we can think of epithelia as an active material and what are the historical ways of modelling it. Finally, I will conclude with the emerging field of bottom up morphogenesis, where researchers are reconstructing the biological systems from scratch.
-
-## 1. Epithelial tissue
+# Epithelial tissue
 
 Epithelial tissues are cell sheets with strong intercellular bonds that form physical barriers for major organs such as the lungs, skin, and intestine. It protects the organs from external physical, chemical, and microbial onslaughts. Besides protection, the main functions of epithelial cells include secretion, selective absorption, transcellular transport, and detection of sensation (Powell, D.W., 1981). It also plays a key role in developmental stages by supporting growth and driving critical shape changes.  
 
