@@ -1,0 +1,1002 @@
+---
+author: Nimesh Ramesh Chahare
+title: Mechanics of inflated epithelia
+---
+
+## Abstract
+
+Epithelial sheets form specialized 3D structures suited to their
+physiological roles, such as branched alveoli in the lungs, tubes in the
+kidney, and villi in the intestine. To generate and maintain these
+structures, epithelia must undergo complex 3D deformations across length
+and time scales. How epithelial shape arises from active stresses,
+viscoelasticity and luminal pressure remains poorly understood. To
+address this question, here we developed a microfluidic setup and a
+digital twin to engineer 3D epithelial tissues with controlled shape and
+pressure. In the experimental setup, an epithelial monolayer is grown on
+a porous surface with circular low adhesion zones (footprint). On
+applying hydrostatic pressure, the monolayer delaminates into a
+spherical cap (dome) from the circular footprint. This simple shape
+allows us to calculate epithelial tension using Laplace's law. Through
+this approach, we subject MDCK epithelial cells to a range of lumen
+pressures at different rates and hence probe the relation between strain
+and tension in different regimes, while computationally tracking actin
+dynamics and their mechanical effect at the tissue scale. Slow pressure
+changes relative to the timescales of actin dynamics allow the tissue to
+accommodate large strain variations. However, under sudden pressure
+reductions, the tissue develops buckling patterns and folds with
+different degrees of symmetry-breaking to store excess tissue area.
+These insights from experiments and the digital twin allow us to pattern
+epithelial folds by rationally directed buckling. Our study establishes
+a new approach for engineering epithelial morphogenetic events.
+
+# Part I: Introduction {#part-i-introduction-1}
+
+The central focus of this thesis is the amazing epithelial tissue
+monolayer. From the perspective of a mechanical engineer, these
+monolayers are endlessly fascinating. They are shape-changing,
+self-healing, and continuously deformming or jamming depending on the
+requirement. They are the most basic system in terms of physical
+understanding of the larger world of biological morphogenesis. Epithelia
+are everywhere: covering all our body surfaces and lining body cavities
+and organs. Epithelial monolayers adopt a range of shapes from simple
+spherical blastocyst to highly branched and folded lungs. These shapes
+are developed and maintained through constant adaptation of epithelia.
+In this work, we have explored the physical principles behind the
+epithelial shape by combining theory and experimentation with simple
+epithelial monolayers.
+
+The chapters in this part are to be a primer for all the topics relevant
+to my PhD. Starting with a brief introduction to the epithelial tissue
+itself and its key components. Subsequently a summary of epithelial
+morphogenesis and how we can think of epithelia as an active material,
+as well as the historical ways of modeling it. Finally, I will conclude
+with the emerging field of "bottom-up" morphogenesis, where researchers
+are reconstructing the biological systems from scratch.
+
+## Epithelial Layers
+
+### ![](media/image1.png){width="5.904861111111111in" height="4.048611111111111in"}Introduction
+
+> Figure: The Anatomy Lesson of Dr. Frederik Ruysch, 1670 by Adriaen
+> Backer
+
+A Dutch botanist, Frederick Ruysch, in early eighteenth century coined
+the term 'epithelia' to describe the tissue found while dissecting the
+lips of a cadaver, combining Greek roots 'Epi' for the top and 'thele'
+for a nipple. A few decades later, a Swiss scientist Albrecht von Haller
+started to use the term epithelium/epithelia to describe fiber(s) of the
+body. The idea of fibers was an old renaissance theory that the body is
+made of fibers, which a fundamental building block of living things. The
+understanding then was that these fibers/tissues arranged in different
+arrays gave rise to biological structures (maccord2012, zampieri2014).
+In the twenty-first century science, epithelial tissues are understood
+as a type of animal tissue in which cells are packed into sheets. The
+epithelial cell sheets have strong intercellular bonds that form
+physical barriers for compartmentalization of the organs and maintains
+the homeostasis. It plays a key role in developmental stages by
+supporting growth and driving shape changes of the organs. It protects
+the organs from external physical, chemical, and microbial onslaughts.
+
+Epithelial cells are polarized, i.e., their apical side, faces the lumen
+of the organ, which differs in shape and composition from the
+basolateral side. Its polar organization is reflected in the vectoral
+functions like creating and maintaining concentration gradients between
+the separated compartment. Typical examples of these are transporting
+epithelia such as those of the renal tubule, absorptive epithelia of the
+intestine, and secretory epithelial cells like hepatocytes. In addition,
+polarized epithelia guide the developmental process by determining the
+fate of cells leading to symmetry breaking events in the embryo.
+(kim2018).
+
+Epithelial cells have different shapes and may be arranged in single or
+multiple layers. They are usually classified according to two features:
+the number of cell layers and the shape of the cells. Simple epithelia
+are single-cell layers where all the cells contact the underlying basal
+lamina and have an apical free surface. The shape of the cells can be
+flat (wider than high), cuboidal (as wide as high), or columnar (higher
+than wide). However, stratified epithelium contains two or more layers
+of cells. Our focus is simple monolayers.
+
+> Figure: Quilling of human body and then showing different epithelial
+> types and their location then showing apical basal polarity of
+> epithelial and monolayer.
+
+Epithelial function primarily depends on the tissue's structure and its
+microenvironment. In essence, it can be described in three parts: first,
+cell structure; second, microenvironment; and lastly, cell-matrix
+interactions.
+
+### Cell structure
+
+In general, cell structure helps cells maintain their shape along with
+providing mechanical support to perform vital functions like division
+and migration. This structure is known as the cell cytoskeleton. In
+particular, the Eukaryotic cell cytoskeleton is mainly constructed out
+of filamentous proteins that hold the cell and its cytoplasmic
+constituents. There are three major filaments, which differ in size and
+protein content. Microtubules are the largest type of filament of the
+protein tubulin, with a diameter of about 25 nm. Actin filaments are the
+smallest type, with a diameter of only about 6 nm. Finally, intermediate
+filaments are medium-sized, with a diameter of about 10 nm. Unlike actin
+filaments and microtubules, intermediate filaments are constructed from
+several different subunit proteins. All three types of filaments
+dynamically alter themselves in reaction to signals from
+microenvironments and cell networks (Alberts, B., et al., 2013;
+Fletcher, D.A., and Mullins, R.D., 2010s). Mechanically, actin filaments
+are stiffer than microtubules in extension, but they rupture at lower
+extension. It is also reported that the intermediate filaments exhibit
+an intermediate extensional stiffness at lower extensions, but that the
+intermediate filament can sustain much larger extensions than the other
+two types of filaments while exhibiting a nonlinear stiffening response
+(Janmey et al., 1991; Mofrad, M.R., 2009).
+
+In the case of epithelial layers, the actin cytoskeleton and
+intercellular junctions make cell-cell contacts stronger and provide
+integrity to the tissue (Braga V. 2016). The perfect example of these
+tissue-level structures can be seen in wound healing assays: cells
+surrounding the wound create a ring of actin to close it (Brugués, A.,
+et al., 2014). One must keep in mind that these structures tend to
+self-organize as well. It can be seen when cells are confined in a
+specific shape, like in the case of circular islands of epithelial cells
+that showed radial patterns in the actin organization (Jalal S., et al.,
+2019).
+
+> Figure: all the cytoskeleton and cell junctions and their mechanics
+
+Multiple membrane molecules can mediate adhesion between cells. One of
+these are cadherins, critical for epithelial cell cohesion through the
+formation of adherens junctions. In these junctions, cadherins are
+coupled to the cell cytoskeleton enabling force transmission between
+cells. It is a key factor in mechanical regulation of division and
+tissue rearrangement during development and homeostasis (mertz2013).
+Desmosomes are another type of intercellular junction. They are coupled
+with intermediate filaments, and the resulting supracellular network
+confers mechanical resilience on cell layers (Hatzfeld, M., Keil, R., &
+Magin, T. M. 2017; Latorre, E., et al., 2018). Tight junctions perform a
+barrier function and enable the transport of ions across epithelial
+layers to be actively regulated. This plays an important role in the
+control of fluid pressure in tissues.
+
+### Microenvironment
+
+Extracellular matrix (ECM) is the cell environment or substrate to which
+cells adhere; it is also known as the matrix, mesenchyme, or cellular
+microenvironment. ECM serves many functions: it endows a tissue with
+strength and thereby maintains its shape; it serves as a biologically
+active scaffolding on which cells can migrate or adhere; it helps to
+regulate the phenotype of the cells; it serves as an anchor for many
+substances, including growth factors, proteases, and inhibitors of such.
+It also provides an aqueous environment for the diffusion of nutrients,
+ions, hormones, and metabolites between the cell and the capillary
+network. On top of that, it is subjected to mechanical forces such as
+blood flow in endothelia, air flow in respiratory epithelia, or
+hydrostatic pressure in the mammary gland and bladder (Roca-Cusachs, P.,
+Conte, V., & Trepat, X. 2017; Humphrey, J. D., et al., 2015; Waters, C.
+M., Roan, E., & Navajas, D., 2012; Paszek, M. J., & Weaver, V. M., 2004;
+Bross, S., et al., 2003). It is shown that the ECM regulates cell shape,
+orientation, movement, and overall function in response to these forces.
+
+ECM is a fibrous network of proteins; from a mechanical perspective, the
+three primary structural constituents of the ECM are typically collagen,
+elastin, and proteoglycans. Collagen is one of the most abundant protein
+in the body. Elastin is the most elastic and chemically stable protein,
+and proteoglycans often sequester significant water as well as growth
+factors, proteases, etc. Due to its water content, the deformation of
+ECM can produce cracks in epithelial layers. ECM acts as a poroelastic
+material, soaking up water upon stretching (like a sponge) and releasing
+it under compression, causing a hydraulic fracture effect (Casares, L.,
+et al., 2015). Moreover, collagen network can remodel under the
+influence of cells aiding in migration or mechanical forces (Shields, M.
+A., et al., 2012; Humphrey, J. D., 2003). Like most cytoskeletal
+proteins, most extracellular components turnover. Some continously and
+some very slowly. For example, collagen in the peridontal ligament
+appears to have a half-life of a few days, whereas that in the
+vasculature may have a normal half-life of several months. In response
+to altered physical stimuli, disease, or injury the rates of synthesis
+and degradation of collagen can increase many folds to have a rapid
+response (Humphrey J. D., 2003).
+
+### Cell-matrix interaction
+
+Cells and ECM have a symbiotic relationship with each other through
+various sensors on the cell surface. The biophysical cues are primarily
+sensed using integrins and focal adhesion complexes in cell-substrate
+adhesion (kechagia2019). Through these adhesions cells can sense the
+external mechanical and chemical signals like matrix stiffness, ligand
+density, or chemotactic gradients (fortunato2022). Recently it has been
+shown that they could the cells could even respond to viscoelasticity of
+the matrix (elosegui-artola2022a). The cells have shown to secrete ECM
+on their own or remodel the substrate to promote growth/invasion of a
+cancer, or reorganize the cytoskeleton all together. Due to recently
+discovered deeper ties of focal adhesions to the nucleus and in turn
+transcriptional factors, cell-matrix adhesions could affect the tissue
+behavior fundamentaly. (DuFort, C. C., Paszek, M. J., & Weaver, V. M.
+2011; Northey, J. J., Przybyla, L., & Weaver, V. M. 2017). Precise
+control of cell-cell and cell-substrate interactions enables emergent
+behaviors in cell sheets that are not observed in single-cell systems
+(Trepat, X., and Sahai, E., 2018; Ladoux, B., and Mège, R.M., 2017).
+
+> Figure: ECM and focal adhesion.
+
+### Role in disease and development
+
+Epithelial integrity and homeostasis are of central importance to
+survival, and mechanisms have evolved to ensure these processes are
+maintained during growth and in response to damage (Macara, I.G., et
+al., 2014). For example, epithelial cells have one of the fastest
+turnover rates in the body. The entire gut cell lining turns over in
+3--4 days. This turnover implies constant cell division and death. The
+excessive rate of division and death may give rise to tumors. It is
+known that 90% of cancers emerge in simple epithelia (Torras, N. et
+al. 2018; Eisenhoffer, G.T., and Rosenblatt, J., 2013). Not only this,
+but it could easily disrupt the barrier function, as no gaps should
+emerge around dying or dividing cells. If the fluid compartmentalization
+goes awry, it has profound implications for epithelial and stromal
+homeostasis, fluid and/or electrolyte balance, and the generation of
+inflammatory states. Several bacterial toxins are known to target
+junctions and cause changes in the tight junction protein ZO1, resulting
+in compromised barrier function and pathologies such as diarrhea and
+colitis (Fasano, A. et al., 1991). Cancer cells tend to spread and
+disperse metastatically by using their very high rate of cell motility
+and a diminished sense of cell adhesion. This elimination and/or
+reduction of ZO1 barriers in cancer is essential to allowing metastatic
+cells to break into and out of blood vessels. The leaky barrier also
+allows a growing epithelial tumor to access luminal fluids as an
+additional source of nutrients (Mullin, J.M., et al., 2005).
+
+Moreover, epithelia participate in physiological events such as
+epithelial--mesenchymal transformation (EMT), a developmental process
+when epithelial cells gradually transform into mesenchymal-like cells by
+losing their epithelial functionality. EMT plays a vital role in normal
+biological function like repair and differentiation; and abnormal
+pathological activity like organ fibrosis and promoting carcinoma
+progression. It endows cells with stem cell properties. Thus, the
+mesenchymal state is enables cell migration to distant organs and
+allowing their subsequent differentiation into multiple cell types
+during development and the initiation of metastasis (thiery2009).
+
+Epithelia undergo drastic changes in shape with deformation and
+reorganization from the embryonic to the adult stage. Unsurprisingly,
+any improper function would lead to damage and disorder. Epithelial
+barrier dysfunction is a precursor of diseases such as chronic
+obstructive pulmonary disease, asthma, cystic fibrosis, or pulmonary
+fibrosis (carlier2021).
+
+## The mechanical basis of Morphogenesis
+
+During embryonic development, epithelia form transient structures, such
+as the neural tube, somites, and the precardiac epithelium, that serve
+as progenitors for the development of more complex organs. Different
+epithelia acquire diverse morphological forms and performs their
+specific functions, such as the thyroid follicles, the kidney tubules,
+sinusoids in the liver, and the complex branching structures found in
+the lung and salivary glands (Gumbiner, B.M., 1992). Owing to its
+multifaceted regulation and hierarchical organization, epithelial
+morphogenesis is a complex phenomenon dependent on factors at multi
+spatial-temporal scales.
+
+Some processes appear to be happening fast at local level like series of
+cells changing their shape by undergoing apical constrictions to create
+a global change in embryo, the ventral furrow in Drosophila
+gastrulation. However, at the same time you will find that the chemical
+signaling events activating this process are slow and at global level.
+Similar events are happening in vitro systems. For example, a cluster of
+dissociated mouse embryonic stem cells (ESCs) cultured in an appropriate
+medium assemble itself in a optic cup. It exhibits all the layers of
+neural retina (Eiraku et al., 2011; Bedzhov, I. & Zernicka-Goetz, M.
+2014). Just like the drosophila embryo, this structure also undergoes
+local changes creating a global invagination in response to global
+signals of culture conditions. It gets even more complex, when we
+consider the details of these processes. For example molecular machinery
+involved in the apical constriction, genes responding the morphogen
+gradients, or mechanical stresses at the cells or tissue levels causing
+flows.
+
+Rudolf Virchow's third tenet of the cell theory stated 'omnis cellula e
+cellula' meaning 'all cells come from cells' (Virchow R.L.K., 1858). All
+tissues come from cells that contain essentially the same genetic
+information. Nonetheless, every tissue exhibits a distinct architecture
+and function. This raises many questions such as what makes cells
+different from each other? Is it all because of the genes? or
+environmental factor? What drives the shape changes in tissue
+morphogenesis? Since the advent of cell theory two centuries ago, the
+field of developmental biology has answered a lot of these questions
+alongside has created new debates and unanswered questions. However, the
+field has been focused on the studies tracking and mapping patterns of
+cell movements to patterns of gene or protein expression. These studies
+whiles being greatly influential and important to understand
+morphogenetic patterns, are not enough to explain morphogenesis
+(gorfinkiel2021, veenvliet2021, odell1981). Because the physical
+understanding is only limited to the kinematic description, which is the
+deformation of the tissue or motion of the cells. As we know the cell
+cytoskeleton and tissues are actively driving these shape changes and
+movements through generation of mechanical forces. Thus, to have an
+integrated grasp of the morphogenesis, we must consider the role of
+forces and mechanics. It is a difficult task owing to the technical
+challenges for measuring forces and observing highly dynamic cellular
+processes.
+
+Historically, form for animate and inanimate objects been tied to the
+function. As per the twentieth century architecture principle of "Form
+Follows Function"; where the organization of a structure should be based
+upon its intended function. In developmental biology there are many
+examples of this principle at work as in self-assembling systems like
+intestinal organoids, cancerous spheroids, and functional kidney tissues
+(Gjorevski, N, et al. 2016; Ishiguro, T, et al. 2017; Morizane, R. and
+Bonventre, J.V., 2017). Each emerging out of a set of cells in
+appropriate environment changing and adapting itself to perform the
+biological function. However, exactly the opposite design principle is
+at work in numerous in vitro experiments with controlled cellular
+environment; illustrating geometric constraints drives biological
+function. For instance, in a micropatterned collagen scaffold (with
+structures of intestine) a human small intestinal epithelium was
+generated that replicates key features of the in vivo small intestine: a
+crypt-villus architecture with appropriate cell-lineage
+compartmentalization and an accessible luminal surface (Wang, Y et al.,
+2017, breau2022a). Or cell reprogramming like in case of fibroblasts
+turning into induced neurons when supported by specific substrate
+topography (Kulangara et al. 2014).
+
+D'Arcy Wentworth Thompson's classical text "On Growth and Form"
+(Thompson, 1917), tries to unravel the dialectics of morphogenesis by
+exploring the geometric and physical constraints on living entities
+during development and across evolution.
+
+It is quite astounding that Thompson was thinking about these questions
+when the scientists were still grappling with ideas of vitalism. Form
+and function debate still lands up in explaining the form because of its
+function. Intenstine has large surface area because its function is
+absorption. There has been a great focus on genetic basis for
+developmental processes. But it is more clearer now that genes are not
+the complete answer. There is a specter is haunting this subject---the
+specter of mechanics. In last couple of decades, there has been a
+resurgence of interest in physical forces as regulator of development,
+homeostasis, and disease (Ingber, D. 2005; Barnes, J.M. et al., 2017).
+This has led researchers across the disciplines to examine the physical
+mechanisms of tissue formation and its regulation. Unravelling mechanism
+of Thompson's mysteriously generated 'Diagram of the forces' which
+governs biological processes (Thompson, 1917; Heer, N.C. and Martin,
+A.C., 2017). After more than 100 years of its publishing the specific
+questions about shape and function can be answer using advances in
+bioengineering and microscopy.
+
+## Mechanics
+
+In simplification, one can imagine each cell in epithelial tissue as a
+mathematical system which integrates several input types to result in an
+output behaviour. Such inputs cues can be chemical like soluble
+chemicals as in morphogen gradients in embryos, and
+cell-cell/cell-surface signalling molecules; or be mechanical --
+involving the generation-modification of intra- or intercellular forces
+as in apical constriction of ventral furrow formation; or external
+forces of tension/shear like breathing lungs (ref ) and flowing blood
+through vasculature (Fenech, M., et al., 2019). While outputs could be
+cells shape change, migration, differentiation, or apoptosis. (Kumar, A.
+et al., 2017) (Figure reference )
+
+For understanding the epithelial mechanics, we need to have epithelia
+with controlled biological and mechanical conditions along side the
+ability to measure forces and deformations. It is not easy to have these
+conditions met. Here I will give the overview of the system in
+decreasing order of complexity. Starting from in vivo organisms to
+simple 2D monolayers.
+
+## Embryos
+
+## Explants
+
+## 3D tissues
+
+## 2D monolayers
+
+> Embryos are one system where we see self organization work. apical
+> basal polarity and lumen formation. Also see that the pressure
+> regulates the size (Chi joe chan paper read ari thesis). Other example
+> is zernicka goetz paper. segregation on adhesion properties. Explants
+> of lungs have been useful tool to However, the embryo system lacks
+> better imaging or control over size shape and measurement of the
+> forces
+
+Simple processes like division and deformation in individual cells
+contribute to complex behaviours which can only be seen at larger scale
+in collective context like emergence. It has been shown in recent years
+how guided by biophysical cues in microenvironment give rise to cellular
+collective migration (Ladoux, B. & Mège, R.-M. 2017), oscillation
+(Balaji, R. et al. 2017; Serra-Picamal, X. et al. 2012), turbulent
+motion (Vedula, S. R. K. et al. 2012), or active cell rearrangement
+(Krajnc, M., et al., 2018). (Figure reference)
+
+Description of actin cytoskeleton and internal force generation Any
+response to biophysical cues is mainly manifested as physical change in
+the cell which in turn shows up in tissue. The change in shape is
+related to mechanical properties of the cell, which are largely defined
+by the actin cytoskeleton. Actin cytoskeleton is a highly polymorphic
+and multifunctional cellular system that consists of actin filaments
+(F-actin) organised into various higher-order arrays capable of dynamic
+remodelling (Svitkina, T. 2018). Its most important function is to
+generate force. For pushing, actin filaments typically assemble into
+branched networks assembled by the Arp2/3 complex (Svitkina, T.M. and
+Borisy, G.G. 1999), while, for contraction, they form composite networks
+or bundles with bipolar filaments of myosin II (Verkhovsky, A.B. et
+al. 1995). These generated forces can also propagate through the tissue
+through cell--cell junctions which form dynamic cellular contacts and
+the substrate (Halbleib, J. M. & Nelson, W. J. 2006; Sunyer, R., et al,
+2016). Cell--matrix and cell--cell junctions are under constant
+mechanical stress (Maruthamuthu, V., et al., 2011), which causes
+remodelling of the junctions (Mège, R. M. & Ishiyama, N. 2017) and
+triggers cell signalling events within the tissue (Ladoux, B. & Mège,
+R.-M. 2017). To summarise, any 'input cues' start a cascade of
+biochemical reactions from 'mechanosensors' to cytoskeleton resulting in
+'output response' through contraction/extension. This process is called
+as 'mechanotransduction' (Harris, A.R., et al., 2018). Introduction to
+models for epithelial mechanics Advances in experimental technologies
+and better-resolved spatial-temporal measurements provide more detail
+view of tissue function and its complex physical and molecular
+underpinnings. Similarly, advances in engineering and mathematical
+models allows for exploration of hidden physical phenomenon; along with
+aiding experimentalists to perform physically motivated experiments. For
+example, the looped pattern of vertebrate gut tube is reproduced by a
+simple physical system of differentially strained rubber tube with soft
+latex sheet composite (Savin, T., et al., 2011). This mathematical
+theory, depended only on geometry and elasticity, could predict
+quantitatively with observations of intestinal loops at different stages
+of development in chick embryo. (Figure reference ) As mentioned before
+epithelial tissues are excellent examples of complexity spanning the
+molecular, cellular, and tissue scales. The strong interdependence
+between mechanical and molecular signals makes it difficult to interpret
+the relative contribution of different cues to the shaping of epithelial
+tissues. Mathematical models can help to disentangle this complex
+relationship. Models are perfect tools for discovery and data
+interpretation. For instance, they have been useful inferring the
+mechano-chemical properties in different experimental manipulation like
+laser ablation, force microscopy, and photobleaching assays (ref ;
+Fradin, C., 2017). History of modelling There is a history to
+mathematical modelling of epithelia. Almost 70 years ago, Alan Turing
+put forth his theory of reaction-diffusion of two chemicals. It showed
+that interaction of two chemicals can generate intriguing spatial
+patterns in his paper "The chemical basis of morphogenesis" (Turing, A.
+1952). These patterns, Turing patterns, can be seen in leopard's spots,
+butterfly's wings, or fish's scales (Figure reference ). Well now, with
+much more information of physical forces involved in biological process
+one can start thinking about mechanochemical basis (Howard, J., Grill,
+S.W. and Bois, J.S., 2011). Introduction to different models There are
+mathematical models describing physics and biology at multiple scale.
+There are hyperelastic continuum material models at larger tissue
+scales, for example, describing behaviour of cardiovascular system (ref
+). There are active fluid models at relatively smaller scales explaining
+epithelial tissue behaviour in systems such as active dewetting or
+drosophila wing development (ref ). Active surfaces Fortunately, as
+anticipated by Descartes and other mechanists, soft tissues respect the
+basic postulates of mechanics (e.g. conservation of mass, momentum, and
+energy), and basic concepts such as stress, strain and entropic
+elasticity apply as well. Hence, much of continuum models focuses on the
+formulation of reliable constitutive relations and then on the solution
+of initial-boundary-value problems. Constitutive relations describe the
+response of a material to applied loads, which depends on the internal
+constitution of the material. Because of the incredible complexity of
+both the ultrastructure and microstructure of these materials
+researchers continue to rely primarily on phenomenological descriptors
+of the behaviours of interest, descriptors that are often motivated by
+the knowledge of the underlying structure. The uniaxial/biaxial tension
+and compression testing has been able to provide insights into the
+constitutive relation of the tissues. In these experiments, one measures
+deformation in terms of strain tensors, like Green strain tensor (E)
+E=(F\^T.F-I)/2 Where, F is a deformation gradient tensor. Here, in the
+theoretical framework of finite elasticity, one can assume a strain
+energy function (W) relates to stress (S). S= ∂W/∂B The stress-strain
+data extracted from the experiment allows to predict the form of strain
+energy function. In case of bladder, heart tissue, skin, and arteries,
+hyperelastic form has been useful in capturing the material response
+(Fung YC, 1990; Humphrey JD, 2002). This kind of formulation is also
+flexible in adding extra physical constraints as anisotropy of the
+tissue microstructure or its incompressibility. Borrowing from composite
+materials, transversely isotropic material models have been instrumental
+in understanding mechanism of myocardium infarction and various
+aneurysms (add references from Humphrey, Holzapfel and Ogden). Slight
+modification to these constitutive relations could capture material
+response, such as explaining strain stiffening, or inhomogeneity in the
+material like accounting for collagen content and crosslinking in the
+tissue (Holzapfel, G.A. and Ogden, R.W., 2020). These models are also
+used in understanding growth and remodelling with using the theory of
+kinematical growth. It has pointed out existence of residual stresses in
+growing tissue to make compatible elastic and inelastic growth-induced
+deformations, which in turn remodel the tissue properties modifying the
+material into a spatially inhomogeneous and anisotropic one. This
+process is crucial in solid tumour growth mechanobiology, the residual
+stresses directly influencing tumour aggressiveness, nutrients walkway,
+necrosis, and angiogenesis (Carotenuto, A.R., et al., 2019). The
+nonlinear continuum models have also been used in mechanical modelling
+of the brain tissue. As an ultra-soft and heterogeneous material,
+researchers can model its behaviour in high strain rate scale of brain
+trauma to slow growth in developmental stages (Budday, S., et al.,
+2019). F=∇\_x φ F=F^e.F^g\
+At cellular scale, we know that the mechanical properties of the tissue
+are controlled by the biopolymeric system called cytoskeleton. Filaments
+and their cross-linkers (molecular motors) continuously transduce energy
+(ATP to ADP) to contract or extend the network. This system can be
+considered as a physical gel because of its cross-linked actin filament
+network. But, phenomenon like treadmilling, active
+polymerization-depolymerization of filaments, and mobility of molecular
+motors like myosin makes the tissue system an active gel. Also, to note
+that cellular system lacks time reversal symmetry because it is
+constantly transducing energy . Moreover, these filaments are polar, as
+constituents can acquire orientational order. Thus, one can model
+tissues as active gels; are used to model active systems like flocks for
+birds and schools of fish using hydrodynamics of active matter (Toner.
+J. et al., 2005). Active matter systems are sub class of continuum
+models used to describe dynamics of packed active particles; based on
+liquid crystal theories of soft condensed matter. Like liquid crystals
+cells too have orientation and ability to move past each other. In this
+framework, one characterises the orientation of filaments in
+cytoskeleton or elongation of cells in the tissue by nematic order
+parameter matrix (Q). Q=3S(nn-I/3)/2 Where n is a unit vector indicating
+local average orientation axis, S is the scalar order parameter and
+theta is the angle of each element with the n vector. S= 〈cos2θ\^((m))
+〉 This formulation aids in defining active forces generated by the
+network. The stress is divided in two parts: active and passive. Where
+passive stress will be arising from mesoscopic viscoelasticity of the
+material and from the bending, splaying and twisting of the aligned
+agents. Active stresses are obtained using combination of zeta, strength
+of activity, and nematic order matrix. Zeta's sign determines the nature
+of the force dipole. If negative, system contracts; if positive, system
+expands along the nematic axis.
+
+For example, actomyosin systems are contractile. Active stress is very
+crucial for the motion of the system. Even in low Reynold's number
+systems, motion could get chaotic. In a dense bacterial system of
+Bacillus subtilis, jet flows and turbulent flow patterns were observed
+(Wensink, H.H., et al., 2012 ). Also, independent vortices have been
+observed in the expanding monolayers (Saw, T.B., et al., 2015). Nematic
+equations have capture physics very well in 2D confined systems or
+expanding systems. For 3D, active surfaces are used. The actomyosin
+cortex near cell membrane or epithelium in the embryo is like a thin
+sheet of matter, which drives shape changes at cellular or tissue level
+by causing deformation due to the generation of internal forces and
+torques. These three-dimensional structures resemble a curved active
+two-dimensional surface. The framework developed for active matter can
+be used by applying mathematical tools from differential geometry. The
+curved surface is defined in generalised coordinates X.
+
+The metric tensor g and curvature tensor C are used to describe the
+kinematics.
+
+And forces and torques are defined as,
+
+Where, dl is length of the line element with tangential unit vector v
+normal to the line, and t and m are tension and moment respectively.
+Total torque is,
+
+The force balance expression becomes
+
+These equations can be used with constitutive equations for specific
+cases. For example, Salbreux and Julicher show that flat active Helfrich
+membrane with up-down asymmetry have its stability dependent on active
+tension and active tension-curvature coupling term. They find that the
+active flat surface undergoes shape instabilities in two cases. First,
+classical buckling instability occurring when active stresses are
+compressive and establish a negative surface tension in the membrane.
+Second, active buckling instability occurs when tension is dependent on
+curvature, Because of this dependency, a perturbation of the surface
+shape results in regions of low and high surface tension. These surface
+tension differences lead to flows towards region of higher tension.
+These flows generate further in-plane torques causing further
+deformation of the surface (Salbreux, G. and Jülicher, F., 2017). This
+tension-curvature dependency can be seen in the pancreas of mice that
+the morphology of epithelial tumours is determined by the interplay of
+cytoskeletal changes in transformed cells and the existing tubular
+geometry (Messal, H.A., et al., 2019). Consistent with theory
+predictions: small pancreatic ducts produced exophytic growth, whereas
+large ducts deformed endophytically. Another example shows that curls of
+high curvature form spontaneously at the free edge of suspended
+epithelial monolayers. It is pointed that the curling originates from an
+enrichment of myosin in the basal domain that generates an active
+spontaneous curvature. It was shown that the extent of curling is
+controlled by the interplay between internal stresses in the monolayer
+(Fouchard, J., et al., 2020 ). Vertex models Another prominent modelling
+system is of vertex models. Monolayered epithelial tissue shows a
+polygonal cellular pattern on its surface. This enables to
+describe/track cell motion and shape change easily in terms of vertices
+and edges (Figure reference). Vertex models have been developed to
+understand the complex interplay between cellular shape, the forces
+generated inside epithelial cells and mechanical constraints externally
+imposed on the tissue. Models could be 2D or 3D depending on the system
+being modelled, but cells are consistently defined as each one has
+apical and basal surface, and lateral interfaces between neighbours.
+This enables one to model for cell polarities in either directions. More
+complexities have been added to describe specific systems like
+intercalations in 3D epithelia using geometric shape as Scutoid
+(Gómez-Gálvez, P., et al., 2018) (Figure reference). The molecular and
+mechanical details are added in formulation of mechanical description.
+In mechanics to determine the motion of vertex, mechanical forces must
+be specified. It is done using virtual work function (W); and forces can
+be obtained by differentiating with vertex position. There are two
+components to W: internal and external. The Changes in internal virtual
+work (dWi) can result from changes in the cell volumes, in the areas of
+surfaces, or in the lengths of bonds. By defining the cell pressure, the
+surface tension and the line tensions, the differential of the internal
+virtual work for vertex movements can be written.
+
+Similarly, the external virtual work can be written external forces that
+arise from external compression or tension applied to the tissue, fluid
+pressure acting on apical or basal cell surfaces, or attachment of cells
+to the underlying basement membrane.
+
+The state of the monolayer is estimated by minimising the virtual work
+function (Alt, S., Ganguly, P. and Salbreux, G., 2017). Here, molecular
+details are incorporated in the changes of the surface tension and line
+tensions (Figure reference). In epithelial layers, the actin cortex
+plays a huge role in determining tensions along the edges (ref). This
+has been very useful in capturing physics in systems starting from cell
+shape distribution and cell packing to appendage formation and growth of
+epithelial vesicles (Staple DB, et al., 2010; Osterfield M, et al.,
+2013; Okuda S., et al., 2015). Introduce controlled environment and
+engineering Due to progress in engineering and material science, new
+avenues have been explored to study environment sensitive response of
+the epithelial tissues. Microengineering techniques can be combined to
+create controllable environments to study epithelial movement and
+mechanics. By modulating the cell--material interface and by applying
+principles of active matter, key aspects of epithelial dynamics and
+mechanosensing mechanisms can be investigated (Xi, W. et al., 2019). The
+lens of epithelial tissues as active materials with rheological
+properties has provided new insights from the molecular level to the
+tissue level. Also, the effects of architecture and stiffness of the
+microenvironment combined with external mechanical stimuli enables us to
+precisely study the complicated compromise between competing stimuli
+(Figure reference). Due to complex nature of material, we need to
+develop experimental approaches to probe tissues at multiple length
+scales and timescales through mechano-chemical control (Good, M. and
+Trepat, X., 2018).
+
+Engineering and Measurement Microenvironment in terms of
+forces/pressures/matrix As we know apart from genes and biochemical
+signalling cascades, the mechanical properties of both the tissue and
+its microenvironment substantially impact epithelial behaviours. The
+cells engage in continuous feedback loop with its surroundings causing
+alteration in its cytoskeleton and matrix. Therefore, the rheological
+behaviour of biological materials, from cortical actin networks to large
+cell assemblies, is a complicated compromise between competing forces,
+cellular events and external stimuli. External stimuli through matrix At
+tissue scale, the epithelia sense its environment through cell-matrix
+adhesion, where it shows response to stiffness changes---durotaxis; like
+in neural crest migration in Xenopus laevis (Alkobtawi, M., et al.,
+2018). It also perceives cell crowding; and cells delaminate from those
+sites to ease higher intercellular tensions. It can be observed during
+homeostasis in the colon epithelia (Eisenhoffer, G. T. et al. 2012). Not
+just matrix affects cells, but reverse is also true. In case of
+Drosophila oogenesis, disorganised matrix is remodelled into a
+polarised, restrictive matrix, which aligns with the actin bundles in
+the follicular epithelium through coordinated rotation of the cells
+(Cetera, M. et al. 2014; Haigo, S. L. & Bilder, D. 2011). These
+polarised fibres can in turn guide the directed motion of cells (Cetera,
+M. et al. 2014; Nam, K.-H. et al. 2016). Similar case is found in tumour
+mass embedded in collagen-rich matrix (Shields, M. A., et al., 2012),
+where invasive cancer cells can also remodel the tumour stroma to
+promote invasion. Examples of engineered environments Due to all these
+factors, it is difficult to decouple the various biophysical aspects of
+matrix, such as material stiffness, spatial confinement, porosity,
+viscoelasticity, material degradability and binding affinity. But
+efforts have been made to replicate and study tissue dynamics and
+mechanics in vitro using cell biology, microengineering, materials and
+modelling approaches.\
+Using such a techniques, collective cell migration under confinement
+(Vedula, S. R. K. et al., 2012; Xi, W., et al., 2017; Yevick, H. G., et
+al., 2015), collective durotaxis (Sunyer, R. et al., 2016), geometrical
+and stretching-controlled epithelial extrusion (Eisenhoffer, G. T. et
+al., 2012; Saw, T. B. et al. 2017) and epithelial growth regulation in
+two dimensions (Nelson, C. M. et al., 2005) and three dimensions
+(Salomon, J. et al., 2017) is studied, which led to a better
+understanding of cell-ECM interactions (Ladoux, B. & Mège, R.-M. 2017)
+and of tissue as active matter (Prost, J., Jülicher, F. & Joanny, J. F.
+2015 ). In vitro studies have elucidated the effects of multiple
+mechanical cues of the microenvironment on cellular behaviour, and
+insights into tissue mechanics have promoted the development of new
+materials and design methods for bioengineering, in vitro modelling,
+immunotherapy and gene therapy. Substrate Patterning Commonly, synthetic
+substrates like plastics (PET, PEGDA), hydrogels (Polyacrylamide,
+collagen gels), and elastomers (soft PDMS) are used to study mechanics
+because one can control rigidity, topography and mechanical forces. They
+can be fabricated using basic chemistry and new microfabrication
+technologies like lithography . For example, 2D substrates are patterned
+with adhesive or non-adhesive ECM to control tissue/cell shape. This has
+revealed complex behaviour in arrangement of epithelia in confinement
+(ref) and mechanism of force transmission throughout the tissue (ref).
+2D Surface ECM patterning and topography also have helped in engineering
+3D epithelial. Moreover, the integration of different techniques and
+materials further allows even higher levels of complexity in both two
+and three dimensions (Xia, Y. N. & Whitesides, G. M. 1998; Théry, M.
+2010; Alom Ruiz, S. & Chen, C. S. 2007). For example, multiple proteins
+can be patterned on flat as well as 3D surfaces using UV patterning and
+stencilling (Ruprecht, V. et al., 2017) to form adhesive patterns with
+spatially controlled adhesive strengths. Mechanical forces/pressures
+Living systems do not just have spatial control, they also have
+mechanical control through physical forces emerging out of growth,
+deformation and remodelling of ECM, and flow or arrest of fluids in
+closed geometries (ref). In our body, intestinal epithelia are stretched
+during peristaltic movements in the gut and lung alveoli deform during
+breathing (Ethier CR, Simmons CA, 2007). Not just tension, compression
+is known to guide several morphogenetic events involving tissue bending
+and folding, such as the formation of the optic cup (Sidhaye, J. &
+Norden, C. 2017), gut villi (Shyer, A. E. et al., 2013), and cortical
+convolutions in the brain (Tallinen, T. et al. 2016) In developing
+embryo, embryonic and extraembryonic fluids generate forces: frictional
+and tensional stresses when flowing (Freund et al., 2012), or
+hydrostatic pressures when in confined spaces (Navis and Bagnat, 2015).
+The mouse embryo indeed initially floats within intraluminal fluid (Chen
+et al., 2013), forms numerous fluid-filled cavities upon implantation
+(Christodoulou et al., 2018), and establishes flows of distinct regimes
+throughout later development (Freund et al.,2012). These fluids pass on
+critical information through soluble chemicals (Zhanget al., 2018).
+However, not much is known about the developmental relevance of the
+mechanical stresses these fluids also exert (ref). At the blastocyst
+stage, when the embryo is little more than a fluid filled sphere,
+internal hydrostatic pressure not only determines embryonic size but
+also directs allocation of fates by affecting allocation to internal or
+external compartments (Chan et al., 2019). As a fluid filled structure,
+imagine a balloon, the hydrostatic pressure inside relates to tension in
+t he surface. Any changes in luminal volumes are sensed by cells through
+the increased cortical tension, which in turn induces changes in cell
+shape and cytoskeletal organization (Chan et al., 2019; Latorre et al.,
+2018). Later in development, the pressure exerted by the fluid within
+the amniotic cavity has been postulated to direct notochord convergent
+extension by exerting anisotropic forces on the underlying axial
+mesoderm (Imuta et al., 2014). Clearly, the fluid dimension of the
+embryo plays key developmental functions, strengthening calls for an
+increased recognition of its role along-side the better-appreciated cues
+presented by the solid environment of cells and tissues (Kaul and
+Ventikos, 2015). Rheological measurements Epithelial tissues are much
+complicated materials than that of simple metals or polymers. However,
+the complex biological behaviour can be connected to mechanical response
+using basic material testing techniques (ref). Typically, it is done by
+probing the material mechanically and then recording its deformation, or
+by deforming the material and recording force response. In mechanical
+terms, one records material behaviour with stress (force) strain
+(deformation) relation, often called as constitutive relation and can be
+quantified in term of passive and active rheological properties (ref).
+This depends on the type of deformation as in shear, tension, or
+compression and is also multiaxial like in composite materials (ref).
+The rheological properties often correlate with their physiological
+state and are crucial for their specific functions (Park, J.-A. et
+al. 2015; Vedula, S. R. K. et al. 2015, Vedula, S. R. K. et al. 2014).
+Fo r example, Heart failure is often due to the loss of contractility of
+heart muscle cells; as it is observed in remodelling under mechanical
+stretch (Fung YC, 1990). So, one must test rheological properties along
+with different microenvironment. The mechanical information include
+deformation, rates of deformation or velocity fields, traction forces
+exerted by cells on the substrate and intercellular mechanical stress.
+Coupling these parameters with information on cellular architecture,
+obtained by imaging, can provide a mechanistic understanding of tissue
+rheology (Roca-Cusachs, P., Conte, V. & Trepat, X. 2017). This has been
+done at the molecular and subcellular scales using, atomic force
+microscopy (AFM) (Emad, A. et al. 1998), magnetic beads (Broders-Bondon,
+F., et al, 2018), optical tweezers (Bambardekar, K., et al., 2015), and
+micropipettes (Evans, E. & Yeung, A. 1989); and at larger scale using
+stretching devices, tissue rheometers and force plates (Huh, D. et al
+2010; Gudipaty, S. A. et al. 2017). This reveals complex mechanism of
+strain stiffening and viscoelastic behaviour at different regimes of
+deformation involving different parts of cytoskeleton. Also, elucidated
+the signalling pathways in terms of transcription factors like YAP
+involved in mechanosensing (ref). Suspended monolayers As mentioned
+earlier, the tissue-matrix interaction is playing a critical role in
+sensing and transmitting forces rapidly (Tambe, Dhananjay T., et
+al. 2011; Sunyer, R., et al., 2016; Serra-Picamal, X., et al., 2012).
+However, in early embryonic epithelia where little or no ECM is present,
+stresses generated by actomyosin contraction of the cells in one tissue
+are transmitted over long ranges via intercellular adhesions to other
+tissues. Thus, intrinsic tension generated in some embryonic tissues
+acts as an extrinsic stress on other tissues. For example, in the
+Drosophila wing disk, contraction of the wing hinge applies tension on
+the wing blade (Etournay, R., et al., 2015). During dorsal extension,
+stresses exerted by the invaginating dorsal mid gut play a role in
+orienting junction elongation after intercalation (Collinet, C., et al.,
+2015). During epiboly in zebrafish, an actin belt in the yolk cell
+applies tension on the enveloping layer (Behrndt, M., et al., 2012). The
+system of studying just simple free-standing epithelial monolayer is
+very appealing in terms of characterising mechanical response to stretch
+at different time scales. This also allows to look at cellular scale
+phenomenon in terms of actin network remodelling and dynamics of
+cell-cell adhesion. In experimental setup developed in Harris AR et al.,
+2012, they were able to create suspended monolayer between two rods.
+This was done by culturing cell monolayer on collagen matrix on top of
+two rods; later matrix was removed using enzymatic digestion. The system
+of two rod allowed them to conduct mechanical tensile testing on the
+suspended monolayer with force measurement in the tissue. These
+experiments showed that elasticity measurements of monolayer were two
+orders of magnitude larger than that of individual cellular parts, and
+monolayer could sustain more than 200% strain before rupture of
+cell-cell junction. Moreover, imaging of cell cytoskeleton showed that
+the acto-myosin network and cadherin junctions actively remodel during
+stretch, also keratin network reinforces the monolayer integrity at
+higher strains. A significant rearrangement and realignment of cells is
+observed. Further, rheological response probed through stress relaxation
+experiments show stress are dissipated on a minute timescale with
+increase in length of the tissue. In stress relaxation experiments,
+suspended monolayer is stretched for some time and then unstretched to
+measure mechanical response. This increase in length points to the
+active remodelling of the cell cytoskeleton at molecular scale. However,
+authors in these experiments did not observe any role played by
+cell-cell junction and intermediate filaments other than maintaining
+integrity of the monolayer (Khalilgharibi, N, et al. 2019). As
+mentioned, earlier the cells have shown complex response to compression
+in form of apoptosis, differentiation, and extrusion (ref). In Wyatt T.,
+et al., 2020 , the same setup was also used to study monolayer response
+under fast compression. Just like the slender elastic structures buckles
+after application of critical compressive stress, this free-standing
+monolayer buckles after application -35% strain at high strain rates.
+Intriguingly, the tissue buckling is followed by tissue flattening up to
+the threshold on -35% strain. The tissue buckling is rapidly eased by
+actomyosin generated tension within tens of seconds. However, after the
+threshold strain and higher strain rates stable 3D folds are formed in
+the epithelia. This revealed mechanisms with which tissues buffer the
+mechanical stress in response to fast external forces. The similar
+system has been explored with completely different mechanism in Latorre
+et al., 2018, where the pressurised epithelia display behaviour
+equivalent to active superelasticity. They used ion pumping of MDCK cell
+(kidney epithelial cells) with micropatterned substrate with circular
+non-adhesive ECM patches to create dome like structures. Due to apical
+to basal ion pumping, cell monolayer delaminates to form engineered 3D
+epithelia---dome. This system uses soft PDMS gel with beads embedded
+into it for later measurement of pressure inside the dome. These domes
+fit very closely to a spherical cap; making structure analogous to a
+bubble. This fact allowed use of Laplace's law relating pressure and
+surface tension in the bubble/dome. The spherical geometry implies
+uniform tension as the pressure build up underneath is hydrostatic in
+nature. Here, they were able to stretch individual cells at extreme
+strains of 500-800%. Interestingly, the cells under uniform tension
+showed drastically different cellular strains reminding authors of
+superelastic materials. The superelasticity describes material response
+when material can undergo large reversible deformations at constant
+stress by alteration/phase change in microstructural elements like in
+Nickel-Titanium alloys. The stress-strain response of cells showed
+initial increase and then long plateau with subsequent increase. Authors
+could explain it with high resolution imaging; that the cortical actin
+depletes as cells are stretched and this induces the plateau where cells
+are rescued by intermediate filament network at the end. These studies
+have discussed generic principles of cellular mechanisms . Just like
+superelasticity could have general application in extra-embryonic
+tissues or blastocysts systems (Hilbrant, M., et al 2016; Hildebrand, S.
+et al. 2017; Deglincerti, A. et al. 2016). Just as superelasticity or
+buckling another interesting physical phenomenon lurking around the
+corner. Besides providing a framework to understand epithelial mechanics
+and morphogenesis in vivo, the physics established in these experiments
+pave the way for a rational manipulation of cell monolayers in organoids
+and organ-on-a-chip technologies.
+
+On the chip Microfluidics and their applications: Interesting setups to
+apply forces and creating controlled microenvironment. Cells have been
+being cultured on synthetic substrates in ex vivo for more than a
+century now, but the understanding was limited to 2D and passive
+environment (Carrel and Burrows, 1911). For studying development and
+immunity in multicellular tissue/organ context, historically researchers
+have depended on animal studies (Schmeichel and Bissell, 2003). Through
+last twenty years, incredible progress has been made in controlling
+matter at small scale. This gave rise to the currently a huge field of
+microfluidics and microfabrication. As described earlier, control of
+microenvironment has been very helpful in understanding the maladies
+from malaria to cancer (Whitesides, G. M. 2006). In purview of cell
+mechanics, microfluidic system---cells on chip--- has been proven as an
+outstanding tool for mimicking in vivo conditions and controlling
+biophysical cues; enabling us to study cell behaviour (Vanapalli SA., et
+al, 2009). Not just in 2D but recent advances in the culture of cells
+within 3D contexts has enabled us to begin to model more complex
+behaviours and tissue functions (Eyckmans, J. and Chen, C.S., 2017).
+Emerging field of organ-on-a-chip or body-on-the-chip: from
+developmental angle and physics angle. With development of more
+sophisticated 3D cell cultures, the effort is being made to engineer
+patient specific drug treatments and eliminate animal use in drug
+testing (Ingber D., 2018). Leading to development of Human 'organs on
+chips', which are microfluidic devices with separate parenchymal and
+vascular compartments lined by living human cells that mimic the
+multicellular architecture and relevant functional units of living
+organs, while providing dynamic vascular perfusion in vitro. This
+multi-channel design technology was successfully used to create human
+lung small airway, skin, kidney, intestine, placenta, blood-retinal
+barrier, blood-brain barrier, neurovascular unit and neuromuscular unit,
+among others (Kim et al., 2012; Achyuta et al., 2013; Abaci et al.,
+2015; Benam et al., 2016a; Musah et al., 2017; Yeste et al., 2017;
+Workman et al., 2018; Kasendra et al., 2018; Sances et al., 2018;
+reviewed by Bhatia and Ingber, 2014). Also, these chips showed their
+application in drug testing and patient specific treatment (more
+reference). Moreover, these chips have potential for giving insights in
+developmental and disease mechanics. As our understanding goes that
+mechanical forces govern cell and tissue development, it is crucial to
+recreate organ level physical cues, like in the case of the lung
+involved surface tension at an air-liquid interface, as well as both
+fluid flow through the vasculature and cyclic mechanical stretch of the
+tissue-tissue interface due to breathing motions (Huh D., et al., 2010).
+These chips could also be used in the modelling cancer by imaging with
+high-resolution the complex interactions between multiple
+cancer-associated cell types and ECM molecules that are found in the
+local tissue microenvironment. For example, in an another version of
+this chip that uses a heterotypic co-culture approach including up to
+three different cell types (breast cancer cells, stromal cells and
+monocytes) in combination with gene expression analysis uncovered
+mechanism of cell types that interacts through paracrine signalling
+through production of transforming growth factor-β (TGFβ) by breast
+cancer cells and expression of corresponding receptors by stromal cells
+(Regier, M. C. et al. 2016). In developmental biology, it has been
+observed that culturing iPSC-derived motoneurons and brain microvascular
+endothelial cells together on a chip model the neuromuscular unit with
+significantly enhanced function and in vivo-like maturation of spinal
+cord neural tissue (Sances et al., 2018). This opens new opportunities
+to in developing current view of self-organization and embryo functions.
+What Is to Be Done? Burning Questions of Our Movement It is very clear
+that the mechanics and biology of the epithelial tissues is complicated;
+intertwined by mechano-chemical signalling; and multiscale in its
+behaviour. The lens of active material has been very helpful in
+providing information on role of molecular elements in performing
+biological function. These studies have also led to observe emergent
+behaviours which would be impossible to see in vivo. The mechanistic
+understanding has been enhanced with newer mathematical tools and
+advanced microscopy; enabling us to measure forces involved in the
+tissues Biomimetics? What remains? Engineering in biological systems
+have pushed our limits in understanding physiological response,
+morphogenesis, and pathologies. However, engineers are not just
+attracted to this subject for its application in health and disease, but
+for its potential to inspire constructions of new material or
+engineering systems. At many instances, where new materials have been
+fabricated inspired by biological matter. Also, improved understanding
+of biological systems has provided new methods for creating organically
+optimised systems. Biomimetics is a field where nature continuously
+inspires human innovation: from hydrophobic surfaces to supersonic
+passenger plane! Here, epithelial tissue has displayed incredible
+capabilities such as self-assembly, self-healing, and self-replicating.
+This makes it a very interesting material for engineers as its study
+provides new ideas in strength, adaptability, flexibility, and
+functionality aspects of the material. What we want to do? The
+principles which governs tissue form and function are very important; on
+two fronts. First, to understand fundamental physical rules of the
+biology, and secondly for inspiration of new engineering tools and
+design principles. We want to use state of the art technologies such as
+bioprinting, microfluidics, and 3D cell cultures to control
+morphogenetic driving factors individually; giving us opportunity to
+test tissues from material science point of view. This specific probing
+allows us to comprehend intricate mechanism of generation of forces, and
+shape change at cellular and tissue level. Using microfluidic setup, we
+subject tissues to unravel emergent phenomenon at different spatial and
+temporal scales.
+
+# Methods
+
+# Results
+
+# Paper
+
+This is a process of deformation or growth of the tissue under the
+combination of endogenous and exogenous mechanical forces that include
+contractility of the epithelium itself and of the surrounding matrix as
+well as hydraulic pressure from the lumen.
+
+These stresses are applied on different material components of the
+tissues, such as cells and the extracellular matrix, that display
+distinct viscoelastic properties and remodeling time scales.
+
+Understanding how the complex interplay between tissue stresses and
+viscoelastic properties gives rise to specific morphogenetic events in
+vivo poses outstanding technical and conceptual challenges. These
+include difficulties to disentangle the relative role of the distinct
+components involved in a system, the lack of tools for quantitative
+measurements of stresses and mechanical properties, and the inability to
+impose controlled stresses over a broad range of amplitudes and rates. 
+As a complementary strategy, bottom-up approaches aim at understanding
+the role of each component of the system and its morphogenetic
+potential, with the ultimate goal of building complexity through
+rational engineering of the building blocks that form a functional
+tissue. These approaches have been successful at engineering elementary
+morphogenetic processes such as epithelial bending or buckling. However,
+despite the emerging success of bottom-up approaches, we still lack
+tools to simultaneously measure and control the shape and stress of 3D
+epithelia. In addition, we lack computational models that integrate
+cellular and tissue shape with the subcellular determinants of
+epithelial mechanics such as the contractility, turnover and
+viscoelasticity of the actomyosin cortex.
+
+Here we present a microfluidic-based technique to impose a controlled
+deformation on an epithelial monolayer while continuously monitoring its
+state of stress. With this technique we probe the active viscoelasticity
+of epithelial layers over a range of physiological time scales. We
+present a 3D model of the epithelium, which shows that the observed
+phenomenology can be explained by the active viscoelastic properties of
+the actomyosin cortex. Finally, we show that these viscoelastic
+properties combined with adhesion micropatterning can be harnessed to
+engineer epithelial wrinkles of predicted geometry.
