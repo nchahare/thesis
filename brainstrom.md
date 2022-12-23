@@ -10,6 +10,13 @@
 
 ## Introduction
 
+As per the introduction of the paper:
+
+- Epithelial layers are multifunctional material
+
+- Fluid filled sacs and mechanics and viscoelasticity
+
+- Bottom up morphogenesis. In vivo it is difficult because of lack of measurement
 1. Epithelia tissues: its constitution and role in disease and development.
 2. Morphogenesis: Co-ordinated movement at local and global scale. Form and function dialectics. Forces and forms. Molecular machinery combining forces and form together with mechanosensing.
 3. Active tissue mechanics: Actin cortex mechanobiology. Rheology. Viscoelasticity and active gel models.
