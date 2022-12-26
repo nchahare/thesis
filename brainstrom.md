@@ -10,17 +10,40 @@
 
 ## Introduction
 
-As per the introduction of the paper:
+General introduction to the part.
 
-- Epithelial layers are multifunctional material
-
-- Fluid filled sacs and mechanics and viscoelasticity
-
-- Bottom up morphogenesis. In vivo it is difficult because of lack of measurement
-1. Epithelia tissues: its constitution and role in disease and development.
-2. Morphogenesis: Co-ordinated movement at local and global scale. Form and function dialectics. Forces and forms. Molecular machinery combining forces and form together with mechanosensing.
-3. Active tissue mechanics: Actin cortex mechanobiology. Rheology. Viscoelasticity and active gel models.
-4. Bottom up biophysics: Reconstructing biological systems. Buckling and folding.
+1. Epithelial layers:
+   - Etymology of the epithelia and its functions
+   
+   - Polarized epithelia
+   
+   - Components, cell structure (filaments and junctions), matrix, and their interaction (focal adhesions)
+   
+   - Role in disease and development. Diarrhea, tumor metastasis. EMT. Fibrosis.
+   
+   - Different kinds of epithelia and germ layers
+2. The mechanical basis of Morphogenesis: 
+   - Complexity of the morphogenesis. 
+   
+   - Co-ordinated movement at local and global scale.
+   
+   - Questions of morphogenesis. kinematic understanding. need measurement of forces.
+   
+   - On growth and form. Form and function dialectics resolved by laws of physics
+   
+   - Darcy Thompson and the examples from the book. Quotes from the book
+   
+   - Epithelial layers in morphogenesis: importance of mechanobiology and key to measure forces
+3. Active tissue mechanics: 
+   - Actin cortex mechanobiology. 
+   
+   - Rheology. Viscoelasticity 
+   
+   - Active gel models.
+4. Bottom up biophysics:
+   - Reconstructing biological systems. 
+   
+   - Buckling and folding.
 
 ## Aims of the thesis
 
