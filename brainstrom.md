@@ -13,6 +13,7 @@
 General introduction to the part.
 
 1. Epithelial layers:
+   
    - Etymology of the epithelia and its functions
    
    - Polarized epithelia
@@ -22,7 +23,9 @@ General introduction to the part.
    - Role in disease and development. Diarrhea, tumor metastasis. EMT. Fibrosis.
    
    - Different kinds of epithelia and germ layers
+
 2. The mechanical basis of Morphogenesis: 
+   
    - Complexity of the morphogenesis. 
    
    - Co-ordinated movement at local and global scale.
@@ -34,13 +37,17 @@ General introduction to the part.
    - Darcy Thompson and the examples from the book. Quotes from the book
    
    - Epithelial layers in morphogenesis: importance of mechanobiology and key to measure forces
+
 3. Active tissue mechanics: 
+   
    - Actin cortex mechanobiology. 
    
    - Rheology. Viscoelasticity 
    
    - Active gel models.
+
 4. Bottom up biophysics:
+   
    - Reconstructing biological systems. 
    
    - Buckling and folding.
