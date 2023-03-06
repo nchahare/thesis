@@ -12,5 +12,6 @@ The work flow for this is following:
 7. Once compiled the `.tex` file.
 8. Convert it into word.
 		```	
-		pandoc main.tex --citeproc --bibliography= LaCaN/9800-Bibliography/ 9800-Bibliography.bib reference-docx=word_style.doc --resource-path= LaCaN/figure   -o main_word.docx
+        pandoc main.tex --citeproc --bibliography="LaCaN/9800-Bibliography/9800-Bibliography.bib" -o main_word.docx --reference-doc word_style.docx --resource-path="LaCaN/figure"
+
 		```
