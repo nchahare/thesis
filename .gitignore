@@ -16,4 +16,6 @@
 *.url 
 *.svn 
 *.toc 
+*.gz
 *.pdf
+*.docx
