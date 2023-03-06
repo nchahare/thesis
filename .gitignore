@@ -17,5 +17,5 @@
 *.svn 
 *.toc 
 *.gz
-*.pdf
-*.docx
+main.pdf
+main_word.docx
