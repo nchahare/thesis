@@ -1,1 +1,0 @@
-I would like to thank all the working people of the world.

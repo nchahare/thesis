@@ -1,5 +1,0 @@
-# Part I: Introduction
-
-The central focus of this thesis is the amazing epithelial monolayers. From the perspective of a mechanical engineer, these monolayers are endlessly fascinating. They are shape-changing, self-healing, and continuously deform or jam depending on the requirement. They are the most basic system in terms of physical understanding of the larger world of biological morphogenesis. Epithelial monolayers adopt range of shapes from simple spherical blastocyst to highly branched highly folded lungs. These shapes are developed and maintained through constant adaptation of epithelia.
-
-This part is a primer for all the topics relevant to my PhD. Starting with a brief introduction to the epithelial tissue itself and its key components. Then a summary of morphogenesis and how we can think of epithelia as an active material, as well as the historical ways of modeling it. Finally, I will conclude with the emerging field of "bottom-up" morphogenesis, where researchers are reconstructing the biological systems from scratch.
