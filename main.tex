@@ -1,0 +1,86 @@
+\documentclass[11pt, final, a4paper, twoside, openright]{book}
+\usepackage{LaCaN/LaCaNThesis/LaCaNThesis}
+
+% --------------------------------------------------------------------
+% Formato de tesis del grupo LaCaN
+% por Marino Arroyo, Enero de 2006
+% modified by Eloi Ruiz
+% modified by David Codony (2020)
+% modified by Waleed Mirza and Marino Arroyo (2022)
+% modifiend by Nimesh Chahare (2023)
+%----------------------------------------------------------------------
+
+
+\newtcolorbox{mybox}[3][]
+{
+	colframe = #2!25,
+	colback  = #2!10,
+	coltitle = #2!20!black,  
+	title    = {#3},
+	#1,
+}
+
+
+\begin{document}
+	\InitializeThesis
+	
+	%%% Title Page %%%
+	\include{LaCaN/0000-Preliminary/0001-Cover} 
+	\include{LaCaN/0000-Preliminary/0002-TitlePage}
+	\include{LaCaN/0000-Preliminary/0003-InitialCite}
+	
+	%%% Preliminary %%%
+	\frontmatter
+	\include{LaCaN/0000-Preliminary/0004-Abstract}
+	%\include{LaCaN/0000-Preliminary/0005-Acknowl}
+	\include{LaCaN/0000-Preliminary/0006-Contents}
+	
+	
+	%%% Body %%%
+	\mainmatter
+	\part{Introduction and motivation}\label{part_1}
+	
+	The central focus of this thesis is the epithelial tissue monolayer. From the perspective of a mechanical engineer, these monolayers are endlessly fascinating. These monolayers are remarkable in their ability to change shape, self-heal, and continuously deform or jam as needed \cite{xi2018}. They represent the simplest system for gaining a physical understanding of biological morphogenesis, as epithelia can be found everywhere in the body, covering the skin and lining various cavities and organs. The shapes of epithelial monolayers can range from simple spherical blastocysts to highly branched and folded lungs, and they are formed and maintained through constant adaptation and renewal. This thesis aims to explore the physical principles behind epithelial shape by combining theoretical and experimental approaches in the study of simple epithelial monolayers.
+	
+	The chapters in this part serve as a comprehensive overview of all the key topics related to my PhD research. They begin with a brief introduction to epithelial tissue and its constituent parts, followed by a discussion on the role of mechanics in morphogenesis and various modeling approaches. This part concludes with a review of the growing field of "bottom-up" morphogenesis, where researchers are building biological systems from scratch.
+
+	\setFiguresPath{LaCaN/figure}
+
+	\renewcommand{\thesection}{1.\arabic{section}}
+	\hypertarget{epithelial-layers}{%
+	\chapter{Epithelial Layers}\label{epithelial-layers}}
+	\input{LaCaN/chap_1/chapter1}
+
+	\renewcommand{\thesection}{2.\arabic{section}}
+	\hypertarget{the-mechanical-basis-of-morphogenesis}{%
+	\chapter{The mechanical basis of
+	Morphogenesis}\label{the-mechanical-basis-of-morphogenesis}}
+	\input{LaCaN/chap_2/chapter2}
+	
+	\renewcommand{\thesection}{3.\arabic{section}}
+	\hypertarget{active-tissue-mechanics}{%
+	\chapter{Active tissue mechanics}\label{active-tissue-mechanics}}
+	\input{LaCaN/chap_3/chapter3}
+
+	\renewcommand{\thesection}{4.\arabic{section}}
+	\hypertarget{bottom-up-morphogenesis}{%
+	\chapter{Bottom up morphogenesis}\label{bottom-up-morphogenesis}}
+	\input{LaCaN/chap_4/chapter4}
+%	
+%	\part{Results}
+%	
+	\part{Appendices}
+	\begin{appendices}
+		\renewcommand{\thesection}{A.\arabic{section}}
+		\chapter{Methods and Materials}   \label{appendix_1}
+		\input{LaCaN/append_A/append_A}
+	\end{appendices}
+	
+	%%% Backmatter %%%
+	\backmatter
+	\bibliography{LaCaN/9800-Bibliography/9800-Bibliography}
+	
+\end{document}
+
+
+
