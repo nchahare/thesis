@@ -2,75 +2,14 @@
 
 [UPC guidelines](https://bibliotecnica.upc.edu/en/investigadors/elaborar-articles-cientifics-tesis-doctorals#publicar-tesi-compendi)
 
-## Acknowledgements
-
-## Contents
-
-## Preface
-
 ## Introduction
-
-General introduction to the part.
-
-1. Epithelial layers:
-   
-   - Etymology of the epithelia and its functions
-   
-   - Polarized epithelia
-   
-   - Components, cell structure (filaments and junctions), matrix, and their interaction (focal adhesions)
-   
-   - Role in disease and development. Diarrhea, tumor metastasis. EMT. Fibrosis.
-   
-   - Different kinds of epithelia and germ layers
-
-2. The mechanical basis of Morphogenesis: 
-   
-   - Complexity of the morphogenesis. 
-   
-   - Co-ordinated movement at local and global scale.
-   
-   - Questions of morphogenesis. kinematic understanding. need measurement of forces.
-   
-   - On growth and form. Form and function dialectics resolved by laws of physics
-   
-   - Darcy Thompson and the examples from the book. Quotes from the book
-   
-   - Epithelial layers in morphogenesis: importance of mechanobiology and key to measure forces
-
-3. Active tissue mechanics: 
-   
-   - Actin cortex mechanobiology. 
-   
-   - Rheology. Viscoelasticity 
-   
-   - Active gel models.
-
-4. Bottom up biophysics:
-   
-   - Reconstructing biological systems. 
-   
-   - Buckling and folding.
-
-## Aims of the thesis
-
-*General aim of the thesis*
-Study the mechanics of epithelial layers subjected to controlled pressure and tension.
-
-*Specific aims of the thesis*
-General aims are divided into specific goals:
-
-1. Review the literature on engineering epithelia, and effect of physical forces such as pressure and tension on morphogenesis.
-2. Develop a new technology to control shape, size, and forces in three dimensional epithelial monolayer.
-3. Study the rheology of pressurized epithelial structure.
-4. Explore role of mechanics in formation of epithelial folds.
 
 ## Results
 
 Part 1. Novel microfluidic system for generating 3D epithelia with controlled pressure and shape.
 
 * 1.1. Introduction to organ on chips and motivation for the device.
-* 1.2. Summary of failed and attempted methods to construct the devices.
+* 1.2. How not to make epithelial structures
 * 1.3. Protein patterning to create 3D epithelia.
 * 1.4. Pressure control for the device and method adopted.
 * 1.5. Optimization of the imaging large epithelial structures.
@@ -96,6 +35,7 @@ Part 3. Epithelial buckling produces predictable folds.
 3. Rapid deflation leads to buckling.
 4. Controlling 3D patterns of epithelial sheets.
 
+  
 ## Appendix
 
 * Funding
@@ -148,11 +88,3 @@ B. Quantitative analysis of the domes.
 16. Used sir-actin staining to visualize cortex buckling.
 17. Produced post-buckling patterns in the domes of circular footprint of different size.
 18. Produced post-buckling patterns in the domes of different shaped footprint.
-
-## List of illustrations and tables
-
-## List of abbreviations and symbols
-
-## Glossary
-
-## References
