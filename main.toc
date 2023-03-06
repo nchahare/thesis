@@ -1,0 +1,54 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{Abstract}{i}{Doc-Start}%
+\contentsline {chapter}{Contents}{iii}{section*.1}%
+\contentsline {chapter}{List of Figures}{v}{section*.2}%
+\contentsline {chapter}{List of Tables}{ix}{section*.3}%
+\contentsline {part}{I\hspace {1em}Introduction and motivation}{1}{part.1}%
+\contentsline {chapter}{\numberline {1}Epithelial Layers}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{5}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Key components}{6}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Cell structure}{6}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Microenvironment}{8}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Cell-Matrix interaction}{9}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Role in disease and development}{9}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Forms of epithelia}{10}{section.1.4}%
+\contentsline {chapter}{\numberline {2}The mechanical basis of Morphogenesis}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}The complexity of the morphogenesis}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2}On growth and form}{14}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Mechanobiology}{16}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Synthetic substrates}{17}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Geometric control}{18}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Mechanical control}{19}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}3D systems}{21}{subsection.2.3.4}%
+\contentsline {chapter}{\numberline {3}Active tissue mechanics}{23}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Force generation with actin}{23}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Actin filaments}{24}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Actin networks}{25}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Actin cortex}{26}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Actin structures at a larger scale}{26}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Timescales of the actin cytoskeleton}{28}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Controlling cortical tension}{29}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Modeling active tissue dynamics}{30}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Vertex models}{31}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Continuum models}{32}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Active surface models}{34}{subsection.3.5.3}%
+\contentsline {chapter}{\numberline {4}Bottom up morphogenesis}{37}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Learn by building}{37}{section.4.1}%
+\contentsline {section}{\numberline {4.2}How to build tissue structures?}{39}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Controlling geometry and physical forces}{39}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Manipulating biochemical signaling}{40}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Exploiting mechanical instabilities}{42}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Tissue hydraulics}{45}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Hydraulic control of morphogenesis}{45}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Mechanics of domes}{47}{subsection.4.3.2}%
+\contentsline {part}{II\hspace {1em}Appendices}{51}{part.2}%
+\contentsline {chapter}{\numberline {A}Methods and Materials}{53}{appendix.a.A}%
+\contentsline {section}{\numberline {A.1}Fabrication of microfluidic devices}{53}{section.a.A.1}%
+\contentsline {section}{\numberline {A.2}Patterning protein on the device}{54}{section.a.A.2}%
+\contentsline {section}{\numberline {A.3}Cell culture in the device}{54}{section.a.A.3}%
+\contentsline {section}{\numberline {A.4}Confocal Microscopy}{55}{section.a.A.4}%
+\contentsline {section}{\numberline {A.5}Device protein patterning and cell culture in Light-Sheet device}{55}{section.a.A.5}%
+\contentsline {section}{\numberline {A.6}Light-sheet microscopy}{56}{section.a.A.6}%
+\contentsline {section}{\numberline {A.7}Analysis of the kymographs}{56}{section.a.A.7}%
+\contentsline {section}{\numberline {A.8}Qualitative analysis of the buckling event}{57}{section.a.A.8}%
+\contentsfinish 

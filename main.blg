@@ -1,0 +1,84 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 50 items.
+The style file: LaCaN/9800-Bibliography/apsrev4-1-modified_sorted.bst
+Reallocating 'name_of_file' (item size: 1) to 38 items.
+A level-1 auxiliary file: LaCaN/0000-Preliminary/0001-Cover.aux
+Reallocating 'name_of_file' (item size: 1) to 42 items.
+A level-1 auxiliary file: LaCaN/0000-Preliminary/0002-TitlePage.aux
+Reallocating 'name_of_file' (item size: 1) to 44 items.
+A level-1 auxiliary file: LaCaN/0000-Preliminary/0003-InitialCite.aux
+Reallocating 'name_of_file' (item size: 1) to 41 items.
+A level-1 auxiliary file: LaCaN/0000-Preliminary/0004-Abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 41 items.
+A level-1 auxiliary file: LaCaN/0000-Preliminary/0006-Contents.aux
+Reallocating 'name_of_file' (item size: 1) to 42 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'field_info' (item size: 4) to 12918 items.
+Database file #1: LaCaN/9800-Bibliography/9800-Bibliography.bib
+Reallocating 'str_pool' (item size: 1) to 130000 items.
+Warning--to sort, need author or key in wolfram2022
+Warning--to sort, need author or key in nat2017
+Warning--to sort, need author or key in natphys2017
+Reallocating 'singl_function' (item size: 4) to 100 items.
+merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+Control: key (0) 
+Control: author (72) initials jnrlst
+Control: editor formatted (1) identically to author
+Control: production of article title (1) required
+Control: page (0) single
+Control: year (1) truncated
+Control: production of eprint (0) enabled
+Warning--empty year in wolfram2022
+Warning--empty author in nat2017
+Warning--empty author in natphys2017
+Warning--empty journal in maccord2012
+You've used 214 entries,
+            5955 wiz_defined-function locations,
+            3011 strings with 69869 characters,
+and the built_in function-call counts, 302555 in all, are:
+= -- 18085
+> -- 12220
+< -- 1876
++ -- 3833
+- -- 3594
+* -- 51024
+:= -- 28127
+add.period$ -- 423
+call.type$ -- 214
+change.case$ -- 2058
+chr.to.int$ -- 225
+cite$ -- 441
+duplicate$ -- 25773
+empty$ -- 20476
+format.name$ -- 6675
+if$ -- 59902
+int.to.chr$ -- 2
+int.to.str$ -- 8
+missing$ -- 3261
+newline$ -- 694
+num.names$ -- 844
+pop$ -- 10718
+preamble$ -- 1
+purify$ -- 2267
+quote$ -- 0
+skip$ -- 9701
+stack$ -- 0
+substring$ -- 4792
+swap$ -- 27138
+text.length$ -- 1199
+text.prefix$ -- 0
+top$ -- 8
+type$ -- 4179
+warning$ -- 7
+while$ -- 834
+width$ -- 0
+write$ -- 1956
+(There were 7 warnings)
