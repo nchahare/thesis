@@ -1,16 +1,14 @@
-# A microfluidic system for generating 3D epithelia with controlled pressure and shape
-
+# Microfluidic device for generating 3D epithelia
 # Introduction
 
 To create three-dimensional epithelial structures in vitro from planar epithelial monolayers, we chose to begin with already existing system of epithelial domes developed by Ernest Latorre and improved Ariadna Marin. In this system, Madin-Darby canine kidney (MDCK) cell monolayer is seeded on substrate which is patterned with circular non adhesive regions. The cells invade these non adhesive regions and form a cohesive monolayer everywhere in 24 to 48 hours. Due to the tendency of these cells to actively pump ions in apical to basal direction, the cells delaminate from the impermeable substrate, like glass or soft PDMS gel, to form a spherical cap structure in the circular patterns, called epithelial domes. Latorre and Marin studies show that they could form variety of the structures of controlled shape and size, ranging from circular to rectangular shaped structures.
 
 At the same time, the system enabled the use of 3D traction force microscopy, which allows for measurement of pressure. It utilizes the deformation of the soft PDMS gel embedded with beads to characterize the forces and pressures applied by the cells on substrate. It is ingenious way of measuring pressure as compared to the past method of puncturing the epithelial domes with a microneedle. This allowed for characterization of rheology of epithelia and revealed interesting material properties such as superelasticity of cells while stretching. 
 
-However, the process of forming epithelial domes is dependent on ion pumping mechanism of the domes. We can call them spontaneous domes. Thus, the timescales for the dome stretching are not controlled. The process could be accelerated marginally by few hours through use of drugs like Forskolin, which can activate transepithelial channels of NA+/K+/Cl-. We wanted to build the epithelial structure at will which requires pressure control. At the same time, we wanted to have measurement of lumen pressure and tissue tension.
-
+However, the process of forming epithelial domes is dependent on ion pumping mechanism of the domes. We can call them spontaneous domes. Thus, the timescales for the dome stretching are not controlled. The process could be accelerated marginally by few hours through use of drugs like Forskolin, which can activate transepithelial channels of NA+/K+/Cl-. However to build the epithelial structure and control it physically requires pressure control.
 # Monolayer inflator
 
-Drawing upon the inspiration from organ on chip microfluidic devices, we though they would be perfect system for controlling pressure, cell culture, and enable us to image at high resolution.  For example, lungs-on-chip device which is a two layers separated with a porous membrane with the channel in top layer for epithelia and another one for endothelia. This is all assembled on a thin glass which allows for high quality imaging.
+Drawing upon the inspiration from organ on chip microfluidic devices, we thought they would be perfect system for controlling pressure, cell culture, and enable us to image at high resolution.  For example, lungs-on-chip device which is a two layers separated with a porous membrane with the channel in top layer for epithelia and another one for endothelia. This is all assembled on a thin glass which allows for high quality imaging.
 
 Therefore, we conceived the idea of monolayer inflator device, where we will use two layer microfluidic channel which will have one side for epithelial monolayer and another on for application of the pressure. The epithelial monolayer side will be micropatterned with protein with non/less-adhesive regions for dome formation. We reasoned that cells will attach everywhere even in less adhesive region. When applying pressure the cells will delaminate from the weakest point of adhesion and form a dome.
 
@@ -22,7 +20,7 @@ The structure of the device is in four layers: glass, bottom channel, porous mem
 
 All the device has to be mounted on a thin glass enabling high quality imaging. There are options for using thicker glass slides but for measurement of the curvature of domes, or monitoring cell stretching would require thinner glass of number 1.5.
 
-For the same reason, the bottom channel has to be thin enough to make it as close as possible. This is due to the working distance of most of the confocal microscope objectives. As it is typically between $200\mu m$ to $1000 \mu m$. We chose to fabricate this layer for $100 \mu m$ such that it is thick enough to handle manually but not too thin too cause microfluidic problems of pressure and flow. We used spin coating method to fabricate thin PDMS layer and then used a desktop cutting machine to cut the              channel out of it. 
+For the same reason, the bottom channel has to be thin enough to make it as close as possible. This is due to the working distance of most of the confocal microscope objectives. As it is typically between $200\mu m$ to $1000 \mu m$. We chose to fabricate this layer for $100 \mu m$ such that it is thick enough to handle manually but not too thin too cause microfluidic problems of pressure and flow. We used spin coating method to fabricate thin PDMS layer and then used a desktop cutting machine to cut the channel out of it. 
 
 Primary purpose of the porous membrane is allow for pressure application and not let cells pass through from cell channel to pressure channel. We started with $10\mu m$ membrane considering the literature. We tried to use PDMS  $100 \mu m$ thin layer with $10\mu m$ pores, but the microfabrication using photolithography was unsuccessful. We were producing $10\mu m$ pillars with $100 \mu m$ height the aspect ratio was too high for use to get upright domes. Thus, we decided use plastic (PET) membranes with $10\mu m$ pores. The thin ($10\mu m$ thick) plastic sheets, very easy to handle, but the bonding with PDMS was not very sturdy there were bonding failures or leakages because membrane wrinkling.
 
@@ -69,18 +67,6 @@ In previous studies, the domes were shown to be dynamic but the dynamics was slo
 For the studying rheology, it would be of our interest to be able monitor dynamic response of the domes at faster pressure rates or shorter timescales. In this case, we would only be interested in the dynamics of the dome strain and curvature. Due to its symmetry, we could image only the mid section of the dome and get all the information needed to characterize the material response of the dome.
 
 Using the line scanning mode of a Zeiss Airy Scan Microscope, we could selectively image a single line of pixel across the midsection of the dome and take a confocal z-stack along the height of the dome. This will give us a cross-section of the dome in a fraction of the time of normal stack. Along with piezo stage movement enabled, we were able to image $100 \mu m$ tall dome within $4s$. We could even track the dome height evolution through kymograph of the central part of the dome. However, it is important to note that this form of imaging is useful to keep track of the dome strain and curvature, but the quality is of cells imaged is quite low. In some cases, where the fluorescent expression of cells on the top of the domes is not adequate, we have much noisy data.
-
-# Dome kinematics
-
-To measure kinematics of the domes, we analyzed midsection of the domes assuming symmetry of spherical caps. We measure the height $h$ and base radius $a$. This allows us to calculate radius of curvature $R$ using trigonometry.
-
-$$ R = \frac{h^2 + a^2}{2h} $$
-This also allows us to compute tension $\sigma$ given by Laplace's law. 
-$$\sigma = \frac{\Delta PR }{2}$$
-For dome strain, we use areal strain measure which is strain computed on basis of surface area. We compare dome surface area to the area of footprint.
-$$ \epsilon = \frac{A_{dome } - A_{footprint}}{A_{footprint}} $$
-$$ \epsilon = \frac{\pi(h^2 + a^2) - \pi a^2}{\pi a^2}$$
-Using line scan method of imagining domes for time-lapse, we get large amount frames for analysis of height and radius of curvature. Thus, we use kymographs to of the top section of the dome. Kymographs are the images with cross section of dome top with respect to time. Using image processing MATLAB code, we get the location of maximum intensity value for particular time in the graph, to obtain the time evolution height of dome. Same is done for the base radius too. The kymograph of base radius allows us to keep track of the delamination. Because delamination would change the value of strain.
 
 # Light-sheet MOLI
 

@@ -17,7 +17,7 @@ _Specific aims of the thesis_
 General aims are divided into specific goals:
 
 1. Develop a new technology to build a three-dimensional epithelia by using controlled hydrostatic pressure.
-2. Characterize material response of  the pressurized epithelial tissue.
+2. Characterize material response of the pressurized epithelial tissue.
 3. Explore mechanics of epithelial folds.
 
 ## Thesis outline
