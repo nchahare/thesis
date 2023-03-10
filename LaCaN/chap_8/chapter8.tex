@@ -1,292 +1,328 @@
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction5}}
 
-In biology, epithelial structures come in all the shape and sizes. We
-could envision all these structures as curved or folded epithelia.
-Labeling epithelial structures is complicated, which really means folded
-together. But at the same time, in developmental biology, development,
-literally means unfolding of organism. In our system, we can generate 3D
-dimensional epithelia with its inflation. In spirit of complicated
-development processes, we decide to try folding and unfolding of the
-domes in our experimental setup. Through understanding the mechanics of
-the epithelial tissue, we realized that if the dome is depressurized at
-extreme rates we could deflate the dome into folds. In this chapter, we
-will discuss the mechanics of epithelial buckling and transforming domes
-into folds.
+Epithelial structures in biology exhibit a wide range of shapes and
+sizes, which can be understood as curved or folded epithelia. However,
+accurately labeling epithelial folding is complicated, which really
+means folded together. In the context of developmental biology, the term
+``development'' refers to the unfolding of an organism, which highlights
+the importance of understanding folding and unfolding processes.
+
+In our experimental system, we can generate 3D epithelial structures
+through inflation of the domes. By studying the mechanics of the
+epithelial tissue, we have discovered that we can deflate the dome into
+folds by rapidly depressurizing it. In this chapter, we will explore the
+process of epithelial buckling and discuss how we have used this
+knowledge to transform domes into folded structures.
 
 \hypertarget{rapid-deflation-produces-a-buckling-instability}{%
-\section{Rapid deflation produces a buckling
-instability}\label{rapid-deflation-produces-a-buckling-instability}}
+	\section{Rapid deflation produces a buckling
+		instability}\label{rapid-deflation-produces-a-buckling-instability}}
 
-In the experiments with constant pressure, we found that the dome
-achieves a steady state through remodeling the cytoskeleton. The
-original area of the footprint increases to areal strains of more than
-100\%, which more than twice of the original area. In cyclic stretching,
-we found that the fast inflation-deflation would accumulate strains
-through the cycles. Because of our total control over pressures, we
-decided to subject the tissue to extreme rates of pressure, leaving no
-time for tissue to relax and cause it to buckle.
+In our experiments involving constant pressure, we observed that the
+dome reached a steady state through cytoskeletal remodeling.
+Specifically, the original footprint area increased to areal strains
+exceeding 100\%, more than double the original area. Moreover, when
+subjected to cyclic stretching, we observed that rapid
+inflation-deflation cycles accumulated strains in the tissue. Given our
+precise control over pressure, we decided to expose the tissue to
+extreme rates of pressure, allowing no time for relaxation and could
+lead to buckling instability.
 
-The results from computational model, where we could track the digital
-dome mechanical effect on tissue and cell scale, show that cortical
-remodeling driven active viscoelastic dissipation allows dome to achieve
-high strains. The cyclic stretching at fast rates show that the resting
-area lags behind actual area. They suggest upon fast deflation this
-discrepancy between actual and resting area could induce negative
-viscoelastic stress leading to buckling. We observed that the digital
-domes would inflate and reach the steady state then upon deflating
-slower than remodeling scale would come down back into a flat monolayer.
-In contrast, deflation faster than the remodeling timescales we get dome
-buckling into folds.
+Our computational model enabled us to analyze the digital dome's
+mechanical effects on both the tissue and cell scales, revealing that
+active viscoelastic dissipation via cortical remodeling allowed the dome
+to attain high strains. Cyclic stretching at rapid rates revealed a
+discrepancy between actual and resting area, suggesting that fast
+deflation could induce negative viscoelastic stress, leading to
+buckling. We observed that the digital domes inflated and reached a
+steady state, then deflated at a rate slower than the remodeling scale,
+eventually returning to a flat monolayer. However, when deflated more
+rapidly than the remodeling timescales, the domes buckled into folds.
 
-In simulations, we found that it is essential to apply negative pressure
-for undergoing buckling. This only affects the domes deflating fast as
-the the pressure becomes negative while curvature remaining positive,
-creating negative stresses. Whereas, the slowly deflating domes reaches
-zero strain as pressure approaches zero.
+In our simulations, we found that negative pressure was necessary for
+inducing buckling, which only affected domes deflating rapidly.
+Specifically, the pressure became negative while the curvature remained
+positive, resulting in negative stresses. By contrast, slowly deflating
+domes reached zero strain as the pressure approached zero.
 
-To test this experimentally, we decided to systematically probe two
-factors: first timescale for cytoskeletal remodeling and second
-deflation rates. We designed the experiments with pressure profile
-divided in three parts: 1. Linear increase in the pressure from 0 to 200
-Pa in 10s 2. Holding constant pressure for different ``hold times'' 3.
-Reducing pressure to -50Pa for different ``deflation rates'' We chose
-the hold times and deflation rates considering the timescales associated
-with actomyosin cytoskeleton.
+To systematically test our hypothesis regarding the factors affecting
+buckling events, we designed experiments with pressure profiles
+consisting of three stages. Firstly, we initiated a linear increase in
+pressure from 0 to 200 Pa over a period of 10 seconds. Secondly, we
+applied constant pressure for varying ``hold times,'' which were chosen
+based on the timescales associated with actomyosin cytoskeletal
+remodeling. Finally, we decreased the pressure to -50Pa at varying
+``deflation rates.''
 
-Table2: Hold times: 6s 60s 600s Deflation rates: 0.2Pa/s 2Pa/s 20Pa/s
-200Pa/s
+It is important to note that we relied on qualitative characterization
+of buckling events, assuming that smooth and continuous curvature of the
+monolayer indicates the absence of buckling. However, in cases where it
+was difficult to make an unbiased judgment, we enlisted the help of
+Thomas Wilson and Tom Golde to categorize the data. We performed the
+experiments for all conditions and quantified the data by tracking the
+fraction of domes that underwent buckling.
 
-It is worth noting that the buckling events were characterized
-qualitatively. The assumption we made was that if the curvature of the
-monolayer remains smooth and without kinks, we would consider it to be
-not buckling. In some extreme cases where it was difficult for me to say
-without biasing the data. I asked my colleagues, Thomas Wilson and Tom
-Golde, to categories the data set. I performed the experiments for all
-the conditions and quantified the data by tracking fraction of domes
-buckling.
+Our results showed that buckling occurred for all hold times, ranging
+from 6s to 600s, at the fastest deflation rate of 200 Pa/s. This
+confirmed our hypothesis that rapid deflation would induce compressive
+stresses and cause buckling. On the other hand, slow deflation at a rate
+of 0.2 Pa/s rarely led to buckling, regardless of the hold time. This
+suggests that the tissue can effectively remodel its cytoskeleton and
+adapt to drastic changes in area to avoid buckling.
 
-We witnessed buckling for all the conditions of hold times ranging from
-6s to 600s for fastest deflation rate of 200 Pa/s. This confirmed our
-hypothesis that the tissue undergoing rapid deflation would have to
-reduce the area and compressive stresses will be introduced causing
-buckling. On another hand, deflating slowly at rate of 0.2 Pa/s buckling
-was observed rarely for all the hold times. This shows that the tissue
-can remodel the cytoskeleton and change the area drastically to not
-buckle.
+As seen in previous experiments, longer ``hold times'' allowed for more
+cytoskeletal remodeling, resulting in higher strains and a higher
+likelihood of buckling, even for slower deflation rates. Results plotted
+in a phase diagram illustrates the trend: as hold time increases,
+buckling becomes more likely at faster deflation rates and less likely
+at slower deflation rates with a shorter hold time.
 
-As seen before, the longer ``hold times'' would give cells time to
-remodel the cytoskeleton and the shorter ones won't. We learned that the
-longer hold time resulted in higher strain and more likelihood of
-buckling even for slower rates. One can see in the simple diagram that
-the transition as the proportion of buckling domes increases towards the
-faster deflation rates with longer hold time and decreases with slower
-deflation rates with a shorter hold time.
+Interestingly, the data showed that domes with a 6s hold time had
+smaller strains compared to those with a 600s hold time, which is
+consistent with results from domes subjected to constant pressure.
+Strain increase requires time for the dome to remodel and balance active
+tension with the externally applied pressure. However, even at 6s hold
+time, we still observed buckling. Expectation for this condition was to
+allow us for inflation and deflation of the dome before it could
+remodel. We selected a 6s hold time based on imaging speeds, but it
+remained too slow for the remodeling timescales.
 
-We find that the domes for 6s hold time would have smaller strains as
-compared to 600s hold time. This is consistent with the results from
-domes subjected to the constant pressure. The strains increase takes
-time as the dome remodels to balance the active tension with externally
-applied pressure. However, it is interesting that we observe domes
-buckling at 6s. In this condition, we wanted to inflate and deflate the
-dome before it can remodel. By considering imaging speeds, we chose 6s
-hold time, but it is still too slow for the remodeling timescales.
-
-It is worth noting that there was lot of diversity in the buckling
-patterns seen through a midsection of tissue imaged by line scan method.
-For some domes the kinks in the folds were minor and in others they were
-drastic, reminiscent of the buckling modes of the plates.
+It is important to note that we observed a wide variety of buckling
+patterns when examining midsections of the tissue through a line scan
+method. Some domes exhibited minor kinks in the folds, while others
+showed drastic buckling modes similar to those of plates.
 
 \hypertarget{multiscale-buckling}{%
-\section{Multiscale buckling}\label{multiscale-buckling}}
+	\section{Multiscale buckling}\label{multiscale-buckling}}
 
-The tissue buckling has been obvious in the confocal images. To get the
-clear look at the shape of the cells, we created a variation of MOLI
-adapted for light sheet microscopy. In higher resolution 3D images of
-dome, we can see variety of thicknesses in the domes: thick part are
-made by nucleus bulging out and very thin parts at cell periphery.
+The observation of tissue buckling was evident in the confocal images.
+In order to gain a clearer understanding of the shape of the cells, we
+adapted a variation of MOLI for use with light sheet microscopy. The
+higher resolution 3D images of the dome revealed a variety of
+thicknesses, with thicker regions caused by the bulging of the nucleus
+and very thin regions at the cell periphery.
 
-We repeated the same experiments as described previous section, but with
-rapid deflation and long hold time. On buckling we discovered more
-features than the tissue scale buckling. We noticed kinks and crimps at
-the cellular and subcellular scales. On closer inspection, we classified
-three levels of buckling:
+To further investigate the phenomenon of buckling, we repeated the
+experiments described in the previous section, this time with rapid
+deflation and a long hold time. We discovered additional features beyond
+tissue-scale buckling, including kinks and crimps at cellular and
+subcellular scales. Upon closer inspection, we classified three levels
+of buckling:
 
-Tissue scale buckling is clearly visible with cells collectively going
-from uniform curvature to distorted shape. At this level, we see cells
-deforming at larger scale and at the junctions.
+At the tissue scale, buckling was visible with cells collectively
+transitioning from a uniform curvature to a distorted shape. At this
+level, we observed cell deformation at a larger scale, including at the
+junctions between cells.
 
-At shorter scales, we noticed individual cells undergoing buckling. The
-buckling cell double ups around itself with apical side on the top. The
-length scale at which cell buckles is much shorter than the tissue. It
-appears as the cell buckles as unit.
+At shorter scales, we observed individual cells undergoing buckling. The
+buckling of the cell resulted in the cell doubling up around itself,
+with the apical side at the top. The length scale at which cell buckling
+occurred was much shorter than that observed at the tissue level. It
+appears as though the cell buckles as a single unit.
 
-In some cases we see buckling at even shorter length scales, we call it
-subcellular buckling, as the folds in membrane are distinct from the
-cell level buckling. These are occurring in the thinnest parts of the
-stretched cells where membrane buckles at much shorter wavelength.
-Interestingly, these folds occur on the both, apical and basal, sides of
-the cells.
+In some cases, buckling occurred at even shorter length scales, which we
+refer to as subcellular buckling, as the folds in the membrane were
+distinct from the cell level buckling. These folds occurred in the
+thinnest parts of the stretched cells, where the membrane buckled at
+much shorter wavelengths. Interestingly, these folds occurred on both
+the apical and basal sides of the cells.
 
-Typically, in epithelial cells the membrane is tightly attached to the
-cortex through membrane-cortex attachment proteins like Ezrin, Radixin,
-Moesin. It is reasonable to believe that the subcellular buckling is due
-to actin cortex buckling. To confirm this, we decided to image actin
-cortex while buckling with SPY actin staining. We found that the actin
-would follow exact shape of the membrane while undergoing buckling.
+In epithelial cells, the membrane is typically attached to the cortex
+through membrane-cortex attachment proteins such as ezrin, radixin, and
+moesin. It is reasonable to assume that the subcellular buckling
+observed in our experiments is due to actin cortex buckling. To confirm
+this, we imaged the actin cortex while the dome was undergoing buckling
+using SPY actin staining. Our results showed that the actin cortex
+followed the exact shape of the membrane during buckling.
 
-Even more interesting results for us were to see domes which not
-buckling at all at tissue scale but would appear to be buckling at cell
-or subcellular levels. Also these categories are not so strictly
-separated, as there were multiple observation of tissue, cell, and
+We also observed interesting results where some domes did not appear to
+be buckling at the tissue scale, but were still exhibiting buckling at
+the cell or subcellular level. These categories are not strictly
+separated, as we observed multiple instances of tissue, cell, and
 subcellular level buckling.
 
 \hypertarget{generating-epithelial-folds}{%
-\section{Generating epithelial
-folds}\label{generating-epithelial-folds}}
+	\section{Generating epithelial
+		folds}\label{generating-epithelial-folds}}
 
-After optimizing the buckling conditions, we decided to explore the
-epithelial folds. While buckling the tissue area is squeezed into a
-small area. This would produce folds and wrinkles in the monolayer. When
-we monitored the base of dome deflating, we saw the tissue making
-contact with the substrate certain regions first then others. This lead
-to formation of folds in the places it made the contact last.
+After optimizing the buckling conditions, we conducted experiments to
+investigate the formation of folds and wrinkles in epithelial cells. As
+the tissue area is squeezed into a small area during buckling, the
+tissue makes contact with the substrate in certain regions first,
+leading to the formation of folds. We monitored the base of the dome
+deflating and found three broad patterns of folding emerging:
+accumulation along the periphery, folds in the middle, and a mixture of
+both.
 
-We looked at spherical domes of different sizes to see if there is any
-pattern to these folds. We found that there were broadly three kinds of
-folding pattern emerging.
+For smaller domes with a footprint less than \(10000 \mu m^2\), we
+repeatedly observed that most of the buckling resulted in an
+accumulation around the periphery, creating a crescent-shaped fold
+resembling a croissant. When looking at the timelapse from the base of
+the dome, it gave us the impression of a donut-like structure. In
+contrast, larger domes with a footprint greater than \(30000\mu m^2\)
+tended to form a network of folds in the middle, with multiple folds
+connecting to each other and forming junctions. Intermediate-sized domes
+exhibited a mixture of accumulation and folds, although the proportion
+of folds along the periphery decreased.
+
+Interestingly, we observed the same folding patterns when performing
+deflation experiments with digital domes. Larger digital domes produced
+more radial folds, while smaller digital domes formed accumulations on
+the side. Intermediate-sized digital domes exhibited a mixture of both
+patterns
+
+After optimizing the buckling conditions, we embarked on exploring
+epithelial folds. We have been imaging only the cross-section of the
+dome to capture the fast dynamics. So, we can only see the buckling in
+form of the squiggly lines. However, these buckling events are
+three-dimensional. During tissue buckling, the squeezed area resulted in
+the formation of folds and wrinkles in the monolayer. Monitoring the
+base of the dome deflating, we observed that the tissue made contact
+with the substrate in certain regions first and others later. This led
+to the formation of folds in the regions where it made contact last.
+
+To investigate if there was any pattern to these folds, we looked at
+spherical domes of various sizes. Broadly, we observed three types of
+folding patterns emerging:
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-
-\item
-  Accumulation along the periphery
-\item
-  Folds in the middle
-\item
-  Mixture of both
+	\def\labelenumi{\arabic{enumi}.}
+	\item
+	Accumulation along the periphery
+	\item
+	Folds in the middle
+	\item
+	A mixture of both
 \end{enumerate}
 
-First, for the domes with the footprint smaller than \(10000 \mu m^2\),
-we observed repeatedly that most of the buckling would create an
-accumulation around the periphery. When looking at the timelapse, it
-gave us the impression of a donut-like structure. However, in
-three-dimensional imaging of the folds, we could see that it was a
-crescent shaped fold like a croissant. Fold was taller on one side than
-other. For larger domes with footprint greater than \(30000\mu m^2\),
-there are more instances of domes forming the network of folds in the
-middle. We could get multiple folds connecting each other by forming
-junctions. Finally, for the domes of intermediate size, we have mixture
-of accumulation and folds. Although, the proportion of the folds along
-the periphery decreases.
+For domes with a footprint smaller than \(10000 \mu m^2\), we repeatedly
+observed that most of the buckling resulted in an accumulation around
+the periphery. The confocal timelapse from the base gave the impression
+of a donut-like structure, but three-dimensional imaging of the folds
+revealed a crescent-shaped fold like a croissant, taller on one side
+than the other. For larger domes with a footprint greater than
+\(30000\mu m^2\), we observed more instances of domes forming a network
+of folds in the middle, with multiple folds connecting each other by
+forming junctions. Finally, for domes of intermediate size, we observed
+a mixture of accumulation and folds, although the proportion of folds
+along the periphery decreased.
 
-We find the same patterns as experiment when performing the same
-deflation experiments with digital domes. The larger domes would produce
-more radial folds and small domes form accumulation of on the side. In
-the intermediate sizes we have mixture of both.
+Interestingly, we observed the same folding patterns in our digital
+domes when performing the same deflation experiments. Larger digital
+domes produced more radial folds, and small digital domes formed an
+accumulation on the side. Intermediate-sized digital domes showed a
+mixture of both patterns.
 
 \hypertarget{forming-predictable-folds}{%
-\section{Forming predictable folds}\label{forming-predictable-folds}}
+	\section{Forming predictable folds}\label{forming-predictable-folds}}
 
-We wondered about how the geometry of the dome would affect the pattern
-formation. As we see with different sizes the buckle pattern changes.
-The issue with spherical domes buckling is that the patterns, even
-though beautiful, cannot be predicted because of the axis-symmetric
-shape. We could possibly guide the folding by breaking the symmetry of
-the domes.
+We were curious about how the geometry of the domes could affect the
+pattern formation of folds. Although we observed that different sizes of
+spherical domes produced different beautiful buckling patterns, the
+axis-symmetric shape made it difficult to predict the patterns. To
+address this, we decided to generate ellipsoidal domes of different
+sizes using MOLI. Interestingly, we found that the ellipsoidal domes
+would buckle into a fold along their major axis, with smaller
+ellipsoidal domes producing a similar peripheral accumulation as
+spherical domes and larger ellipsoidal domes producing a fold in the
+center along the major axis. This suggested that only larger domes,
+regardless of their shape, could produce folds.
 
-Using MOLI, we generated ellipsoidal domes of different sizes. We found
-that these domes would buckle into a fold along the major axis. Smaller
-area domes would produce similar peripheral accumulation as spherical
-domes. The larger domes produced a fold in the center along the major
-axis. This reasserted that only larger domes would produce folds
-regardless of the shape.
+To further explore the possibility of creating more complex folds, we
+decided to buckle a dome with a triangular shape, anticipating that the
+vertices of the triangle could push the buckling along the medians of
+the triangle. As expected, the domes did buckle into forming a Y-shaped
+network of the fold. We also repeated the triangular and ellipsoidal
+shapes with digital domes and found similar patterns.
 
-Finally, to create a controlled and more complex fold than a straight
-line in the middle we decided buckle a dome with a triangular. We
-expected that the vertices of the triangles could push the buckling
-along the medians of the triangle. And as expected domes did buckle into
-forming a Y-shaped network of the fold. When we repeated the triangular
-and ellipsoidal shapes with digital domes, we found similar patterns.
+We also investigated the stability of these folded structures and found
+that they were stable for hours and could be imaged for more than 12
+hours. However, not all folds were alike, as some would dissipate into
+the monolayer while others would last longer by forming attachments with
+each other. Interestingly, if immediately inflated these folds would
+unfurl themselves into a dome again.
 
-On imaging the stability of these folded structures, we found that these
-folds were stable for hours. We could image them more than 12 hours.
-However, not all folds were alike, some folds would dissipate into the
-monolayer. Whereas, others would last longer by forming attachments with
-each other.
+These results suggest that the MOLI system could provide a novel way of
+producing folds, with potential applications in tissue engineering, by
+simply controlling a few mechanical parameters such as geometry and
+pressure.
 
-This could be a novel of producing folds. We envision tissue engineering
-possibilities of the MOLI system by just controlling a few mechanical
-parameters such as geometry and pressure.
+\hypertarget{summary-and-discussion-1}{%
+	\section{Summary and Discussion}\label{summary-and-discussion-1}}
 
-\newpage
-\hypertarget{summary-and-discussion}{%
-\section{Summary and discussion}\label{summary-and-discussion}}
+We utilized our device to generate dome from a flat monolayer then
+transform it into folds, alongside investigating the buckling response
+in relation to actin remodeling timescales. We discovered that buckling
+occurs at various scales, starting from the tissue level down to the
+actin cortex of individual cells, and is triggered when deflation occurs
+more rapidly than actin can remodel. We then explored the patterns of
+folding that emerge from different sized and shaped domes, and proposed
+a new method of creating controlled folds from planar monolayer. With
+the aid of computational models, we demonstrated the engineering
+potential of the dome system to produce structured folds by manipulating
+the geometry and pressure.
 
-We used the device to create domes and then transform them into folds.
-We characterized the buckling response with respect to actin remodeling
-timescales. The domes buckle when deflated faster than they can remodel.
-We found that the buckling occurs at multiple scales starting from
-tissues then cells to actin cortex. Then we used this system to
-understand the fold patterns with different shape and size domes. We
-presented a novel approach of creating folds from pressurized structure.
-Along with computational model, we unlocked the engineering potential
-for the dome system to create controlled folds by just controlling
-geometry and pressure.
+As mentioned earlier, mechanical instabilities are ubiquitous in
+biological systems, and the phenomenon of buckling has been observed in
+MDCK epithelial monolayers through various methods, such as growth in
+confinement or direct application of compression. Charras et
+al.~demonstrated that compressive stress greater than 35\% strain can
+cause epithelial monolayers to buckle out of plane, and showed that
+active contractility can recover the out-of-plane deformation within
+tens of seconds.
 
-As mentioned earlier, the mechanical instabilities are omnipresent in
-biological systems. In particular, buckling phenomena has been observed
-by researchers in MDCK epithelial monolayers through compressive
-stresses applied by growth in confinement or direct application of
-compression. Charras people show that the epithelial monolayer under
-compression of more than 35\% strain buckles out of plane.
-Interestingly, they show that the out of plane deformation is recovered
-through active contractility within tens of seconds.
+Our study, on the other hand, is the first to offer visual insights into
+the minute details of the buckling process and its implications for
+tissue architecture at multiple scales.
 
-However, we are the first to be able to visualize the minute details of
-the buckling process leading to insights in the behavior of tissue
-architecture at multiple scales.
+From a mechanistic perspective, our result are a consequence of the
+hierarchical structure of the epithelial tissue, which comprises various
+components that sustain deformations and forces at different levels.
+Notably, the actin cytoskeleton plays a critical role in defining the
+shape of cells and tissues at multiple scales. Additionally, a cell
+monolayer can be considered as an assembly of cells with their own
+surface tension and material properties, indicating a material with
+different length scales would buckle at different length scales.
+Therefore, if there is a local weakness in a cell or subcellular
+feature, it is expected to locally buckle. For instance, we only
+observed subcellular-level buckling in very thin cells while overall
+tissue doesn't buckle.
 
-Mechanistically, we understand that these results are a consequence of
-hierarchical nature of the epithelial tissue. There are various
-components sustaining deformations and forces at different levels. Actin
-cytoskeleton plays a key role in defining cell and tissue shape at
-multiple scales. At the same time, cell monolayer can also be thought as
-assembly of cells with their own surface tension and material
-properties. Thus, it is expected that a material with different length
-scales would also buckle at different length scales. If there is a local
-weakness in a cell or subcellular feature, we could expect it to locally
-buckle. For instance we only see subcellular level buckling in very thin
-cells. This could also explain why we see no buckling at tissue scale
-but see buckling at cellular or subcellular levels.
+Furthermore, the short-wavelength folds resulting from subcellular
+buckling are intriguing to consider. It is worth noting that actin
+buckling is not a new phenomenon in the field, and there are minimal
+models of actin filaments with myosin motors on a lipid membrane
+demonstrating that myosin-induced contraction leads to actin filament
+buckling. In membrane-actin droplets, researchers have reported multiple
+modes in the form of buckling and wrinkling, depending on the thickness.
+Interestingly, they found that thin shells undergo buckling and thin
+shells produce wrinkles in the membrane but not in actin, which could
+indicate different modes of buckling within a cell.
 
-Moreover, it is fascinating to think about the short wavelength folds of
-subcellular buckling. It is essential to point out that the actin
-buckling is not new to the field. There are minimal models of actin
-filaments with myosin motors on a lipid membrane, showing the myosin
-induced contraction leads to actin filaments or shell buckling. In the
-membrane-actin droplets, researchers show multiple modes in form of
-buckling and wrinkling depending of the thickness. They found, counter
-intuitively, thin shells undergoing buckling and thin shells producing
-wrinkles in the membrane but not actin. It could relate to different
-modes of buckling within a cell.
+In the context of tissue-scale buckling, our results can be understood
+in terms of modes of buckling in thin shells. Our computational model
+suggests that the cortex behaves like a hyperelastic material, as
+evidenced by the rate at which we are deflating these tissues. Similar
+results would be obtained if we repeated the experiment with elastic
+shells. The literature on thin shell buckling reveals similar aspects,
+such as the folds and patterns that emerge when different sized shells
+buckle.
 
-In context of tissue scale buckling, we can understand these results in
-terms of modes of buckling in thin shells. The rate at which we are
-deflating these tissues, our computational model suggest that the cortex
-behaves like a hyperelastic material. If we repeat the same experiment
-with elastic shells we would get similar results. In literature on thin
-shell buckling, we find similar aspects where the folds and patterns
-emerging when different sized shell are buckles.
+The slenderness, defined as the ratio of dome radius to thickness,
+intuitively guides the different modes of buckling. Thin shells with
+high slenderness would lead to a higher mode of buckling compared to
+thicker shells. However, our experiments go beyond understanding the
+system and show that we can program folds by minimally controlling two
+parameters: geometry and pressure. For non-spherical domes, anisotropic
+stresses are observed along the axes of the elliptical footprint for
+ellipsoidal domes. These stresses can orient the folding in a particular
+direction to generate a programmed fold, such as Y junctions on the
+sides of a rectangular footprint.
 
-Intuitively, we can imagine the slenderness, ratio of dome radius to
-thickness, guiding the different modes of buckling. Thin shell with high
-slenderness would lead to higher mode of buckling as compared to thicker
-shell. However, our experiments go further than just understanding the
-system but show that we program folds by minimally controlling two
-parameters: geometry and pressure. In non spherical dome, Ariadna saw
-for ellipsoidal domes the stresses were oriented in along the axes of
-elliptical footprint. These anisotropic stress could orient the folding
-in particular direction to generate a programmed fold. Like rectangular
-footprint could create a mix of fold along the major axis as well as Y
-junctions on the sides.
+In summary, this thesis presents a novel experimental system that allows
+us to inflate epithelial domes and deflate them into tubes. We
+demonstrate that the timescales of actomyosin cytoskeleton remodeling
+play a key role in this transformation. By controlling the geometry of
+the epithelia and the rate of deflation, we show that we can engineer
+epithelial folds of desired geometry.
