@@ -232,6 +232,33 @@ Rayleighian, which is given as:
 
 \[ \mathcal{R} = \frac{dF}{dt} - D + P + P_e \]
 
+
+\begin{center}
+	\begin{mybox}{gray}{  \center{\label{A} \textbf{ Box A: Governing equations for a 2D compressible active nematic gel}}}
+		
+		\textbf{Constitutive relations}
+		\newline
+		Power conjugate to the rate of deformation tensor $d_{ab}$ is given as
+		\begin{align}  \label{eq_box_A_2}
+			& \sigma^{\rm s}_{ab} = \rho \left[2\eta  (d_{ab}+d_{cc} \delta_{ab}) + \beta  \widehat{q}_{ab}  + \lambda \left(\delta_{ab} + \kappa q_{ab}\right) -L\nabla_b q_{cd} \nabla_a q_{cd}\right].
+		\end{align}
+		Power conjugate to in-plane spin $\bm{w}$ is given as
+		\begin{align}  
+			\sigma^{\rm a}_{ab} = L \nabla_c \rho \left( q_{ad} \nabla_c q_{db}  - q_{bd} \nabla_c q_{da}  \right) + \rho L  \left(q_{ae}\Delta q_{be}  -q_{be}  \Delta q_{ae}  \right).
+		\end{align}
+		
+		
+		\textbf{Constraint}
+		\newline
+		Balance of mass of cytoskeleton material
+		\begin{equation} 
+			\dot{\rho} + \rho {\rm tr} \bm{d} = k_p - k_d \rho + D \Delta \rho.
+		\end{equation}
+		
+	\end{mybox} 
+\end{center}
+
+
 Here, \(P_e\) is an additional potential that accounts for external
 forces and tractions. The model assumes that the volume of the cell is
 conserved during deformation, and a mechanical barrier is introduced to
