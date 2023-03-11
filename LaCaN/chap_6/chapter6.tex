@@ -59,6 +59,13 @@ its ease of use. We attempted to construct devices using plastic
 stickers and photopolymerizable glue, but these attempts were
 unsuccessful due to issues such as leakage and lack of biocompatibility.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{chap6_scheme.png}
+	\caption{\textbf{Conceptual design of MOLI}: (A) Two layer microfluidic device with porous membrane sandwiched between. (B) Upon application of pressure, cells from low adhesion will detach to form an epithelial dome.
+	}\label{fig_6_1}
+\end{figure}
+
 
 \hypertarget{fabrication-of-the-device}{%
 \section{Fabrication of the device}\label{fabrication-of-the-device}}
@@ -106,11 +113,31 @@ a 3D printer to create a mold with a channel, and four inlets were added
 to the big block to accommodate two inlets for the bottom channel and
 two inlets to seed cells.
 
+
+\begin{figure}[h]
+	\begin{minipage}[c]{0.6\textwidth}
+		\includegraphics[width=\textwidth]{chap6_mold.png}
+	\end{minipage}\hfill
+	\begin{minipage}[c]{0.35\textwidth}
+		\caption{\\ \textbf{3D printed mold for the device} patterned to prepare eight devices at a time. The thickness of the PDMS block is controlled with volume of PDMS poured into the mold.
+		}\label{fig_6_1a}
+	\end{minipage}
+\end{figure}
+
+
+
 Finally, all the layers were bonded together in two steps using an ozone
 plasma cleaner. First, we bonded the glass to the bottom channel and
 simultaneously bonded the middle layer to the top channel. Once these
 layers were bonded, we then bonded them to each other with the membrane
 sandwiched in the middle.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.75\textwidth]{chap6_realscheme.png}
+	\caption{ \textbf{Fabrication of MOLI}: Four layers assembled together with ozone plasma cleaning. Each channels has a inlet and outlet. Only the pressure channel is connected to the tubing; one side connects to the reservoir and other is sealed. 
+	}\label{fig_6_2}
+\end{figure}
 
 
 \hypertarget{protein-patterning-and-inverted-cell-culture}{%
@@ -154,6 +181,14 @@ we noticed that cells were filtering through the membrane from top to
 bottom, resulting in better protein coating on the bottom channel side
 than the top.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.75\textwidth]{chap6_cellsontop.png}
+	\caption{ \textbf{Cells filtering through the membrane}: (A) Images of MDCK-CiBN CAAX GFP monolayer on the both sides of the membrane. Scale bar is $80\mu m$ (B) Schematic of imaging through the porous layer.
+	}\label{fig_6_4}
+\end{figure}
+
+
 To prevent cells from crossing the membrane, we decided to use a
 membrane with smaller pore size, around \(400nm\). However, imaging the
 green channel (\(488nm\)) through these pores was impossible. Therefore,
@@ -172,6 +207,16 @@ Despite these improvements, the ultimate challenge was ensuring that the
 cell monolayer covered the non-adhesive regions. To resolve this issue,
 we increased the protein concentration in these regions so that cells
 could attach there weakly and detach first to form a dome.
+
+\begin{figure}[h]
+	\begin{minipage}[c]{0.7\textwidth}
+		\includegraphics[width=\textwidth]{chap6_realdevice.png}
+	\end{minipage}\hfill
+	\begin{minipage}[c]{0.27\textwidth}
+		\caption{\\ \textbf{Upside-down cell culture}: Illustration of upside-down cell culture and the experimental setup on the microscope stage.
+		}\label{fig_6_5}
+	\end{minipage}
+\end{figure}
 
 \hypertarget{pressure-control}{%
 \section{Pressure control}\label{pressure-control}}
@@ -207,10 +252,34 @@ this stage, we could apply pressure in the range of
 setting it lower. For our experiments, we used the range of
 \(-200\rightarrow 1300Pa\).
 
+\begin{figure}
+	\begin{minipage}[c]{0.6\textwidth}
+		\includegraphics[width=\textwidth]{chap6_pressure.png}
+	\end{minipage}\hfill
+	\begin{minipage}[c]{0.35\textwidth}
+		\caption{\\ \textbf{Hydrostatic pressure application}:\\ The device is positioned on a microscope stage and connected to a reservoir of media, which in turn is attached to a translation stage. By increasing the difference between the device and the air-liquid interface, we can measure and apply hydrostatic pressure.
+		} \label{fig_6_3}
+	\end{minipage}
+\end{figure}
+
 
 \hypertarget{imaging-the-epithelial-domes}{%
 \section{Imaging the epithelial
 domes}\label{imaging-the-epithelial-domes}}
+
+
+
+
+
+\begin{figure}
+	\begin{minipage}[c]{0.6\textwidth}
+		\includegraphics[width=\textwidth]{chap6_confocaldomes.png}
+	\end{minipage}\hfill
+	\begin{minipage}[c]{0.35\textwidth}
+		\caption{\\ \textbf{Epithelial dome:}\\ Representative confocal microscopy sections of domes at 0 Pa and 200 Pa. Images in the XY plane represent the dome's maximum projection, while images in the XZ plane represent a cross section at the center plane. Three cells are highlighted with color to show the stretching during the dome inflation. Scale bar is $20 \mu m$.
+		} \label{fig_6_6}
+	\end{minipage}
+\end{figure}
 
 After optimizing the protein patterning, cell culture conditions, and
 confocal microscopy, we were able to form domes according to the pattern
@@ -257,6 +326,16 @@ of the cell images is often low. In cases where the fluorescent
 expression of cells on the top of the domes was inadequate, the data was
 much noisier.
 
+\begin{figure}
+	\begin{minipage}[c]{0.6\textwidth}
+		\includegraphics[width=\textwidth]{chap6_LSM.png}
+	\end{minipage}\hfill
+	\begin{minipage}[c]{0.35\textwidth}
+		\caption{\\ \textbf{Imaging the dome with Line scanning mode:}\\ (A) Confocal microscopy image of a dome's maximum projection. (B) Midsection of the same dome imaged with the line scan mode (LSM). (C-D) Timelapse of the dome in LSM and a kymograph showing dynamics of the domes when imaged at time-step of $4s$. Scale bars are $20 \mu m$.
+		} \label{fig_6_7}
+	\end{minipage}
+\end{figure}
+
 \hypertarget{light-sheet-moli}{%
 \section{Light-sheet MOLI}\label{light-sheet-moli}}
 
@@ -266,6 +345,13 @@ two immersion-upright objectives at 45 degrees to the horizontal plane.
 With our expertise at fabricating devices, we were able to design new
 setup which would have cells and porous membrane exposed to the top for
 imaging.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{chap6_lightsheet.png}
+	\caption{ \textbf{Light sheet MOLI}: (A) Isometric illustration of a single piece PDMS block engraved with two channels, so that we can have two devices in one. (B) Cross-section of the device. (C) The device is used with 40x immersion objectives coming at $45 \deg$ angle. This limits to the field of view to $332\times 332\mu m^2$.
+	}\label{fig_6_8}
+\end{figure}
 
 We decided to invert the normal MOLI device and simplify the setup for
 fabrication. For this, we needed a pressure channel and middle layer
@@ -302,6 +388,12 @@ before and form domes. Using this imaging strategy, we were able to see
 fast moving features that were impossible to see with other imaging
 methods.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{chap6_lightsheetdome.png}
+	\caption{ \textbf{Dome imaged with Light sheet MOLI}: Mid-section of a dome with membrane marker imaged every $2s$. Showing the shape of individual cells undergoing changes during deflation. Scale bar is $20 \mu m$.
+	}\label{fig_6_9}
+\end{figure}
 
 \newpage
 \hypertarget{summary-and-discussion}{%
