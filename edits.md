@@ -1,7 +1,7 @@
 # edits
 
 # chapter 6
-
+making it 
 protein patterning part
 
 In the spontaneous dome system, the top surface was accessible for treatments and microcontact printing. However, in out case we have a completely sealed device; thus forcing us to use the photopatterning technique PRIMO. Briefly, we coat the surface with PLL and then SVA PEG chains. On shinning blue light the selective regions can be cleaved and would be exposed to adhesion promoting protein. We used fibronectin for the experiments in this thesis. However, other proteins such as vitronectin and collagen can be coated too.
