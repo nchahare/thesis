@@ -284,30 +284,30 @@ Rayleighian, which is given as:
 \[ \mathcal{R} = \frac{dF}{dt} - D + P + P_e \]
 
 
-\begin{center}
-	\begin{mybox}{gray}{  \center{\label{A} \textbf{ Box A: Governing equations for a 2D compressible active nematic gel}}}
-		
-		\textbf{Constitutive relations}
-		\newline
-		Power conjugate to the rate of deformation tensor $d_{ab}$ is given as
-		\begin{align}  \label{eq_box_A_2}
-			& \sigma^{\rm s}_{ab} = \rho \left[2\eta  (d_{ab}+d_{cc} \delta_{ab}) + \beta  \widehat{q}_{ab}  + \lambda \left(\delta_{ab} + \kappa q_{ab}\right) -L\nabla_b q_{cd} \nabla_a q_{cd}\right].
-		\end{align}
-		Power conjugate to in-plane spin $\bm{w}$ is given as
-		\begin{align}  
-			\sigma^{\rm a}_{ab} = L \nabla_c \rho \left( q_{ad} \nabla_c q_{db}  - q_{bd} \nabla_c q_{da}  \right) + \rho L  \left(q_{ae}\Delta q_{be}  -q_{be}  \Delta q_{ae}  \right).
-		\end{align}
-		
-		
-		\textbf{Constraint}
-		\newline
-		Balance of mass of cytoskeleton material
-		\begin{equation} 
-			\dot{\rho} + \rho {\rm tr} \bm{d} = k_p - k_d \rho + D \Delta \rho.
-		\end{equation}
-		
-	\end{mybox} 
-\end{center}
+%\begin{center}
+%	\begin{mybox}{gray}{  \center{\label{A} \textbf{ Box A: Governing equations for a 2D compressible active nematic gel}}}
+%		
+%		\textbf{Constitutive relations}
+%		\newline
+%		Power conjugate to the rate of deformation tensor $d_{ab}$ is given as
+%		\begin{align}  \label{eq_box_A_2}
+%			& \sigma^{\rm s}_{ab} = \rho \left[2\eta  (d_{ab}+d_{cc} \delta_{ab}) + \beta  \widehat{q}_{ab}  + \lambda \left(\delta_{ab} + \kappa q_{ab}\right) -L\nabla_b q_{cd} \nabla_a q_{cd}\right].
+%		\end{align}
+%		Power conjugate to in-plane spin $\bm{w}$ is given as
+%		\begin{align}  
+%			\sigma^{\rm a}_{ab} = L \nabla_c \rho \left( q_{ad} \nabla_c q_{db}  - q_{bd} \nabla_c q_{da}  \right) + \rho L  \left(q_{ae}\Delta q_{be}  -q_{be}  \Delta q_{ae}  \right).
+%		\end{align}
+%		
+%		
+%		\textbf{Constraint}
+%		\newline
+%		Balance of mass of cytoskeleton material
+%		\begin{equation} 
+%			\dot{\rho} + \rho {\rm tr} \bm{d} = k_p - k_d \rho + D \Delta \rho.
+%		\end{equation}
+%		
+%	\end{mybox} 
+%\end{center}
 
 
 Here, \(P_e\) is an additional potential that accounts for external
@@ -363,6 +363,14 @@ experiments. When the cells are probed faster than viscoelastic
 timescales, they accumulate strains due to an inability to dissipate the
 elastic stress. In contrast, when stretching is slower, elastic stresses
 are dissipated with increasing area.
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{chap7_area.png}
+	\caption{\label{fig_7_7} \textbf{Concept of resting area}: (A) Illustration of a resting and actual are of a cell in a monolayer during stretching. (B) Differences in results of resting and actual area when subjected to different rates of pressure. (C) Inset of the last two cycles.
+	}
+\end{figure}
 
 We observed that, for the slowest condition, the resting area in the
 digital dome almost overlapped with the actual area in the last two
