@@ -47,11 +47,11 @@ Further examination of the tension-strain relationship of these domes revealed a
 
 This kind of material response would be unusual for typical materials undergoing biaxial stretching. However, in our case, the underlying cause of this curve can be attributed to the geometric constraint imposed by the dome system and force balance (Laplace's law). Since the tension in the dome is a function of its radius of curvature, the radius of curvature starts out very high, producing higher tension that then reduces to a minimum with a hemispherical shape before increasing again (see fig \ref{fig_7_4}). The radius of curvature, areal strain, and tension are inherently interconnected, such that at a constant pressure, we can write the expression of the curve.
 
-$$ R = \frac{h^2 + a^2}{2h}, \ \ \ \ \text{and} \ \ \ \ \epsilon = \frac{h^2}{a^2}$$
+$$ R = \frac{h^2 + a^2}{2h}, \ \ \ \ \text{and} \ \ \ \ \epsilon = \frac{h^2}{a^2}.$$
 By substituting ($\epsilon$) in ($R$),
-$$ R = \frac{h^2/a^2 + 1}{2h/a^2} = a\frac{\epsilon + 1}{\sqrt{\epsilon}}$$
+$$ R = \frac{h^2/a^2 + 1}{2h/a^2} = a\frac{\epsilon + 1}{\sqrt{\epsilon}}.$$
 By substituting ($R$) in Laplace's law, we get the relation
-$$ \frac{\sigma}{a} = \frac{\Delta P}{4} \left( \frac{\epsilon + 1}{\sqrt{\epsilon}} \right)$$
+$$ \frac{\sigma}{a} = \frac{\Delta P}{4} \left( \frac{\epsilon + 1}{\sqrt{\epsilon}} \right).$$
 
 Normalizing the tension with the base radius results in all domes collapsing onto one curve corresponding to a specific pressure. We call this curve the "isobaric" curve.
 
@@ -117,11 +117,6 @@ For the slowest cycles of $2000 s$, we faced difficulty in forming domes at lowe
 \hypertarget{active-gel-tissue-model}{%
 	\section{Active gel tissue model}\label{active-gel-tissue-model}}
 
-\begin{figure} [h!]
-	\centering
-	\includegraphics[width=\textwidth]{chap7_digitaldome.png}
-	\caption{\label{fig_7_2} \textbf{Active gel tissue model}: (A) The cell is modeled as an active gel of cortex, which mainly comprises three aspects: viscoelasticity of the network, turnover dynamics, and active contractility. (B) These cells can be assembled into a tissue that can be used to perform in-silico experiments. An example of this is the digital dome being inflated, highlighting individual cells increasing their area.}
-\end{figure}
 
 In addition, to complement our experimental findings, we collaborated with Adam Ouzeri to develop a computational framework. Our understanding of epithelial mechanics suggests that the viscoelasticity of the actin cortex plays a crucial role in sustaining deformations at the timescale of seconds to minutes \cite{kelkar2020,clement2017,khalilgharibi2019}. Adam Ouzeri developed a theoretical framework that bridges active gel models of the actomyosin cortex and 3D vertex models at tissue scales  \cite{ouzeri2023}. In this model, each cell is represented by an active gel surface that accounts for the physical aspects of the cortex, and a tissue is assembled from a collection of these active gel surfaces (see fig \ref{fig_7_2}). The dynamics of the system are formulated through a balance of different potentials that represent different active internal or external forces and dissipation.
 
@@ -143,6 +138,12 @@ The proposed governing equations are obtained by minimizing the Rayleighian, whi
 $$ \mathcal{R} = \frac{dF}{dt} - D + P + P_e .$$
 
 Here, $P_e$ is an additional potential that accounts for external forces and tractions. The model assumes that the volume of the cell is conserved during deformation, and a mechanical barrier is introduced to prevent excessive strains beyond a threshold. This barrier is implemented by adding re-stiffening at large strains, which is necessary for physiological reasons, such as activation of intermediate filaments, cell crowding, or compression of the nucleus.
+
+\begin{figure} [h!]
+	\centering
+	\includegraphics[width=\textwidth]{chap7_digitaldome.png}
+	\caption{\label{fig_7_2} \textbf{Active gel tissue model}: (A) The cell is modeled as an active gel of cortex, which mainly comprises three aspects: viscoelasticity of the network, turnover dynamics, and active contractility. (B) These cells can be assembled into a tissue that can be used to perform in-silico experiments. An example of this is the digital dome being inflated, highlighting individual cells increasing their area.}
+\end{figure}
 
 The model exhibits three timescales: turnover time ($t_{to} = 1/k_d$), viscoelastic time ($t_{ve} = \eta/\lambda$), and viscoactive time ($t_{va} = \eta/\xi$). At shorter timescales, the system behaves like an active hyperelastic material, while at longer timescales, it behaves like an active viscoelastic material.
 
@@ -180,6 +181,7 @@ To sum up, the digital dome model explains the different behaviors of epithelial
 	}
 \end{figure}
 
+\newpage
 \hypertarget{summary}{%
 	\section{Summary and Discussion}\label{summary}}
 

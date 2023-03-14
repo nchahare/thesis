@@ -1,9 +1,9 @@
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction1}}
 
-To generate three-dimensional epithelial structures in vitro from planar epithelial monolayers, we chose to utilize an existing system of epithelial domes (spontaneous domes) developed by Ernest Latorre and improved by Ariadna Marin-Llaurada \cite{latorre2018,marin-llaurado2022}. This system involves seeding a Madin-Darby canine kidney (MDCK) cell monolayer on a substrate that is patterned with circular non-adhesive regions. The cells invade these regions and form a cohesive monolayer everywhere within 24 to 48 hours. Due to the active ion pumping mechanism of the MDCK cells in the apical-to-basal direction, the cells delaminate from impermeable substrates such as glass or soft PDMS gel and form spherical cap structures in the circular patterns, known as epithelial domes. Latorre and Marin-Llaurado demonstrated that they could form a variety of structures with controlled shape and size, ranging from circular to rectangular.  
+To generate three-dimensional epithelial structures in vitro from planar epithelial monolayers, we chose to utilize an existing system of epithelial domes (spontaneous domes) developed by Ernest Latorre and improved by Ariadna Marin-Llaurado \cite{latorre2018,marin-llaurado2022}. This system involves seeding a Madin-Darby canine kidney (MDCK) cell monolayer on a substrate that is patterned with circular non-adhesive regions. The cells invade these regions and form a cohesive monolayer everywhere within 24 to 48 hours. Due to the active ion pumping mechanism of the MDCK cells in the apical-to-basal direction, the cells delaminate from impermeable substrates such as glass or soft PDMS gel and form spherical cap structures in the circular patterns, known as epithelial domes. Latorre and Marin-Llaurado demonstrated that they could form a variety of structures with controlled shape and size, ranging from circular to rectangular.  
 
-This system also enables the use of 3D traction force microscopy to measure pressure. The technique involves measuring the deformation of a soft PDMS gel embedded with beads to characterize the forces and pressures applied by the cells on the substrate. This method offers an innovative approach to measuring pressure compared to the previous technique of puncturing epithelial domes with a microneedle \cite{tanner1983, choudhury2022}. It allows for the characterization of the rheology of epithelia and the discovery of interesting material properties such as the superelasticity of cells during stretching \cite{latorre2018}.  
+This system also enables the use of 3D traction force microscopy to measure pressure. The technique involves measuring the deformation of a soft PDMS gel embedded with beads to characterize the forces and pressures applied by the cells on the substrate. This method offers an innovative approach to measuring pressure compared to the previous technique of puncturing epithelial domes with a microneedle \cite{tanner1983, choudhury2022}. It also allows for the characterization of the rheology of epithelia and the discovery of interesting material properties such as the superelasticity of cells during stretching \cite{latorre2018}.  
 
 However, the formation of epithelial domes is dependent on the ion pumping mechanism of the domes, making them spontaneous structures. Therefore, the timescales for the dome stretching are not controlled. This process can be marginally accelerated by a few hours through the use of drugs like Forskolin, which can activate transepithelial channels of NA+/K+/Cl-  \cite{klebe1995,bourke1987}. However, to build and physically control the epithelial structure, pressure control is necessary. In this chapter, we will be discussing a microfluidic chip that can inflate an epithelial monolayer into a dome while also allowing us to measure and control the forces involved.
 
@@ -42,7 +42,7 @@ The top channel was designed as a large block with a $5mm$ thickness and a $1mm$
 
 \begin{figure}
 	\begin{minipage}[c]{0.6\textwidth}
-		\includegraphics[width=\textwidth]{chap6_mold.png}
+		\includegraphics[width=0.8\textwidth]{chap6_mold.png}
 	\end{minipage}\hfill
 	\begin{minipage}[c]{0.35\textwidth}
 		\caption{\\ \textbf{3D printed mold for the device} patterned to prepare eight devices at a time. The thickness of the PDMS block is controlled with volume of PDMS poured into the mold.
@@ -121,7 +121,7 @@ To control the pressure, we used an automatic translation stage that could be pr
 \section{Imaging the epithelial
 domes}\label{imaging-the-epithelial-domes}}
 
-\begin{figure}
+\begin{figure}[h!]
 	\begin{minipage}[c]{0.6\textwidth}
 		\includegraphics[width=\textwidth]{chap6_confocaldomes.png}
 	\end{minipage}\hfill
@@ -139,7 +139,7 @@ However, acquiring images of the dome stack using a step size of $0.5\mu m$ and 
 
 With the line scanning mode of a Zeiss Airy Scan Microscope, we were able to quickly image a single line of pixels across the midsection of the dome and take a confocal z-stack along the height of the dome (see fig \ref{fig_6_7}). This provided us with a cross-section of the dome in a fraction of the time of a normal stack. By enabling piezo stage movement, we were able to image a $100\mu m$ tall dome in just $4s$, and could even track the dome height evolution through a kymograph of the central part of the dome. However, it is important to note that this form of imaging is primarily useful for tracking dome strain and curvature, and the quality of the cell images is often low. In cases where the fluorescent expression of cells on the top of the domes was inadequate, the data was much noisier.  
 
-\begin{figure}
+\begin{figure}[h!]
 	\begin{minipage}[c]{0.6\textwidth}
 		\includegraphics[width=\textwidth]{chap6_LSM.png}
 	\end{minipage}\hfill
@@ -161,18 +161,19 @@ With the line scanning mode of a Zeiss Airy Scan Microscope, we were able to qui
 
 Later in my PhD, we used a Brucker QuVi SPIM light sheet microscope to observe rapid cellular or sub-cellular changes. It has two immersion-upright 40x objectives at 45 degrees to the horizontal plane. With our expertise in fabricating devices, we designed a new setup that exposed cells and porous membranes to the top for imaging (see fig \ref{fig_6_8}).
 
-To simplify the setup for fabrication, we inverted the normal MOLI device. This only required a pressure channel and middle layer with a hole and porous membrane. The device had to be thick enough to plug in the tubing. Since the device and channels were large, we could fabricate the mold using a Ultimaker 3D printer. We created a ridge-like protrusion so that the pressure channel and cell seeding hole could be manufactured in one go. We bonded the device to a microscope slide using unpolymerized PDMS. We were able to perform PRIMO patterning of the device by flipping it upside down. Seeding cells in this setup was easier as the cell seeding part was exposed.
-
-As expected, we were able to apply pressure using the same system as before to generate domes. By using the imaging strategy we developed, we were able to obtain a full dome image within a mere 4 seconds, which allowed us to observe fast-moving features that were not discernible using other imaging techniques (see fig \ref{fig_6_9}).
-
-\begin{figure}[h]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=\textwidth]{chap6_lightsheetdome.png}
 	\caption{ \textbf{Dome imaged with Light sheet MOLI}: Mid-section of a dome with membrane marker imaged every $2s$. Showing the shape of individual cells undergoing changes during deflation. Scale bar is $20 \mu m$.
 	}\label{fig_6_9}
 \end{figure}
 
+To simplify the setup for fabrication, we inverted the normal MOLI device. This only required a pressure channel and middle layer with a hole and porous membrane. The device had to be thick enough to plug in the tubing. Since the device and channels were large, we could fabricate the mold using a Ultimaker 3D printer. We created a ridge-like protrusion so that the pressure channel and cell seeding hole could be manufactured in one go. We bonded the device to a microscope slide using unpolymerized PDMS. We were able to perform PRIMO patterning of the device by flipping it upside down. Seeding cells in this setup was easier as the cell seeding part was exposed.
+
+As expected, we were able to apply pressure using the same system as before to generate domes. By using the imaging strategy we developed, we were able to obtain a full dome image within a mere 4 seconds, which allowed us to observe fast-moving features that were not discernible using other imaging techniques (see fig \ref{fig_6_9}).
+
 \newpage
+
 \hypertarget{summary-and-discussion}{%
 \section{Summary and Discussion}\label{summary-and-discussion}}
 
