@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "9d97d922942c8887",
@@ -147,7 +146,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d66b01fd54a6f186",
+  "active": "70d50cf101f52233",
   "lastOpenFiles": [
     "results.md",
     "chapter6.md",
