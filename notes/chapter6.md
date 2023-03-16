@@ -1,18 +1,41 @@
 # Microfluidic device for generating 3D epithelia
 # Introduction
 
-To create three-dimensional epithelial structures in vitro from planar epithelial monolayers, we chose to begin with already existing system of epithelial domes developed by Ernest Latorre and improved Ariadna Marin. In this system, Madin-Darby canine kidney (MDCK) cell monolayer is seeded on substrate which is patterned with circular non adhesive regions. The cells invade these non adhesive regions and form a cohesive monolayer everywhere in 24 to 48 hours. Due to the tendency of these cells to actively pump ions in apical to basal direction, the cells delaminate from the impermeable substrate, like glass or soft PDMS gel, to form a spherical cap structure in the circular patterns, called epithelial domes. Latorre and Marin studies show that they could form variety of the structures of controlled shape and size, ranging from circular to rectangular shaped structures.
 
-At the same time, the system enabled the use of 3D traction force microscopy, which allows for measurement of pressure. It utilizes the deformation of the soft PDMS gel embedded with beads to characterize the forces and pressures applied by the cells on substrate. It is ingenious way of measuring pressure as compared to the past method of puncturing the epithelial domes with a microneedle. This allowed for characterization of rheology of epithelia and revealed interesting material properties such as superelasticity of cells while stretching. 
 
-However, the process of forming epithelial domes is dependent on ion pumping mechanism of the domes. We can call them spontaneous domes. Thus, the timescales for the dome stretching are not controlled. The process could be accelerated marginally by few hours through use of drugs like Forskolin, which can activate transepithelial channels of NA+/K+/Cl-. However to build the epithelial structure and control it physically requires pressure control.
+
+
+
+
+To generate three-dimensional epithelial structures in vitro from planar epithelial monolayers, we chose to utilize an existing system of epithelial domes (spontaneous domes) developed by Ernest Latorre and improved by Ariadna Marin-Llauradó (Latorre et al. 2018; Marín-Llauradó et al. 2022). This system involves seeding a Madin-Darby canine kidney (MDCK) cell monolayer on a substrate that is patterned with circular non-adhesive regions. The cells invade these regions and form a cohesive monolayer everywhere within 24 to 48 hours. Due to the active ion pumping mechanism of the MDCK cells in the apical-to-basal direction, the cells delaminate from impermeable substrates such as glass or soft PDMS gel and form spherical cap structures in the circular patterns, known as epithelial domes. Latorre and Marin-Llauradó demonstrated that they could form a variety of structures with controlled shape and size, ranging from circular to rectangular.
+
+This system also enables the use of 3D traction force microscopy to measure pressure. The technique involves measuring the deformation of a soft PDMS gel embedded with beads to characterize the forces and pressures applied by the cells on the substrate. This method offers an innovative approach to measuring pressure compared to the previous technique of puncturing epithelial domes with a microneedle (Tanner, Frambach, and Misfeldt 1983; Choudhury et al. 2022). It also allows for the characterization of the rheology of epithelia and the discovery of interesting material properties such as the superelasticity of cells during stretching (Latorre et al. 2018).
+
+However, the formation of epithelial domes is dependent on the ion pumping mechanism of the domes, making them spontaneous structures. Therefore, the timescales for the dome stretching are not controlled. This process can be marginally accelerated by a few hours through the use of drugs like Forskolin, which can activate transepithelial channels of NA+/K+/Cl- (Klebe et al. 1995; Bourke et al. 1987). However, to build and physically control the epithelial structure, pressure control is necessary. In this chapter, we will be discussing a microfluidic chip that can inflate an epithelial monolayer into a dome while also allowing us to measure and control the forces involved.
+
 # Monolayer inflator
 
-Drawing upon the inspiration from organ on chip microfluidic devices, we thought they would be perfect system for controlling pressure, cell culture, and enable us to image at high resolution.  For example, lungs-on-chip device which is a two layers separated with a porous membrane with the channel in top layer for epithelia and another one for endothelia. This is all assembled on a thin glass which allows for high quality imaging.
+Drawing inspiration from the pioneering work on organ-on-chip microfluidic devices, we have deemed these platforms to be an ideal system for the precise manipulation of pressure, cell culture conditions, and the acquisition of high-resolution imaging data (Huh et  al., 2010; Nelson et al., 2017). An illustrative example is the lungs-on-chip device, which comprises two distinct layers separated by a porous membrane. The top layer contains a channel for the epithelial cells, while the bottom layer has a channel for the endothelial cells.  
+This device is assembled on a thin glass slide, which facilitates the  
+collection of high-quality imaging data.
 
-Therefore, we conceived the idea of monolayer inflator device, where we will use two layer microfluidic channel which will have one side for epithelial monolayer and another on for application of the pressure. The epithelial monolayer side will be micropatterned with protein with non/less-adhesive regions for dome formation. We reasoned that cells will attach everywhere even in less adhesive region. When applying pressure the cells will delaminate from the weakest point of adhesion and form a dome.
+Therefore, we conceived the idea of a MOnoLayer Inflator (MOLI) device,  
+which utilizes a two-layer microfluidic channel with one side for  
+epithelial monolayers and the other for the application of pressure (see  
+fig [1.1](app://obsidian.md/index.html#fig_6_1)). The epithelial monolayer side is micropatterned  
+with a protein that contains non-adhesive or less-adhesive regions for  
+dome formation. Our working hypothesis postulated that cells would  
+adhere to the protein substrate uniformly, even in regions with lower  
+adhesive properties. We anticipated that upon the application of  
+pressure, cells would detach from the regions with weaker adhesion,  
+leading to the formation of a dome-shaped structure.
 
-We decided use the classical PDMS material for building the microfluidic chip because of ease of use. We attempted making devices from plastic stickers and photopolymerizable glue, but they were unsuccessful and had issues due to leakage or lack of bio-compatibility.
+We attempted to fabricate the devices by utilizing plastic stickers and  
+photopolymerizable adhesive, but encountered difficulties such as fluid  
+leakage and limited biocompatibility, rendering them unsuitable (Sollier  
+et al. 2011; Bartolo et al. 2008). Consequently, we opted for the  
+utilization of PDMS material to construct the microfluidic chip due to  
+its facile handling and processing characteristics.
 
 # Fabrication of the device
 

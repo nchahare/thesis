@@ -1,26 +1,26 @@
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction1}}
 
-To generate three-dimensional epithelial structures in vitro from planar epithelial monolayers, we chose to utilize an existing system of epithelial domes (spontaneous domes) developed by Ernest Latorre and improved by Ariadna Marin-Llaurado \cite{latorre2018,marin-llaurado2022}. This system involves seeding a Madin-Darby canine kidney (MDCK) cell monolayer on a substrate that is patterned with circular non-adhesive regions. The cells invade these regions and form a cohesive monolayer everywhere within 24 to 48 hours. Due to the active ion pumping mechanism of the MDCK cells in the apical-to-basal direction, the cells delaminate from impermeable substrates such as glass or soft PDMS gel and form spherical cap structures in the circular patterns, known as epithelial domes. Latorre and Marin-Llaurado demonstrated that they could form a variety of structures with controlled shape and size, ranging from circular to rectangular.  
+To generate three-dimensional epithelial structures in vitro from planar epithelial monolayers, we chose to utilize an existing system of epithelial domes (spontaneous domes) developed by Ernest Latorre and improved by Ariadna Marin-Llauradó  \cite{latorre2018,marin-llaurado2022}. This system involves seeding a Madin-Darby canine kidney (MDCK) cell monolayer on a substrate that is patterned with circular non-adhesive regions. The cells invade these regions and form a cohesive monolayer everywhere within 24 to 48 hours. Due to the active ion pumping mechanism of the MDCK cells in the apical-to-basal direction, the cells delaminate from impermeable substrates such as glass or soft PDMS gel and form spherical cap structures in the circular patterns, known as epithelial domes. Latorre and Marin-Llauradó demonstrated that they could form a variety of structures with controlled shape and size, ranging from circular to rectangular.  
 
 This system also enables the use of 3D traction force microscopy to measure pressure. The technique involves measuring the deformation of a soft PDMS gel embedded with beads to characterize the forces and pressures applied by the cells on the substrate. This method offers an innovative approach to measuring pressure compared to the previous technique of puncturing epithelial domes with a microneedle \cite{tanner1983, choudhury2022}. It also allows for the characterization of the rheology of epithelia and the discovery of interesting material properties such as the superelasticity of cells during stretching \cite{latorre2018}.  
 
-However, the formation of epithelial domes is dependent on the ion pumping mechanism of the domes, making them spontaneous structures. Therefore, the timescales for the dome stretching are not controlled. This process can be marginally accelerated by a few hours through the use of drugs like Forskolin, which can activate transepithelial channels of NA+/K+/Cl-  \cite{klebe1995,bourke1987}. However, to build and physically control the epithelial structure, pressure control is necessary. In this chapter, we will be discussing a microfluidic chip that can inflate an epithelial monolayer into a dome while also allowing us to measure and control the forces involved.
+However, the formation of epithelial domes is dependent on the ion pumping mechanism of the domes, making them spontaneous structures. Therefore, the timescales for the dome stretching are not controlled. This process can be marginally accelerated by a few hours through the use of drugs like Forskolin, which can activate transepithelial channels of NA+/K+/Cl- \cite{klebe1995,bourke1987}. However, to build and physically control the epithelial structure, pressure control is necessary. In this chapter, we will be discussing a microfluidic chip that can inflate an epithelial monolayer into a dome while also allowing us to measure and control the forces involved.
 
 
 \hypertarget{monolayer-inflator}{%
 \section{Monolayer Inflator}\label{monolayer-inflator}}
 
-Inspired by the concept of organ-on-chip microfluidic devices, we considered them to be an ideal system for controlling pressure, cell culture, and high-resolution imaging \cite{huh2010, nelson2017}. For instance, the lungs-on-chip device consists of two layers separated by a porous membrane, with one channel in the top layer for epithelia and another for endothelia. The device is assembled on a thin glass substrate, enabling high-quality imaging.  
+Drawing inspiration from the pioneering work on organ-on-chip microfluidic devices, we have deemed these platforms to be an ideal system for the precise manipulation of pressure, cell culture conditions, and the acquisition of high-resolution imaging data \cite{huh2010, nelson2017}. An illustrative example is the lungs-on-chip device, which comprises two distinct layers separated by a porous membrane. The top layer contains a channel for the epithelial cells, while the bottom layer has a channel for the endothelial cells. This device is assembled on a thin glass slide, which facilitates the collection of high-quality imaging data. 
 
-Therefore, we conceived the idea of a MOnoLayer Inflator (MOLI) device, which utilizes a two-layer microfluidic channel with one side for epithelial monolayers and the other for the application of pressure (see fig \ref{fig_6_1}). The epithelial monolayer side is micropatterned with a protein that contains non-adhesive or less-adhesive regions for dome formation. We hypothesized that the cells would attach to the protein everywhere, even in the less adhesive regions. When pressure is applied, the cells would delaminate from the weakest point of adhesion and form a dome.  
+Therefore, we conceived the idea of a MOnoLayer Inflator (MOLI) device, which utilizes a two-layer microfluidic channel with one side for epithelial monolayers and the other for the application of pressure (see fig \ref{fig_6_1}). The epithelial monolayer side is micropatterned with a protein that contains non-adhesive or less-adhesive regions for dome formation. Our working hypothesis postulated that cells would adhere to the protein substrate uniformly, even in regions with lower adhesive properties. We anticipated that upon the application of pressure, cells would detach from the regions with weaker adhesion, leading to the formation of a dome-shaped structure.
 
-We chose to use PDMS material for building the microfluidic chip due to its ease of use. We attempted to construct devices using plastic stickers and photopolymerizable glue, but these attempts were unsuccessful due to issues such as leakage and lack of biocompatibility \cite{sollier2011, bartolo2008}.  
+We attempted to fabricate the devices by utilizing plastic stickers and photopolymerizable adhesive, but encountered difficulties such as fluid leakage and limited biocompatibility, rendering them unsuitable \cite{sollier2011, bartolo2008}. Consequently, we opted for the utilization of PDMS material to construct the microfluidic chip due to its facile handling and processing characteristics.  
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{chap6_scheme.png}
-	\caption{\textbf{Conceptual design of MOLI}: (A) Two layer microfluidic device with porous membrane sandwiched between. (B) Upon application of pressure, cells from low adhesion will detach to form an epithelial dome.
+	\caption{\textbf{Conceptual design of MOLI}: (A) Microfluidic device consist of a porous membrane sandwiched between two layers of schannels. (B) Upon application of pressure, cells from low adhesion will detach to form an epithelial dome. 
 	}\label{fig_6_1}
 \end{figure}
 
@@ -28,27 +28,27 @@ We chose to use PDMS material for building the microfluidic chip due to its ease
 \hypertarget{fabrication-of-the-device}{%
 \section{Fabrication of the device}\label{fabrication-of-the-device}}
 
-The structure of the device consists of four layers: glass, bottom channel, porous membrane, and top channel. These layers are bonded together using ozone plasma activation.  
+The structure of the device consists of four layers: glass, bottom channel, porous membrane, and top channel. These layers are bonded together using ozone plasma activation.
 
-\begin{figure}[b!]
+For imaging epithelial structures with high-resolution confocal microscopy, the device must be mounted on a thin glass slide. We used \#0 glass slides, which have a thickness range of 85-115 \unit{\um} and are designed for high-performance microscopy applications. 
+
+To ensure that the porous membrane is positioned as close as possible to the microscope objectives, whose working distance typically ranges between 200\unit{\um} and 1000\unit{\um}, it is crucial that the channel is sufficiently thin. To this end, we fabricated the bottom layer with a thickness of 100\unit{\um}. This thickness provides adequate structural support for manual handling, while avoiding potential microfluidic issues arising from pressure loss and lower flow rates. To achieve the desired thickness, we utilized a spin coating method to fabricate a thin layer of polydimethylsiloxane (PDMS). Subsequently, the layer was precisely cut into the channel shape using a desktop cutting machine (Silhouette Cameo 4, Silhouette America).
+
+The primary function of the porous membrane is to enable pressure application while preventing the migration of cells from the cell channel to the pressure channel. Initially, we used a membrane with pores of 10\unit{\um} diameter based on literature. We attempted to create 10\unit{\um} pores in a 100\unit{\um} thin layer of PDMS using photolithography to facilitate manual handling. However, we encountered difficulty in fabricating 10\unit{\um} pillars with a height of 100\unit{\um} due to an excessively high aspect ratio, making the pillars too fragile and prone to breakage during fabrication (see appendix B). Consequently, we opted to employ plastic, polyethylene terephthalate (PET), membranes with 10\unit{\um} pores. 
+
+The thin (10\unit{\um}) plastic sheets were easily manageable, but we encountered difficulties with bonding and experienced leakages due to membrane wrinkling. To address these difficulties, we decided to modify the middle layer by using a PDMS layer with a hole attached to a small piece of membrane, instead of whole layer being a porous membrane. This approach allowed us to achieve stronger and leak-proof bonding by sandwiching a smaller area between the two PDMS layers. The middle PDMS thin layer was constructed with a 1.2\unit{\mm} hole to expose the membrane to pressure, as this dimension is approximately the size of the field of view of a 10X objective.
+
+The design of the top channel in the device involved a PDMS block with a 5\unit{\mm} thickness and a 1mm engraved channel. The decision to select the thickness of the top channel was based on the requirement for the block to be sufficiently thick to accommodate tubing for pressure application.  To create the mold with the channel, a precision 3D printer (Solus DLP 3D Printer) was utilized. Additionally, four inlets with a diameter of 1.5\unit{\mm} were punched into the block using a biopsy punch to facilitate two inlets for the pressure channel and two inlets for cell seeding purposes  (see fig \ref{fig_6_1a}).
+
+Ultimately, the integration of the layers was accomplished through a two-step bonding process utilizing an ozone plasma cleaner (refer to fig \ref{fig_6_2}). First, we bonded the glass to the bottom channel and simultaneously bonded the middle layer to the top channel. Following this step, the two assembled layers were bonded together with the membrane sandwiched in the middle to create the final device.
+
+\begin{figure}[]
 	\centering
 	\includegraphics[width=\textwidth]{chap6_mold.png}
-	\caption{ \textbf{3D printed mold for the device} patterned to prepare eight devices at a time. The thickness of the PDMS block is controlled with volume of PDMS poured into the mold. After polymerization, the PDMS is cut into individual pieces and inlets are punched with a biopsy punch.	}\label{fig_6_1a}
+	\caption{ \textbf{3D printed mold for the device} patterned to prepare eight devices at a time. The thickness of the PDMS block is controlled with volume of PDMS poured into the mold. After polymerization, the PDMS is cut into individual pieces and inlets are punched with a biopsy punch.}\label{fig_6_1a}
 \end{figure}
 
-To enable high-quality imaging, the device must be mounted on a thin glass slide. Although thicker glass slides can be used, we use a glass slide \# 1.5H with a thickness of $170 \mu m$ is necessary for measuring the curvature of domes or monitoring cell stretching.  
-
-The bottom channel must also be thin enough to ensure it is as close as possible to the working distance of most confocal microscope objectives, typically between $200\mu m$ and $1000 \mu m$. To achieve this, we fabricated the bottom layer using a thickness of $100 \mu m$. This thickness is thick enough to handle manually but not too thin to cause microfluidic problems with pressure and flow. We used a spin coating method to fabricate a thin PDMS layer and then cut the channel out of it using a desktop cutting machine (Silhouette Cameo 4, Silhouette America).  
-
-The primary purpose of the porous membrane is to allow for pressure application while preventing cells from passing through from the cell channel to the pressure channel. We initially started with a $10\mu m$ membrane based on the literature. We attempted to use a $100 \mu m$ thin layer of PDMS with $10\mu m$ pores using photolithography, but we were unsuccessful due to producing $10\mu m$ pillars with $100 \mu m$ height, which resulted in an aspect ratio that was too high for us to get upright pillars. Therefore, we decided to use plastic (PET) membranes with $10\mu m$ pores. The thin ($10\mu m$ thick) plastic sheets were easy to handle, but we experienced bonding failures and leakages due to membrane wrinkling.  
-
-Later, we decided to attach the PDMS thin layer to a small piece of membrane. The middle PDMS thin layer was constructed with a $1.2 mm$ hole to expose the membrane to pressure, as this dimension is approximately the size of the field of view of a 10X objective.  
-
-The top channel was designed as a large block with a $5mm$ thickness and a $1mm$ thickness engraved channel. The thickness of the top channel was chosen arbitrarily based on the need for the block to be thick enough to plug in tubing for the application of pressure. We used a 3D printer (Solus DLP 3D Printer) to create a mold with a channel, and four inlets were added to the big block to accommodate two inlets for the bottom channel and two inlets to seed cells (see fig \ref{fig_6_1a}).
-
-Finally, all the layers were bonded together in two steps using an ozone plasma cleaner (see fig \ref{fig_6_2}). First, we bonded the glass to the bottom channel and simultaneously bonded the middle layer to the top channel. Once these layers were bonded, we then bonded them to each other with the membrane sandwiched in the middle.
-
-\begin{figure}[h!]
+\begin{figure}[]
 	\centering
 	\includegraphics[width=0.75\textwidth]{chap6_realscheme.png}
 	\caption{ \textbf{Fabrication of MOLI}: Four layers assembled together with ozone plasma cleaning. Each channels has a inlet and outlet. Only the pressure channel is connected to the tubing; one side connects to the reservoir and other is sealed. 
@@ -59,29 +59,23 @@ Finally, all the layers were bonded together in two steps using an ozone plasma 
 \section{Protein patterning and "upside-down" cell
 culture}\label{protein-patterning-and-inverted-cell-culture}}
 
-After a few trials, we realized that the entire device needed to be contained in a Petri dish due to the cell culture medium. Placing the glass slide in a larger Petri dish resulted in liquid flowing underneath the glass, and any leakage during pressure application caused spillage in the microscope. Consequently, we designed the setup to fit within a glass-bottomed dish (35 mm, no. 0 coverslip thickness, Cellvis).  
+To overcome issues encountered in earlier prototypes, we opted to employ a glass-bottomed dish (35\unit{\mm}, \#0 coverslip thickness, Cellvis) as the container for our experimental setup. This design choice was made to address concerns surrounding the potential for cell culture medium to spill over/under the device during pressure application, especially in the case of a leaky device. 
 
-In the context of the spontaneous dome system, the upper surface was accessible for various treatments and microcontact printing using a polydimethylsiloxane (PDMS) block. However, in our case, we have a completely sealed device, which necessitated the use of the photopatterning technique known as PRIMO. The PRIMO technique had been optimized previously for substrates made of glass and soft PDMS. For our setup, we had to optimize the technique for use with a plastic porous membrane, which entailed increasing laser power and protein concentration (for details see the Appendix). In brief, we first coated the surface with poly-L-lysine (PLL) and then SVA-PEG chains. Upon illumination with blue light, selective regions could be cleaved and subsequently exposed to adhesion-promoting proteins. In our experiments, we utilized fibronectin, although other proteins such as vitronectin and collagen could also be coated onto the surface.
+In the context of the spontaneous dome system, the upper surface is accessible for various treatments and microcontact printing using a PDMS block. However, in our case, we have a completely sealed device, which necessitated the use of the photopatterning technique known as PRIMO. In brief, first the surface to be micropatterned is coated with poly-L-lysine (PLL) and then SVA-PEG chains. Upon illumination with UV light (375\unit{\nm}), PEG chains in selective regions could be cleaved and subsequently exposed to adhesion-promoting proteins. The PRIMO technique had been optimized previously for substrates made of glass and soft PDMS. We had to optimize the technique for use with a porous plastic membrane, which entailed increasing laser power to 1500\unit{mJ/\mm^2} (for details see the Appendix A). We also optimized coating the devices with fibronectin, vitronectin and collagen. For the experiments featured in this thesis, we are using fibronectin mixed with fluorescent fibrinogen for finding the samples.
 
-We also had to optimize the cell seeding. Unlike in other setups where cells could be seeded in a dish, the channel required a higher concentration of cells than typical spontaneous dome experiments. We seeded $30\times 10^6$ cells/ml for one hour and then washed away the cells that did not attach within that hour.  
+To ensure successful attachment of cells and formation of monolayer, a concentration of 25-30×\unit{\num{e6} cells/\ml} was seeded for one hour, followed by rigorous flushing with fresh cell culture media to wash away any unattached cells. Early experiments revealed that while cells attached to the top side of the porous membrane, there were very few dome formations upon application of pressure. Additionally, imaging through the porous membrane was poor quality, as the cells were further away from the microscope objective, and some cells were filtering through the membrane from top to bottom (see fig \ref{fig_6_4}).  
 
-In our early experiments, we observed that while cells attached to the top side of the porous membrane, there were very few dome formations upon application of pressure. Additionally, the quality of imaging was poor due to imaging through the porous membrane. In the top channel, the cells were further away from the microscope objective, and we also noticed that cells were filtering through the membrane from top to bottom (see fig \ref{fig_6_4}).  
+To prevent cells from crossing the membrane, various plastic membranes with smaller pore sizes (ranging from 50 \unit{\nm} to 10 \unit{\um}) were systematically tested. Considering the flow rates and cell filtration through the membrane, a 400\unit{\nm} pore size membrane was chosen. However, imaging the green channel (488\unit{\nm}) through these pores was impossible. Therefore, an "upside-down" cell culture approach was implemented, where the device was flipped immediately after seeding cells in the bottom channel to ensure attachment on the membrane instead of the glass (see fig \ref{fig_6_5}). Thorough washing of the channel was necessary to prevent cell attachment to the glass, which would have obstructed the imaging of the domes.
 
-\begin{figure}[h]
+Despite the optimization efforts, achieving a complete coverage of the non-adhesive regions with the cell monolayer remained a significant challenge. To address this issue, the protein concentration in these regions was increased to facilitate cell attachment at the designated dome location. However, to ensure dome formation upon application of pressure, cells were encouraged to attach weakly in these regions. This approach ensured that cells with weak adhesion detached first upon pressure application, resulting in the formation of the desired dome structure.
+
+\begin{figure}[]
 	\centering
 	\includegraphics[width=0.75\textwidth]{chap6_cellsontop.png}
-	\caption{ \textbf{Cells filtering through the membrane}: (A) Images of MDCK-CiBN CAAX GFP monolayer on the both sides of the membrane. Scale bar is $80\mu m$ (B) Schematic of imaging through the porous layer.
-	}\label{fig_6_4}
+	\caption{ \textbf{Cells filtering through the membrane}: (A) Images of MDCK-CiBN CAAX GFP monolayer on the both sides of the membrane. Scale bar is $80\mu m$. (B) Schematic of imaging through the porous layer.	}\label{fig_6_4}
 \end{figure}
 
-To prevent cells from crossing the membrane, we decided to use a membrane with smaller pore size, around $400nm$. However, imaging the green channel ($488nm$) through these pores was impossible. Therefore, we decided to change the side of seeding cells from top to bottom, which improved two things. First, imaging was better as the cells and dome were closer to the objective. Second, cells were seeded on the good side of the protein pattern.  
-
-We termed this "upside-down" cell culture, where we would flip the device immediately upon seeding cells in the bottom channel to ensure attachment on the membrane, not the glass (see fig \ref{fig_6_5}). We had to thoroughly wash the channel to prevent cells from attaching to the glass, which would obstruct the imaging of the domes.  
-
-Despite these improvements, the ultimate challenge was ensuring that the cell monolayer covered the non-adhesive regions. To resolve this issue, we increased the protein concentration in these regions so that cells could attach there weakly and detach first to form a dome.  
-
-
-\begin{figure}[h]
+\begin{figure}[]
 	\begin{minipage}[c]{0.7\textwidth}
 		\includegraphics[width=\textwidth]{chap6_realdevice.png}
 	\end{minipage}\hfill
@@ -94,13 +88,11 @@ Despite these improvements, the ultimate challenge was ensuring that the cell mo
 \hypertarget{pressure-control}{%
 \section{Pressure control}\label{pressure-control}}
 
-After optimizing protein patterning, cell culture conditions, and confocal microscopy, we turned our attention to pressure control. Our idea was to use hydrostatic pressure.  Previous studies indicated that the pressure required to form a dome is around $100Pa$, which is equivalent to $1cm$ of water column.
+For the application of external pressure, we selected hydrostatic pressure as the method of choice. Previous studies had reported a pressure requirement of approximately 100\unit{\pascal}, equivalent to 1\unit{\cm} of water column, for the formation of a dome. Initially, pipette tips were employed to apply pressure, but we observed that they were susceptible to bubble formation and leaks. Consequently, we switched to using Polytetrafluoroethylene tubing, which was connected to a 50\unit{\ml} reservoir (Falcon tube) to mitigate these issues (see fig \ref{fig_6_3}).By adjusting the height of the tube to match the air-liquid interface in the reservoir with the device, zero pressure was exerted on the cell monolayer. To apply pressure, we increased the height of the tube by 2\unit{\cm}, resulting in the application of 200\unit{\pascal} pressure to the monolayer, leading to the delamination of cells and the formation of domes.
 
-In early trials, we used pipette tips to apply pressure. However, we found that they were prone to bubbles and leaks. Therefore, we switched to using Polytetrafluoroethylene tubing, which was connected to a $15ml$ reservoir (falcon tube) (see fig \ref{fig_6_3}). This system allowed us to match the height of the device with the air-liquid interface in the tube, resulting in zero pressure on the monolayer. By increasing the height of the tube by $2cm$, we could apply $200Pa$ pressure to the monolayer, causing it to delaminate and form domes.  
+Nonetheless, we exercised caution regarding the potential occurrence of cavitation or bubble formation within the cell channel. To avoid this we subjected the media to a vacuum chamber for 30\unit{\minute} prior to the experiment to eliminate any nascent bubbles that may have developed over time. During tubing insertion, however, the system posed a risk of reintroducing bubbles into the system. To counter this issue, we employed the two inlets for each channel to flush fresh media from the reservoir, ensuring that no bubbles were present.
 
-However, we had to be careful of cavitation or bubbles getting trapped in the cell channel. To prevent this, before the experiment we had to place the media in a vacuum chamber to get rid of nascent bubbles that could grow over time. Additionally, during tubing insertion, we could introduce bubbles again. To address this issue, we used the two inlets for each channel to flush the fresh media from the reservoir, ensuring that there were no bubbles present.  
-
-To control the pressure, we used an automatic translation stage that could be programmed to lift the reservoir. We measured the pressure by tracking the height of the stage and the zero-pressure position. With this stage, we could apply pressure in the range of $0\rightarrow 1500Pa$, and we could even apply negative pressure by setting it lower. For our experiments, we used the range of $-200\rightarrow 1300Pa$.  
+To control the pressure, we used an automatic translation stage (Zaber High speed motorized linear stage) that could be programmed to lift the reservoir. We measured the pressure by tracking the height of the stage and the zero-pressure position. With this stage, we could apply pressure in the range of 0 $\rightarrow$ 1500\unit{\pascal}, and we could even apply negative pressure by setting it lower. For our experiments, we used the range of -200 $\rightarrow$ 1300\unit{\pascal}.
 
 \begin{figure}
 	\begin{minipage}[c]{0.6\textwidth}
@@ -117,7 +109,15 @@ To control the pressure, we used an automatic translation stage that could be pr
 \section{Imaging the epithelial
 domes}\label{imaging-the-epithelial-domes}}
 
-\begin{figure}[h!]
+Following extensive optimization of protein patterning, cell culture conditions, and confocal microscopy techniques, we were able to generate domes in accordance with the intended pattern and exert precise control over the pressure required for their formation. To obtain images of the dome, we utilized a spinning disk confocal microscope with a 40x objective lens (NA 0.75), which allowed us to visualize the membrane (CIBN CAAX GFP) and adhesion protein (Fibrinogsen) pattern in separate channels (488\unit{\nm} and 644\unit{\nm}, respectively). By incorporating a labeled adhesion protein, we were able to track the formation of the domes with greater ease and accuracy.
+
+We initially focused on characterizing the mechanics of spherical domes at constant pressure to gain insights into epithelial behavior (see fig \ref{fig_6_6}).Laplace's law was employed to calculate tension using pressure, cell shape, and tissue curvature data, which we could easily monitor. Unlike previous studies that did not control the pressure under the dome, our experimental system allowed us to inflate and deflate the domes in seconds. This forced us to monitor them by observing the base of the dome where the monolayer would intermittently come in and out of view.
+
+Acquiring images of the dome stack in a confocal microscope required three minutes using a step size of 0.5\unit{\um} (exposure 500\unit{\ms}) and a height of 100\unit{\um}, which was slower than the rate at which we could deform the dome by changing the pressure (see fig \ref{fig_6_6}). To investigate the rheology of the domes, it was necessary to monitor their dynamic response at faster pressure rates and shorter timescales while measuring dome strain and curvature. Since the dome possessed inherent symmetry, imaging the mid-section of the structure provided all the geometric information required.
+
+Using the line scanning mode of a Zeiss Airy Scan Microscope, we imaged a single line of pixels across the midsection of the dome and acquired a confocal z-stack (1024 pixel, 4.1\unit{\us/pixel} dwell time, and 1\unit{\um} step size) along the height of the dome (refer to fig 1.8). This approach allowed us to obtain a cross-sectional view of the dome in a fraction of the time required for a normal stack. By enabling piezo stage movement, we imaged a 100\unit{\um} tall dome in just 4 seconds and tracked its height evolution using a kymograph of the central part of the dome. It is important to note that this imaging method is primarily useful for tracking dome strain and curvature, and the cell images obtained are often of low quality.
+
+\begin{figure}[t]
 	\begin{minipage}[c]{0.6\textwidth}
 		\includegraphics[width=\textwidth]{chap6_confocaldomes.png}
 	\end{minipage}\hfill
@@ -127,15 +127,7 @@ domes}\label{imaging-the-epithelial-domes}}
 	\end{minipage}
 \end{figure}
 
-Following extensive optimization of protein patterning, cell culture conditions, and confocal microscopy techniques, we were able to generate domes in accordance with the intended pattern and exert precise control over the pressure required for their formation. To obtain images of the dome, we utilized a spinning disk confocal microscope with a 40x objective lens, which allowed us to visualize the membrane (CIBN CAAX GFP) and adhesion protein (Fibrinogen) pattern in separate channels ($488nm$ and $644nm$, respectively). By incorporating a labeled adhesion protein, we were able to track the formation of the domes with greater ease and accuracy.
-
-Initially, we were mainly interested in spherical domes at constant pressure to characterize the epithelial mechanics (see fig \ref{fig_6_6}). We could monitor pressure, cell shape, and tissue curvature easily, enabling us to utilize Laplace's law to calculate tension. However, previous studies have tracked the dynamics of the domes at a much slower rate of $5$ minutes. In contrast, our domes could be inflated and deflated in a matter of seconds, forcing us to monitor them only by looking at the base of the dome, where the monolayer would come in and out of view.  
-
-However, acquiring images of the dome stack using a step size of $0.5\mu m$ and height of $100 \mu m$ in a confocal microscope required three minutes, which was slower than the rate at which we could deform the dome by changing the pressure (see fig \ref{fig_6_6}). To investigate the rheology of the domes, it was necessary to monitor their dynamic response at faster pressure rates and shorter timescales, with a focus on measuring dome strain and curvature. Given the dome's inherent symmetry, imaging the mid-section of the structure provided sufficient information to characterize its material response.
-
-With the line scanning mode of a Zeiss Airy Scan Microscope, we were able to quickly image a single line of pixels across the midsection of the dome and take a confocal z-stack along the height of the dome (see fig \ref{fig_6_7}). This provided us with a cross-section of the dome in a fraction of the time of a normal stack. By enabling piezo stage movement, we were able to image a $100\mu m$ tall dome in just $4s$, and could even track the dome height evolution through a kymograph of the central part of the dome. However, it is important to note that this form of imaging is primarily useful for tracking dome strain and curvature, and the quality of the cell images is often low. In cases where the fluorescent expression of cells on the top of the domes was inadequate, the data was much noisier.  
-
-\begin{figure}[h!]
+\begin{figure}[]
 	\begin{minipage}[c]{0.6\textwidth}
 		\includegraphics[width=\textwidth]{chap6_LSM.png}
 	\end{minipage}\hfill
@@ -148,39 +140,40 @@ With the line scanning mode of a Zeiss Airy Scan Microscope, we were able to qui
 \hypertarget{light-sheet-moli}{%
 \section{Light-sheet MOLI}\label{light-sheet-moli}}
 
-\begin{figure}[h]
+We utilized a Brucker QuVi SPIM light sheet microscope to capture rapid subcellular or cellular changes. The microscope was equipped with two immersion-upright 40x objectives (NA 0.8) at 45\unit{\degree} to the horizontal plane. Drawing upon our proficiency in device fabrication, we devised a new setup that facilitated top imaging of cells and porous membranes (see fig \ref{fig_6_8}).
+
+To simplify the fabrication process, we inverted the conventional MOLI device. This necessitated only a pressure channel and a middle layer with a hole and porous membrane. The device was manufactured sufficiently thick to plug in the tubing, and given the device and channels' size, we produced the mold using a standard 3D printer, Ultimaker 3D printer. We incorporated a ridge-like protrusion to manufacture the pressure channel and cell seeding hole in one go. The device was bonded to a microscope slide using unpolymerized PDMS, and we performed PRIMO patterning of the device by flipping it upside down. In this setup, seeding cells was easier, as the cell seeding part was exposed.
+
+As expected, we were able to generate domes using the same system as before by applying pressure. The imaging technique we developed enabled us to acquire a full dome image in a mere 4 seconds, which involves using objective scan, where only one objective to scan the dome with 100 frames with step size of 1\unit{\um} at rate of 4\unit{\ms}. This allows us to observe fast-moving features that were indiscernible with other imaging techniques (see fig \ref{fig_6_9}).
+
+\begin{figure}[]
 	\centering
 	\includegraphics[width=\textwidth]{chap6_lightsheet.png}
 	\caption{ \textbf{Light sheet MOLI}: (A) Isometric illustration of a single piece PDMS block engraved with two channels, so that we can have two devices in one. (B) Cross-section of the device. (C) The device is used with 40x immersion objectives coming at $45 \deg$ angle. This limits to the field of view to $332\times 332\mu m^2$.
 	}\label{fig_6_8}
 \end{figure}
 
-Later in my PhD, we used a Brucker QuVi SPIM light sheet microscope to observe rapid cellular or sub-cellular changes. It has two immersion-upright 40x objectives at 45 degrees to the horizontal plane. With our expertise in fabricating devices, we designed a new setup that exposed cells and porous membranes to the top for imaging (see fig \ref{fig_6_8}).
-
-\begin{figure}[h!]
+\begin{figure}[]
 	\centering
 	\includegraphics[width=\textwidth]{chap6_lightsheetdome.png}
 	\caption{ \textbf{Dome imaged with Light sheet MOLI}: Mid-section of a dome with membrane marker imaged every $2s$. Showing the shape of individual cells undergoing changes during deflation. Scale bar is $20 \mu m$.
 	}\label{fig_6_9}
 \end{figure}
 
-To simplify the setup for fabrication, we inverted the normal MOLI device. This only required a pressure channel and middle layer with a hole and porous membrane. The device had to be thick enough to plug in the tubing. Since the device and channels were large, we could fabricate the mold using a Ultimaker 3D printer. We created a ridge-like protrusion so that the pressure channel and cell seeding hole could be manufactured in one go. We bonded the device to a microscope slide using unpolymerized PDMS. We were able to perform PRIMO patterning of the device by flipping it upside down. Seeding cells in this setup was easier as the cell seeding part was exposed.
-
-As expected, we were able to apply pressure using the same system as before to generate domes. By using the imaging strategy we developed, we were able to obtain a full dome image within a mere 4 seconds, which allowed us to observe fast-moving features that were not discernible using other imaging techniques (see fig \ref{fig_6_9}).
 
 \newpage
 
 \hypertarget{summary-and-discussion}{%
 \section{Summary and Discussion}\label{summary-and-discussion}}
 
-We have developed a microfluidic chip to generate 3D curved epithelia, utilizing a multilevel device consisting of two layers separated by a porous membrane. Seeding cells on the membrane in the bottom channel allowed for dome formation closer to the microscope objective, enabling high-quality confocal imaging. Hydrostatic pressure was used to control pressure under the dome dynamically, allowing for monitoring of cells and tissue behavior. Additionally, we developed imaging strategies to capture dynamics of these 3D structures faster using line scanning mode of confocal microscope or light sheet microscope.  
+We have developed a microfluidic chip to generate 3D curved epithelia, utilizing a multilevel device consisting of two layers separated by a porous membrane. Seeding cells on the membrane in the bottom channel allowed for dome formation closer to the microscope objective, enabling high-quality confocal imaging. Hydrostatic pressure was used to control pressure under the dome dynamically, allowing for monitoring of cells and tissue behavior. Additionally, we developed imaging strategies to capture dynamics of these 3D structures faster using line scanning mode of confocal microscope or light sheet microscope.
 
-However, it is worth acknowledging that while the method of forming 3D epithelia described here may seem straightforward, it required many iterations of the device and other attempted methods that ultimately failed.  
+We were able to form the domes and monitor cellular and tissue behavior\footnote{It is important to acknowledge that while the method of forming 3D epithelia described here may seem straightforward, it required numerous iterations of the device and other attempted methods that ultimately failed.}. As demonstrated in previous studies, the most intriguing aspect of the system is that complex materials such as epithelial tissue, in order to maintain mechanical equilibrium, must adopt a spherical cap shape for a circular footprint. This uniform curvature and pressure imply uniform tension, independent of tissue material properties  \cite{latorre2018,marin-llaurado2022}. The tissue tension can be easily measured by applying Laplace's law for spherical cap domes. However, in the case of non-spherical geometry, there would be anisotropic stresses that would require a computational model, such as curved monolayer stress microscopy, to solve an inverse problem to go from geometry to forces \cite{marin-llaurado2022}.  
 
-We formed the domes and were able to monitor cells and tissue behavior. As shown in previous studies, the most interesting part of the system is that the complex material such as epithelial tissue to maintain mechanical equilibrium has to adopt a spherical cap shape for circular footprint. This uniform curvature and pressure implies uniform tension, for this we don't even need material properties of the tissue \cite{latorre2018,marin-llaurado2022}. The tissue tension can be measured easily by applying Laplace's law for spherical cap domes. However, in case of the non-spherical geometry, there would be anisotropic stresses which would require computational model to solve an inverse problem to go from geometry to forces \cite{marin-llaurado2022}.  
-
-The geometry of the domes is primarily controlled by the adhesion protein pattern, but delamination can still occur. In spontaneous domes, circular footprints were found to be the most common \cite{tanner1983}, while domes formed around sharp corners can blunt themselves through delamination \cite{latorre2018}. This must be taken into consideration when creating specific geometries.  
+The geometry of the domes is primarily controlled by the adhesion protein pattern, but delamination can still occur. In spontaneous domes, circular footprints were found to be the most common  \cite{tanner1983}, while domes formed around sharp corners can blunt themselves through delamination \cite{latorre2018}. This must be taken into consideration when creating specific geometries.  
 
 Tissue tension and adhesion forces also interact with each other. In MDCK suspended monolayer, it is seen that cell-cell junctions are stronger than cell-substrate adhesion \cite{harris2012}, so if tension at the base of the dome exceeds the adhesion forces, it can lead to detachment and delamination.  
 
-Moreover, unintentionally, we have created a peeling system that allows us to observe tissue being peeled off from the substrate. If the dome remains spherical, we can calculate the forces required to break cell-substrate adhesion and identify the role of molecular components of focal adhesion. However, our primary interest lies in understanding the mechanics of epithelial tissue under controlled pressure.
+Furthermore, we have unintentionally developed a peeling system that enables us to observe tissue detachment from the substrate. If the dome retains its spherical shape, we can calculate the necessary forces for breaking cell-substrate adhesion and identify the contribution of focal adhesion molecular components.
+
+This system provides a novel approach for testing material properties and probing mechanics at the tissue scale, allowing for simultaneous high-quality imaging and monitoring of cytoskeletal components and the nucleus. Additionally, we can create a 3D tissue with controlled lumen pressure, providing a well-controlled protocol that is suitable for replicating curvature-pressure-tension conditions in various cell lines, not just MDCK cells. However, our primary focus is on comprehending the mechanics of epithelial tissue under controlled pressure.
