@@ -1,139 +1,75 @@
-\hypertarget{introduction}{%
-\section{Introduction}\label{introduction2}}
+This chapter focuses on investigating the dynamic material response of epithelial domes to varying strain, tension, and pressure. In morphogenetic context, reviews by Torres-Sanchez et al. and Choudhury et al. demonstrate that pressure levels can vary significantly across a wide range of magnitudes and timescales in different situations \cite{torres-sanchez2021, choudhury2022a}. For example, during blastocyst development, luminal pressure doubles, leading to changes in cortical tension and strain \cite{chan2019}.
 
-The main objective of this thesis is twofold: to develop a method for
-creating three-dimensional epithelia with controlled pressure and to
-investigate the tissue's material response under different tension
-regimes. Reviews from Torres-Sanchez et al. and Choudhury et al.
-demonstrate that pressure levels in different contexts can vary
-significantly across a wide range of timescales and magnitudes.
-\cite{torres-sanchez2021, choudhury2022a}. For instance, the luminal pressure in blastocysts doubles
-during development, causing changes in cortical tension and strain \cite{chan2019}.
-
-To investigate the relationship between cell strain, tension, and
-pressure, the MDCK dome system offers a suitable platform. Previous
-research by Latorre et al. observed a broad spectrum of pressure
-throughout dome evolution, with cells displaying various deformations,
-including active-superelastic behavior \cite{latorre2018}. However,
-the control in this system is limited to the footprint of the domes,
-with no capability for control of pressure and tension.
-
-To address the first objective, we have developed the monolayer inflator
-(MOLI) device, enabling the creation of epithelial domes where cells can
-be stretched to over 100\% of areal strain. This innovative MOLI system
-allows for better control of pressure and tension applied to the tissue,
-making it a valuable tool for our research. In this chapter, the MOLI
-system will be employed to subject tissues to various strain and tension
-regimes, enhancing our understanding of the epithelial tissue's material
-response under different conditions.
+In the case of epithelial domes, Latorre et al. observed a broad spectrum of pressure levels throughout dome evolution, resulting in various cellular deformations, including active-superelastic behavior  \cite{latorre2018}. However, in this system, control is limited to the footprint of the domes, with no capability for control of pressure and tension. To address this limitation, in this chapter, we will employ the monolayer inflator (MOLI) system to subject tissues to different strain and tension regimes and characterize the material response of epithelial tissues.
 
 \hypertarget{measurement-of-dome-mechanics}{%
-	\section{Measurement of dome
-		mechanics}\label{measurement-of-dome-mechanics}}
+	\section{Measurement of dome mechanics}\label{measurement-of-dome-mechanics}}
 
+To characterize the dynamics of the domes, we focused on the midsection, assuming symmetry of spherical caps (see Figure \ref{fig_7_1}). We measured the height ($h$) and base radius ($a$) of each dome, which allowed us to calculate the radius of curvature ($R$) using trigonometry as,
 
-To measure the kinematics of the domes, we focused on the midsection, assuming symmetry of spherical caps (see Figure \ref{fig_7_1}). We measured the height ($h$) and base radius ($a$) of each dome, which allowed us to calculate the radius of curvature ($R$) using trigonometry as
 \begin{equation}
 	\label{eqn:radiuscurve}
 	R = \frac{h^2 + a^2}{2h}.
 \end{equation}
-Additionally, we measured the pressure ($\Delta P$) to compute the tension ($\sigma$) using Laplace's law
+
+\vspace{2em}
+
+Additionally, we measured the pressure ($\Delta P$) to compute the tension ($\sigma$) using Laplace's law,
+
 \begin{equation}
 	\label{eqn:laplace}
 	\sigma = \frac{\Delta PR }{2} .
 \end{equation}
 
-For dome strain, we utilized the areal strain measure, which is based on the surface area, and compared the dome surface area ($A$) to the area of the footprint ($A_{0}$) by
+For dome strain, we utilized the areal strain measure, which is defined as the difference between the dome surface area ($A$) and the area of the footprint ($A_{0}$) normalized by the latter,
+
 \begin{equation}
 	\label{eqn:arealstrain}
 	\epsilon = \frac{A - A_{0}}{A_{0}} = \frac{\pi(h^2 + a^2) - \pi a^2}{\pi a^2} = \frac{h^2}{a^2} .
 \end{equation}
 
-However, the line scanning modality of a Zeiss Airy Scan Microscope generated hundreds of images per experiment, making manual quantification of geometrical parameters impractical. To overcome this challenge, we generated kymographs of the top section of the domes, allowing us to extract geometric information more efficiently (as described in the previous chapter). Using these kymographs, we were able to measure the tension and strain of the domes with greater ease and speed. These measurement techniques enabled us to study the dynamics of epithelial domes at faster rates without the need for time-consuming 3D imaging.
+To obtain the temporal evolution of the dome’s geometry, we generated kymographs of the top section of the domes. Using these kymographs, we computed tensions and strain.
 
 \begin{figure}
-	\begin{minipage}[c]{0.7\textwidth}
-		\includegraphics[width=\textwidth]{chap7_realdome.png}
-	\end{minipage}\hfill
-	\begin{minipage}[c]{0.27\textwidth}
-		\caption{\\ \textbf{Spherical cap}:\\An example of an epithelial dome at 200 Pa, which has increased its surface area almost four times the original footprint. The spherical shape of the dome can be seen in the cross-section. Scale bar is  $20 \mu m$.
-		} \label{fig_7_1}
-	\end{minipage}
+	\centering
+	\includegraphics[width=0.8\textwidth]{chap7_realdome.png}
+	\caption{\textbf{Epithelial dome generated by the MOLI device:} Maximum intensity projection of an MDCK dome (Left) . Dashed yellow line indicates the dome's footprint. Vertical yellow line crosses the center of the footprint, where the cross-section   (Right) shows the spherical shape of the dome. MDCK Cells were expressing CIBN CAAX GFP-488. Pressure, 200 Pa. Scale bar is $20 \mu m$.
+	} \label{fig_7_1}
 \end{figure}
 
 \hypertarget{epithelial-domes-at-constant-pressure}{%
 	\section{Epithelial domes at constant
 		pressure}\label{epithelial-domes-at-constant-pressure}}
 
-To begin, we systematically inflated domes at varying pressures ranging
-from 0-400Pa. However, we found that domes could not form at pressures
-lower than 50-100Pa due to adhesion forces, and delamination occurred at
-higher pressures. Ultimately, we determined that 200 Pa allowed the
-domes to form without delaminating, falling within the previously
-reported pressure range \cite{choudhury2022,marin-llaurado2022}.
+First, we systematically applied varying pressures ranging from 0-400 \unit{\pascal} to the domes. However, we observed that domes could not form at pressures lower than 50-100 \unit{\pascal} due to cell-substrate adhesion forces. Conversely, high pressures resulted in dome delamination from the sides of the footprint. Ultimately, we determined that 200 \unit{\pascal} allowed the domes to form without delamination, falling within the previously reported pressure range  \cite{choudhury2022,marin-llaurado2022}.
 
-Our measurements revealed that when the domes were subjected to a
-constant pressure of 200Pa, they underwent a significant increase in
-areal strain during the first three to five minutes of pressure
-application. Following this initial increase, the areal strain reached a
-plateau and remained relatively constant for the next 5-10 minutes (see Figure \ref{fig_7_3} A).
-Notably, our findings also
-indicated considerable variability in dome-to-dome strain, with strains
-ranging from 50\% to 300\%. Nevertheless, the stabilization in strain
-across all the domes suggested that a steady state had been achieved by
-the epithelial tissue.
+When the domes were subjected to a constant pressure of 200 \unit{\pascal}, they underwent a significant increase in areal strain during the first three to five minutes of pressure application (see Figure \ref{fig_7_3} A). Following this initial increase, the areal strain reached a plateau and remained relatively constant for the next 5-10 minutes (see Figure \ref{fig_7_3} A). Notably, our findings also indicated considerable variability in the maximum strain achieved by domes for the same pressure, with strains ranging from 50\% to 300\%. Nevertheless, the stabilization in strain across all the domes suggested that the epithelial tissue reached a steady state (see Figure \ref{fig_7_3} A).
 
-In analyzing the tension-strain relationship of these domes, we found
-that it exhibits a non-monotonic curve similar to the Nike "swish"
-symbol (see Figure \ref{fig_7_3} B).  At low strains,
-the tension within the domes is exceptionally high, followed by a
-decline to a minimum value at an areal strain of one, where the dome
-adopts a hemispherical shape. The tension then increases once again, but
-the rate of increase is much slower than the rate at which tension
-decreases at lower strains. This non-monotonic tension-strain curve is
-atypical and represents an intriguing characteristic of the epithelial
-domes.
+Analyzing the tension-strain relationship of these domes, we found that it exhibits a non-monotonic curve similar to the Nike "swoosh" symbol (see Figure \ref{fig_7_3} B). At low strains, the tension within the domes is exceptionally high, followed by a decline to a minimum value at an areal strain of 100\%, where the dome adopts a hemispherical shape. The tension then increases once again, but the rate of increase is slower than the rate at which tension decreases at lower strains. This non-monotonic tension-strain curve is atypical and represents an intriguing characteristic of the epithelial domes.
 
-This tension-strain relationship of the domes can be explained by the
-geometric constraints imposed by the dome system and force balance, as
-governed by Laplace's law. The tension within the dome is intrinsically
-dependent on its radius of curvature, and the initial high value of the
-radius of curvature leads to a correspondingly high tension that
-subsequently diminishes to a minimum upon adopting a hemispherical shape (see Figure \ref{fig_7_4}).
-Since the dome always maintains a spherical shape, the radius of curvature, areal strain, and
-tension are all interconnected. The expression of the curve can be
-derived by substituting areal strain (\(\epsilon\)) in the expression of
-radius of curvature (\(R\)) (Equation \ref{eqn:radiuscurve})
+\begin{figure}[b!]
+	\centering
+	\includegraphics[width=\textwidth]{chap7_constpressure.png}
+	\caption{\label{fig_7_3} \textbf{Epithelial domes at constant pressure}: Dynamic response of three representative domes at a constant pressure of 200 Pa: (A) Areal strain increases and reaches a steady state at around 5 minutes, and we can clearly see variability in the maximum strains. (B) The same domes produce a peculiar tension and strain curve. (representative of 12 domes)
+	}
+\end{figure}
+
+The tension-strain relationship of the domes can be explained by the geometric constraints imposed by the dome system and force balance. Laplace’s law implies that for a constant pressure, the tension within the dome is directly proportional to its radius of curvature. Domes with low strain are close to being flat monolayers and have a high value of the radius of curvature, which leads to a correspondingly high tension  (see Figure \ref{fig_7_4}). As the dome inflates, the radius of curvature subsequently diminishes to a minimum upon adopting a hemispherical shape. Since the dome always maintains a spherical shape, the radius of curvature, areal strain, and tension are all interconnected. The curve's expression can be derived by substituting areal strain ($\epsilon$) in the expression of radius of curvature ($R$) (Equation \ref{eqn:radiuscurve})
+
 \begin{equation}
 	R = \frac{h^2/a^2 + 1}{2h/a^2} = a\frac{\epsilon + 1}{\sqrt{\epsilon}}.
 \end{equation}
+
 Then, by substituting ($R$) in Laplace's law (Equation \ref{eqn:laplace}), we obtain the relation for the tension in terms of strain.
+
 \begin{equation}
 	\label{eqn:isobaric}
 	\frac{\sigma}{a} = \frac{\Delta P}{4} \left( \frac{\epsilon + 1}{\sqrt{\epsilon}} \right).
 \end{equation}
 
-This relationship provides a specific link between tension and strain
-for a given pressure and base radius.
+This relationship provides a specific link between tension and strain for a given pressure and base radius.
 
-Therefore, it can be inferred that when a step pressure is applied, the
-dome undergoes a non-steady-state with out-of-equilibrium stresses while
-experiencing high tension related to high radius of curvature. The dome
-then rapidly inflates by following the tension-strain curve dictated by
-equation \ref{eqn:isobaric} to achieve
-a steady state. In this steady state, the external pressure is balanced
-with equilibrium tissue tension. It is evident that this Nike curve
-material response does not represent the quasi-static constitutive
-relation of the epithelial tissue. To determine the true constitutive
-relation, a different experimental strategy will be adopted in the
-following section.
-
-\begin{figure}[t]
-	\centering
-	\includegraphics[width=\textwidth]{chap7_constpressure.png}
-	\caption{\label{fig_7_3} \textbf{Epithelial domes at constant pressure}:Dynamic response of the representative domes at a constant pressure of 200 Pa: (A) Areal strain increases and reaches a steady state at around 5 minutes, and we can clearly see variability in the maximum strains. (B) The same domes produce a peculiar "NIKE swish" shaped tension and strain curve.
-	}
-\end{figure}
+These measurements imply that when a step pressure is applied, the inflating dome undergoes a non-steady-state with out-of-equilibrium stresses while experiencing high tension related to high radius of curvature. The dome then rapidly inflates by following the tension-strain curve dictated by equation \ref{eqn:isobaric} to achieve a steady state. In this steady state, the external pressure is balanced with equilibrium tissue tension. It is evident that this tension-strain curve observed does not represent the quasi-static material response of the epithelial tissue. To determine the true tension strain relation, a different experimental strategy will be adopted in the following section.
 
 \begin{figure}
 	\centering
@@ -146,109 +82,46 @@ following section.
 	\section{Constitutive relation of
 		epithelia}\label{constitutive-relation-of-epithelia}}
 
-The constitutive relation of a material describes the relationship
-between its deformation and the applied forces. In conventional
-experiments, quasi-static strain or tension is applied to determine this
-relation. However, our experiments could only control pressure.
-Increasing pressure slowly was not feasible for domes due to limited
-delamination at low pressures. To overcome this and obtain the tissue
-constitutive relation, we deflated a dome in steps, capturing
-steady-state tension and strain for different pressures. The locus of
-these steady states provides the constitutive relation.
+The constitutive relation of a material describes the relationship between its deformation and the applied forces. In conventional material testing, quasi-static strain or tension is applied to determine this relation. However, our experiments could only control pressure. Increasing pressure quasi-statically was not feasible for domes due to limited delamination at low pressures. To overcome this and obtain the tissue constitutive relation, we deflated a dome in steps, capturing steady-state tension and strain for different pressures.
 
-Specifically, we applied a pressure of 200 Pa for 5 minutes, allowing
-the dome to reach a steady state. We then reduced the pressure in
-increments of 20 Pa, permitting the dome to reach steady state at each
-step (see Fig. \ref{fig_7_5}). This process continued
-until the dome was completely deflated. Consequently, we captured the
-material response of the tissue at various pressures as the dome
-transitioned through different tension-strain states. It appeared to
-move between different Nike curves corresponding to pressure. By mapping
-all steady-state tension-strains of domes at different pressures, we
-determined a constitutive relation for the tissue.
+Specifically, we applied a pressure of 200 \unit{\pascal} for 5 minutes, allowing the dome to reach a steady state. We then reduced the pressure in increments of 20 \unit{\pascal}, permitting the dome to reach steady state at each step (see Fig. \ref{fig_7_5}). This process continued until the dome was completely deflated. Through this approach, we captured the material response of the tissue at various pressures as the dome transitioned through different tension-strain states. By mapping all steady-state tension-strains of domes at different pressures, we determined a constitutive relation for the tissue.
 
-The resulting constitutive relation showed an initial increase in
-tension with strain for lower strains. For larger strains, the tension
-plateaued, consistent with earlier studies on MDCK domes (see Fig. \ref{fig_7_5} B). It is important to note the
-significant variability in dome-to-dome tension, with recorded tensions
-around 4.5 mN/m aligning with the same order of magnitude as those in
-previous studies \cite{latorre2018,marin-llaurado2022}.
+The resulting constitutive relation showed an initial increase in tension with strain for lower strains. For larger strains, the tension plateaued, consistent with earlier studies on MDCK domes (see Fig. \ref{fig_7_5} B). It is important to note the significant variability in dome-to-dome tension, with recorded tensions around 4.5 \unit{mN/m} consistent with the same order of magnitude as those in previous studies \cite{latorre2018,marin-llaurado2022}.
 
-To summarize, our experiments demonstrate that the tissue reaches a
-steady state under a specific static pressure, which enables us to
-determine its constitutive relation through deflation. In the next
-section, we will explore the dynamic material response of the tissue.
-
-
-\begin{figure}
+\begin{figure}[b!]
 	\centering
 	\includegraphics[width=\textwidth]{chap7_constitutivelaw.png}
-	\caption{\label{fig_7_5} \textbf{Constitutive Relation of Epithelia}: (A) We will set up experiments to probe the steady state at different pressures. We will start from the highest pressure, move along the isobaric line and achieve a steady state, and then move down to the next curve, and so on.	(B) The constitutive relation between dome strain and tissue tension was experimentally obtained (n=12). The line and shaded area represent the median and standard deviation, respectively, by binning 13 points in each bin.
-	}
+	\caption{\label{fig_7_5} \textbf{Constitutive Relation of Epithelia}: (A) We set up experiments to probe the steady state at different pressures. We will start from the highest pressure, move along the isobaric line and achieve a steady state, and then move down to the next curve, and so on.	(B) The constitutive relation between dome strain and tissue tension was experimentally obtained (n=12). The line and shaded area represent the median and standard deviation, respectively, by binning 13 points in each bin.}
 \end{figure}
 
+To summarize, our experiments demonstrate that the tissue reaches a steady state under a specific static pressure, which enables us to determine its constitutive relation through deflation. In the next section, we will explore the dynamic material response of the tissue.
 
-\hypertarget{dynamics-of-the-epithelia-domes}{%
-	\section{Dynamics of the epithelia
-		domes}\label{dynamics-of-the-epithelia-domes}}
+\vspace{0cm}
 
-In this section, we investigated the dynamic material response of the
-domes by conducting cyclic stretching experiments. We subjected the
-domes to a triangular wave of pressure with a magnitude of 200 Pa at
-three distinct timescales, as depicted in Figure \ref{fig_7_6}. The selected timescales of 20s, 266s,
-and 2000s were based on existing literature on tissue remodeling,
-particularly the work of Khalilgharibi et al. (2019) and Casares et al.
-(2015) \cite{khalilgharibi2019, casares2015}. These studies
-demonstrated that stress relaxation in tissues occur from tens of
-seconds to minute timescales due to F-actin remodeling and myosin-driven
-contractility. Additionally, in some cases, even faster deformation at
-timescales of a few seconds has been shown to impact cell remodeling \cite{andreu2021a}.
-In our device, the fastest cycle that could be
-probed was limited to 20s because of the microscope's imaging speed.
+\hypertarget{dynamics-of-the-epithelia-domes}{\section{Dynamics of the epithelial domes}\label{dynamics-of-the-epithelial-domes}}
+
+In this section, we investigated the dynamic material response of the domes by conducting cyclic stretching experiments. We subjected the domes to a triangular wave of pressure with a magnitude of 200 Pa at three distinct timescales, as depicted in Figure \ref{fig_7_6} A. The selected timescales of 20s, 266s, and 2000s were based on existing literature on tissue remodeling, particularly the work of Khalilgharibi et al. (2019) and Casares et al. (2015) \cite{khalilgharibi2019, casares2015}. These studies demonstrated that stress relaxation in tissues occurs from tens of seconds to minute timescales due to F-actin remodeling and myosin-driven contractility. Additionally, in some cases, even faster deformation at timescales of a few seconds has been shown to impact cell remodeling \cite{andreu2021a}. In our device, the fastest cycle that could be probed was limited to 20s because of the microscope’s imaging speed.
 
 \begin{center}
 	\begin{table}[h!]
 		\label{tab:hysteresis}
+		\centering
 		\begin{tabular}{c c c c}
 			& Fast & Moderate & Slow \\ 
 			Time period (s) & 20   & 266      & 2000 \\ 
 			Rates (Pa/s)    & 20   & 1.5      & 0.2  \\ 
 		\end{tabular}
+		\caption{Pressure rates used for cyclic stretching experiments}
 	\end{table}
 \end{center}
 
-For the fastest cycles, we observed that the maximum strain achieved by
-the domes in each cycle increased until they reached a steady state
-oscillation around 600 seconds. The experiment was conducted over 1200
-seconds, equivalent to 60 cycles, during which we observed a cumulative
-buildup of strain over time. In the loading phase, the domes underwent
-stretching, while during the unloading phase, they experienced
-unstretching but failed to revert to zero strain after the initial
-cycles. In the concluding cycles, we noted that the dome oscillated
-between two distinct states of strain, resembling a limit cycle.
+For the fastest cycles, we observed that the maximum strain achieved by the domes in each cycle increased until they reached a steady state oscillation around 600 seconds. The experiment was conducted over 1200 seconds, equivalent to 60 cycles, during which we observed a cumulative buildup of strain over time. In the loading phase, the domes underwent stretching, while during the unloading phase, they experienced unstretching but failed to revert to zero strain after the initial cycles. In the concluding cycles, we noted that the dome oscillated between two distinct states of strain, resembling a limit cycle (see Figure \ref{fig_7_6} B top).
 
-A similar response was observed for the moderate cycles, where the domes
-were stretched for five cycles of 266s each. The strain accumulated in
-the first cycle, with strains reaching higher values than those observed
-in the fast case. Moreover, after a few cycles, the dome appeared to
-reach a stable limit cycle.
+A similar response was observed for the moderate cycles, where the domes were stretched for five cycles of 266s each. The strain accumulated in the first cycle, with strains reaching higher values than those observed in the fast case (see Figure \ref{fig_7_6} B middle). Moreover, after a few cycles, the dome appeared to reach a stable limit cycle.
 
-In the slowest cycles, which lasted 4000 seconds, we observed that the
-domes did not form at lower pressures. As discussed earlier, the domes
-remained attached until a pressure of 100-150 Pa was attained, beyond
-which they underwent rapid inflation, leading to high strains of
-200-350\%. However, during cyclic stretching, we noted that strain
-accumulation did not occur, and there was no variation in the maximum
-strains attained during both cycles. The cells were able to stretch four
-times their original size and return to the original size at the end of
-each cycle.
+In the slowest loading experiments, two cycles of 2000s, we observed that the domes did not form at lower pressures. As discussed earlier, the domes remained attached until a pressure of 100-150 Pa was attained, beyond which they underwent rapid inflation, leading to high strains of 200-350\%. However, during cyclic stretching, we noted that strain accumulation did not occur, and there was no variation in the maximum strains attained during both cycles (see Figure \ref{fig_7_6} B bottom). The cells were able to stretch four times their original size and return to the original size at the end of each cycle.
 
-These experiments clearly demonstrated the rate-dependent response of
-the domes, with faster rates resulting in strain accumulation and slower
-rates allowing for large, reversible deformations. This behavior
-resembles viscoelastic properties. In the next section, we will explore
-this viscoelastic behavior further to better understand the tissue's
-characteristics.
+These experiments clearly demonstrated the rate-dependent response of the domes, with faster rates resulting in strain accumulation and slower rates allowing for reversible large deformations. This behavior is indicative of viscoelasticity. In the next section, we will explore this viscoelastic behavior with help of a computational model.
 
 \begin{figure}[]
 	\centering
@@ -257,124 +130,48 @@ characteristics.
 	}
 \end{figure}
 
+\newpage
+
 \hypertarget{active-gel-tissue-model}{%
 	\section{Active gel tissue model}\label{active-gel-tissue-model}}
 
-The role of actin cortex viscoelasticity in sustaining deformations over
-various timescales, from seconds to minutes, has been emphasized in the
-existing literature on epithelial mechanics \cite{kelkar2020, clement2017, khalilgharibi2019}. To further
-understand this behavior, Adam Ouzeri and Marino Arroyo developed a
-computational model that bridges active gel models of the actomyosin
-cortex with 3D vertex models at tissue scales \cite{ouzeri2023}.
-Our collaboration necessitated close coordination, with Adam Ouzeri
-developing the model and me conducting experiments, facilitating the
-effective integration of the model with experimental data.
+Current literature emphasizes that the response of the cell to deformations over various time scales is governed by the viscoelasticity of the actin cortex \cite{kelkar2020, clement2017, khalilgharibi2019}. To further understand this behavior, Adam Ouzeri and Marino Arroyo developed a computational model that bridges active gel models of the actomyosin cortex with 3D vertex models at tissue scales \cite{ouzeri2023}. Our collaboration necessitated close coordination, with Adam Ouzeri developing the model and me conducting experiments, facilitating the effective integration of the model with experimental data.
 
-The model simplifies the complex cortex, comprising the actin filament
-network, hundreds of actin-binding proteins, and myosin motors, into a
-thin layer of contractile gel. This layer possesses a thickness denoted
-as cortical thickness (\(\rho\)).
+The model simplifies the complex cortex, comprising the actin filament network, hundreds of actin-binding proteins, and myosin motors, into a thin layer of contractile gel. This layer possesses a thickness denoted as cortical thickness (\(\rho\)).
 
-The crosslinked actin filament network exhibits the behavior of an
-elastic network of semi-flexible filaments, whose material properties
-are represented by Lamé parameters (\(\mu\)). Consequently, upon
-deformation, it can store elastic energy, although only at shorter
-timescales. At longer timescales, in response to stretching, the network
-dynamically reorganizes itself, releasing the stored elastic energy by
-relaxing stresses. This takes place through assembly/disassembly of the
-filaments or binding/unbinding of the crosslinkers. The dissipation of
-stresses is represented by a viscosity coefficient (\(\eta\)).
+The crosslinked actin filament network exhibits the behavior of an elastic network of semi-flexible filaments, whose material properties are represented by Lamé parameters  (\(\lambda,\mu\)). Consequently, upon deformation, it can store elastic energy, at shorter timescales. At longer timescales, in response to stretching, the network dynamically reorganizes itself, releasing the stored elastic energy by relaxing stresses. This takes place through assembly/disassembly of the filaments or binding/unbinding of the crosslinkers. The dissipation of stresses is represented by a viscosity coefficient (\(\eta\)).
 
-However, the active component of the active gel model arises from myosin
-motor activity, generating contractile active tension in the network.
-This active tension (\(\gamma\)) is hypothesized to be directly
-proportional to cortical thickness, with a proportionality constant
-denoted by coefficient of active tension (\(\xi\)).
+The active component of the active gel model arises from myosin motor activity, generating contractile active tension in the network. This active tension (\(\gamma\)) is hypothesized to be directly proportional to cortical thickness:	$\gamma(\rho) = \xi \rho$, with a proportionality constant denoted by coefficient of active tension (\(\xi\)).
 
+Several assumptions underlie this model. Firstly, it is assumed that the cell volume remains conserved throughout the deformations. Secondly, it is understood that cells cannot stretch indefinitely. To limit strains, a strain stiffening mechanism is introduced, which is activated at high strains. With respect to the actin network, it is assumed to be isotropic and undergoes constant turnover, thereby maintaining a steady-state cortical thickness.
 
-\begin{equation}
-	\gamma(\rho) = \xi \rho.
-\end{equation}
+Based on the above assumptions and the cortex’s physical attributes, the model represents each cell as an active gel surface. These active gel surfaces are then assembled to form a tissue, as depicted in Figure \ref{fig_7_2}. The system’s dynamics are formulated through a balance of diverse potentials, representing free energy, dissipation, active contractility, and external forces.
 
-Several assumptions underlie this model. First, the cell volume is
-assumed to be conserved throughout the deformations. Second, cells
-cannot stretch indefinitely due to physiological constraints, such as
-reorganization of intermediate filaments, cell crowding, or compression
-of the nucleus. To limit strains, a strain stiffening mechanism is
-introduced, activated beyond high strains.
+Due to this formulation, three timescales emerge from the theoretical framework: 
 
-Regarding the actin network, it is assumed to be isotropic, whereas in
-reality, it also can be polar or nematic. Another assumption posits that
-the cortex undergoes constant turnover, maintaining a steady-state
-cortical thickness.
+\begin{enumerate}
+	\item Turnover timescale \(t_{to} = 1/k_{d}\)
+	\item Viscoelastic timescale \(t_{ve} = \eta/\lambda\)
+	\item Viscoactive timescale \(t_{va} = \eta/\xi\)
+\end{enumerate}
 
-Based on the above assumptions and the cortex's physical attributes, the
-model represents each cell as an active gel surface. These active gel
-surfaces are then assembled to form a tissue, as depicted in Figure \ref{fig_7_2}.
-The system's dynamics are formulated
-through a balance of diverse potentials, representing free energy,
-dissipation, active contractility, and external forces.
+The turnover timescale is driven by the cortex's polymerization rates (\(k_{d}\)). The viscoelastic timescale is a ratio of the viscous remodeling coefficient to the Lamé parameters, representing elasticity. Lastly, the viscoactive timescale is the ratio of the viscous remodeling coefficient to the coefficient of active tension. All of these timescales are interconnected through the cortical thickness; thus, for simplicity, we can understand them as one remodeling timescale
 
-Due to this formulation, the system exhibits the behavior of an active
-hyperelastic material at shorter timescales, while at longer timescales,
-it behaves like an active viscoelastic material. This behavior can be
-explained through three timescales emerging from the theoretical
-framework: turnover timescale \(t_{to} = 1/k_{d}\), viscoelastic
-timescale \(t_{ve} = \eta/\lambda\), and viscoactive timescale
-\(t_{va} = \eta/\xi\). The turnover timescale is driven by the cortex's
-polymerization rates (\(k_{d}\)). The viscoelastic timescale is a ratio
-of the viscous remodeling coefficient to the Lamé parameters,
-representing elasticity. Lastly, the viscoactive timescale is the ratio
-of the viscous remodeling coefficient to the coefficient of active
-tension. All of these timescales are interconnected through the cortical
-thickness; thus, for simplicity, we can understand them as one
-remodeling timescale.
-
-Using this model, a virtual representation of the cell monolayer can be
-generated, including specific regions devoid of basal attachment to the
-substrate, which could be inflated into domes under pressure, similar to
-the experimental setup. These simulations will be referred to as
-"digital domes" in subsequent discussions (see Figure \ref{fig_7_2}).
-By employing this model and comparing
-the results with the experimental data, we could effectively understand
-and investigate the biomechanical properties of the epithelial tissues,
-specifically the contribution of the actin cortex's viscoelasticity.
+Using this model, a virtual representation of a cell monolayer can be generated, with specific boundary conditions. In particular, we can create a cell monolayer with regions that lack basal attachment to the substrate, which can be inflated into domes under pressure application, similar to the experimental setup. These simulations will be referred to as "digital domes" in subsequent discussions  (see Figure \ref{fig_7_2}). By employing this model and comparing the results with the experimental data, we can effectively understand and investigate the biomechanical properties of epithelial tissues, specifically the contribution of the viscoelasticity of the actin cortex.
 
 \begin{figure}[]
 	\centering
 	\includegraphics[width=\textwidth]{chap7_digitaldome.png}
-	\caption{\label{fig_7_2} \textbf{Active gel tissue model}: (A) The cell is modeled as an active gel of cortex, which mainly comprises three aspects: viscoelasticity of the network, turnover dynamics, and active contractility. (B) These cells can be assembled into a tissue that can be used to perform in-silico experiments. An example of this is the digital dome being inflated, highlighting individual cells increasing their area.}
+	\caption{\label{fig_7_2} \textbf{Active gel tissue model}: (A) The cell is modeled as an active gel of cortex, which mainly comprises three aspects: viscoelasticity of the network, turnover dynamics, and active contractility. (B) These cells can be assembled into a tissue that can be used to perform in-silico experiments. An example of this is the digital dome being inflated, color is highlighting individual cells increasing their area.}
 \end{figure}
 
 \hypertarget{active-viscoelasticity-of-the-epithelia}{%
 	\section{Active viscoelasticity of the
 		epithelia}\label{active-viscoelasticity-of-the-epithelia}}
 	
-	
-	
-In this section, we interpret the experimental results within the
-context of the active viscoelastic gel model. The mathematical framework
-describes how cells, represented as an active gel, change shape.
-Specifically, the initial shape, known as the reference configuration
-(\(\Gamma_{0}\)), is mapped to its current shape, called the deformed
-configuration (\(\Gamma\)). This mapping enables the quantification of
-strains and deformations relative to the reference configuration using a
-metric tensor, which measures distances and angles within the material.
-When a material is deformed, the distances and angles within it change,
-and the metric tensor reflects these changes. In this case, each
-configuration possesses its own metric tensor.
+In this section, we interpret the experimental results within the context of the active gel tissue model. The mathematical framework describes how cells, represented as an active gel, change shape. Specifically, the initial shape, known as the reference configuration (\(\Gamma_{0}\)), is mapped to its current shape, called the deformed configuration (\(\Gamma\)). This mapping enables the quantification of strains and deformations relative to the reference configuration using a metric tensor, which measures distances and angles within the material. When a material is deformed, the distances and angles within it change, and the metric tensor reflects these changes. In this case, each configuration possesses its own metric tensor.
 
-For typical elastic materials, the reference configuration remains fixed
-in time, and deformations are measured relative to this fixed state.
-However, to account for the remodeling of the cortex through dynamic
-crosslinking, our model considers the reference configuration as
-dynamic, necessitating a time-varying metric tensor (\(\mathbf{G}\)). We
-can refer to this evolving reference configuration as the resting frame.
-By employing the dynamic metric tensor, we can calculate the resting
-area of a cell, which represents an imagined area where all stored
-elastic energy is dissipated. In terms of cell area, the relationship
-between the resting area (\(A_{rest}\)) and the actual area
-(\(A_{actual}\)) can be expressed as
+For typical elastic materials, the reference configuration remains fixed in time, and deformations are measured relative to this fixed state. However, to account for the remodeling of the cortex through dynamic crosslinking, our model considers the reference configuration as dynamic, necessitating a time-varying metric tensor  (\(\mathbf{G}\)). We can refer to this evolving reference configuration as the resting frame. By employing the dynamic metric tensor, we can calculate the resting area of a cell, which represents an imagined area where all stored elastic energy is dissipated. In terms of cell area, the relationship between the resting area (\(A_{rest}\)) and the actual area (\(A_{actual}\)) can be expressed as
 
 \begin{equation}
 	A_{rest} = \int_{\Gamma_0} \sqrt{|\mathbf{G}|}dS_0, \text{ and } A_{actual} = \int_{\Gamma}dS.
@@ -383,25 +180,9 @@ between the resting area (\(A_{rest}\)) and the actual area
 Where $dS_{0}$ and $dS$ are infinitesimal area on the cortex in
 reference and deformed configuration respectively.
 
+In the case of a polymer with dynamic crosslinks, the resting area of the material changes as the crosslinks break and reform in response to applied stress. The updated resting area can be used as a dynamic reference configuration for measuring subsequent deformations of the material.
 
-In the case of a polymer with dynamic crosslinks, the resting area of
-the material changes as the crosslinks break and reform in response to
-applied stress. The updated resting area can be used as a dynamic
-reference configuration for measuring subsequent deformations of the
-material. This concept of a resting area provides a useful way to think
-about the dynamic behavior of materials with internal structure and
-connectivity that change in response to applied stress.
-
-Consider an example where the tissue is stretched instantaneously. The
-actual area changes instantly, but the resting area of the tissue
-stretches gradually and eventually catches up to the actual area due to
-the active viscoelasticity of the tissue. This process involves two
-types of stresses: viscoelastic stress and active tension. The total
-tissue tension is the sum of these two stresses. Upon stretching the
-tissue, viscoelastic stresses dissipate at viscoelastic timescales
-through remodeling, which allows the resting area to match the actual
-area, while active tension increases at turnover timescales. The effect
-of this remodeling on the tissue behavior is evident in experiments.
+Consider an example where the tissue is step stretched biaxially. The actual area changes instantly, but the resting area of the tissue stretches gradually and eventually becoming equal to the actual area due to the active viscoelasticity of the tissue (see fig). This process involves two types of stresses: viscoelastic stress and active tension. The total tissue tension is the sum of these two stresses. Upon stretching the tissue, viscoelastic stresses dissipate at viscoelastic timescales through remodeling, which allows the resting area to match the actual area, while active tension increases at turnover timescales. The effect of this remodeling on the tissue behavior is evident in experiments described in previous sections.
 
 The simulations were conducted to mirror the experimental conditions.
 Upon subjecting the digital dome to constant pressure, consistent with
