@@ -1,37 +1,30 @@
 # edits
+MOLI Chapter Discussion:
 
-# chapter 7
+## Summary
 
-To investigate the active viscoelasticity of epithelia, we conducted simulations that mirrored the experimental conditions. Under constant pressure, the digital domes reached a steady state while undergoing a reduction in cortical thickness as the cells stretched. Consistent with our earlier experimental observations, once the tissue tension was balanced by the applied pressure, the strain reached a stable point (see Figure 1.7).
+We have developed a microfluidic chip to generate 3D curved epithelia, utilizing a multilevel device consisting of two layers separated by a porous membrane. Seeding cells on the membrane in the bottom channel allowed for dome formation closer to the microscope objective, enabling high-quality confocal imaging. Hydrostatic pressure was used to control pressure under the dome dynamically, allowing for monitoring of cells and tissue behavior. Additionally, we developed imaging strategies to capture dynamics of these 3D structures faster using line scanning mode of confocal microscope or light sheet microscope.
 
-To derive the constitutive relation within the computational framework, we subjected the digital dome to varying levels of pressure, generating tension-strain curves and steady-state points. The material response of the domes followed the geometric constraint observed in experiments, resulting in a non-monotonous tension-strain curve.
+The device is able to measure forces and build epithelial domes. However, it is not only restricted to domes, we could imagine building even more with it such are complex shapes and network of the tubes or different co-culture systems. For example, this could be easily extended in replacing MDCK cells to any other cell line where there is enough of the cell-cell adhesion to form inflated structures.
 
-In addition, a quasi-static inflation of the digital dome was performed to assess the model's robustness. The quasi-statically obtained constitutive relation showed consistency with the locus of steady-state tension-strain points under different constant pressure conditions, as shown in Figure 1.7 B. The resulting constitutive curve also demonstrated characteristics similar to those obtained experimentally, including re-stiffening at significant strains attributed to a barrier mechanism.
+For instance, we could apply this experimental system with stem cells in investigating the relationship between curvature and pressure. As it is of great interest in the field of developmental biology. Past studies have shown that there is a close connection with curvature and tension. This system could present an alternative to traditional systems of micropipetting or puncturing the system.
 
+However, this device could also be useful in establishing co-culture systems. Because of the original design was based on a lung on chip co- culture, we have found its application in creating co-culturing systems such as fibroblasts and cancer spheriods. The two channels separated by a barrier offers a transwell like setup which is widely used in the field. For example, immunofilteration. Or this can be extended to use of organoid system where we can put 2D organoids and open up the lumen with patterning and pressure. We could have organoids in the bottom channel which can be filled up with matrix too for better growth of the organoids. While having lumen accessible for pressure control. We think there are endless avenues to pursue in different cell systems  with control over pressure, biochemical signaling, micropatterning and high resolution imaging. 
 
+Another aspect of the device could be to closely at the dynamics of the cell cytoskeleton of epithelial cells. This device offers capabilities of stretching cells 400% of their original size. This unprecedented control over the stretching allows for using epithelial cell lines labeled with different cytoskeletal filaments or components to examine the effects of stretch and curature. For example, we could use MDCK cell labeled with cadherin to see the response of cell-cell junctions to extreme levels of stretching. There is a lot of information on the stretching of the individual filaments or molecules. Characterized response however, the cell stretching is limited to adherent cells stretching to 10-25%. Exceptionally, system developed by Harris et al. could stretch a lot but it is limited to 2D monolayers and lacks the control over curvature. We expect this device to open avenues in characterization of cytoskeletal components to large strains and measure the tension.
 
+As demonstrated in previous studies, the most intriguing aspect of the system is that complex materials such as epithelial tissue, in order to maintain mechanical equilibrium, must adopt a spherical cap shape for a circular footprint. This uniform curvature and pressure imply uniform tension, independent of tissue material properties (Latorre et al., 2018; Marín-Llauradó et al., 2022). The tissue tension can be easily measured by applying Laplace's law for spherical cap domes. However, in the case of non-spherical geometry, there would be anisotropic stresses that would require a computational model, such as curved monolayer stress microscopy, to solve an inverse problem to go from geometry to forces (Marín-Llauradó et al., 2022). In this thesis, we limit ourselves to measuring tissue tensions in spherical domes. 
 
-To interpret these experimental results in the context of the model, we introduced the concept of the resting area, which represents the area of a cell in a monolayer that is in a steady state. The mathematical framework used in the model describes how the cortical surface changes its shape when deformed. This framework maps the initial shape (known as the reference configuration) to its current shape (known as the deformed configuration), with a corresponding metric tensor for each configuration. To capture remodeling of the cortex, a second reference configuration is added with a dynamic metric tensor, where the cortex has relaxed. We could refer to this as the resting frame.
-
-In terms of cell area, the current area is the actual area represented by the deformed configuration. However, the cell could have a resting area different from the actual area, represented by the second reference configuration due to network relaxation.
-
-$$	A_{rest} = \int_{\Gamma_0} \sqrt{|\mathbf{G}|}dS_0, \text{ and } A_{actual} = \int_{\Gamma}dS.
-$$
-
-The metric tensor is used to measure distances and angles within the material. When a material is deformed, the distances and angles within the material change, and the metric tensor reflects these changes.
-
-When the tissue is perturbed from steady state, the actual area can change faster than the resting area because of timescales associated with cortex remodeling. Once cell is stretched, the cell dissipates elastic stresses at viscoelastic timescales through remodeling, eventually reaching a steady state, where resting area will be equal to actual area.
-
-This effect of timescales is particularly evident in cyclic stretching experiments. When the cells are probed faster than viscoelastic timescales, they accumulate strains due to an inability to dissipate the elastic stress. On inflation, cells are able to stretch and at viscoelastic timescales change the resting area  
+At the same time, we could utilize other techniques to infer forces
 
 
-We observed that, for the slowest condition, the resting area in the digital dome almost overlapped with the actual area. This is because the pressure is changing very slowly at a rate of 0.2 Pa/s, allowing the cells sufficient time to remodel and dissipate elastic stresses. Viscoelastic and turnover timescales in simulations are around 10-30s, which means that over a period of 2000s, the dome stretches considerably and returns to original flat state.
+## Device
 
-However, when pressure is applied rapidly in cycles of 20 seconds, strains accumulate due to insufficient time for cells to dissipate stored elastic energy. The simulations show that the resting area marginally changes relative to the actual area. Notably, creep experiments, where tissue is stretched at constant tension, demonstrate strain accumulation at the visco-active timescale, where both contractility and viscosity play a role.
+There are constant improvements in the device since the moment of its conception. The device started out as a device compatible with only inverted microscopes. Then for imaging fast moving subcellular features we adapted the device for light sheet microscope.
 
-Interestingly, the simulations indicate that due to active viscoelasticity, there would be a lag between the peak of pressure and the peak of strain. This lag is clearly reflected in the comparison of resting area and actual area, where the delay decreases with increasing pressure rates. The slowest pressure rate results in the least amount of delay, while the fastest pressure rate results in the most delay. Although we can only experimentally observe this at moderate rates. The experimental data from faster cycles is too noisy to observe the lag.
+There could be possible modification that can be incorporated for certain applications. For example, the device could be adapted for high  throughput experiments where we could have pressure application for longer terms and monitor state of epithelia with immunofluorescence staining.
 
-To sum up, the digital dome model explains the material response of epithelial tissue depending on the rate at which pressure is applied. Slower rates allow for cell remodeling and dissipation of elastic stresses, while faster rates result in strain accumulation due to insufficient time for dissipation. This active viscoelastic behavior is the outcome of cortical remodeling.
+Another aspect we would like to do is to get rid of the membrane, where we can 
 
 
 
@@ -40,25 +33,13 @@ To sum up, the digital dome model explains the material response of epithelial t
 
 
 
+The geometry of the domes is primarily controlled by the adhesion protein pattern, but delamination can still occur. In spontaneous domes, circular footprints were found to be the most common (Tanner, Frambach, and Misfeldt 1983). This was the reason the researchers thought that this circular footprint
 
+while domes formed around sharp corners can blunt themselves through delamination (Latorre et sal. 2018). This must be taken into consideration when creating specific geometries.
 
+Tissue tension and adhesion forces also interact with each other. In MDCK suspended monolayer, it is seen that cell-cell junctions are stronger than cell-substrate adhesion (A. R. Harris et al. 2012), so if tension at the base of the dome exceeds the adhesion forces, it can lead to detachment and delamination.
 
+Furthermore, we have unintentionally developed a peeling system that enables us to observe tissue detachment from the substrate. If the dome retains its spherical shape, we can calculate the necessary forces for breaking cell-substrate adhesion and identify the contribution of focal adhesion molecular components.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+This system provides a novel approach for testing material properties and probing mechanics at the tissue scale, allowing for simultaneous high-quality imaging and monitoring of cytoskeletal components and the nucleus. Additionally, we can create a 3D tissue with controlled lumen pressure, providing a well-controlled protocol that is suitable for replicating curvature-pressure-tension conditions in various cell lines, not just MDCK cells. However, our primary focus is on comprehending the mechanics of epithelial tissue under controlled pressure.
 
