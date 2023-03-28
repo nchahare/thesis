@@ -72,7 +72,7 @@ During Drosophila gastrulation, tissue-level actin cortex is altered in the dire
 
 Morphogenesis, the process of shaping and forming living structures, occurs at varying timescales and requires the cell cytoskeleton to change its shape accordingly. Rheological and mechanobiological experiments have given us insights into how cells respond to forces and deformations based on their magnitude and rate (see fig \ref{fig_3_5}; reviewed in \cite{wyatt2016}).
 
-For fast deformations (in the range of milliseconds to seconds), cells exhibit predominantly elastic behavior, as there is insufficient time for the actin cortex to respond or remodel \cite{deng2006}. The cytoskeleton can store elastic energy and release it. At this scale, there is also flow of cytosol through the cortical mesh, resulting in poroelastic behavior\cite{moeendarbary2013}.
+For fast deformations (in the range of milliseconds to seconds), cells exhibit predominantly elastic behavior, as there is insufficient time for the actin cortex to respond or remodel \cite{deng2006}. The cytoskeleton can store elastic energy and release it. At this scale, there is also flow of cytosol through the cortical mesh, resulting in poroelastic behavior \cite{moeendarbary2013}.
 
 When forces or deformations are applied over longer timescales (seconds to minutes), cells exhibit an increasingly viscoelastic behavior \cite{kollmannsberger2011}. The actin cortex can flow and is unable to fully store energy. The actin filaments and crosslinkers, such as myosins and actinin, allow the cytoskeleton to remodel in response to mechanical perturbations through turnover in tens of seconds or a few seconds, respectively. Myosin mini filaments, however, can take longer to remodel, up to hundreds of seconds.
 
@@ -152,7 +152,15 @@ Rheological properties are often linked to physiological state and are crucial f
 	}
 \end{figure}
 
-However, in certain cases like modeling cardiovascular mechanics or the growth of organs, we can rely on hyperelasticity or composite material framework. The basic kinematics assumes a mapping, \(x = \chi (X, t)\), deformation from reference to deformed configuration. The deformation gradient and Green's strain tensor are defined. 
+One general feature of most biological tissues is their softness, and hence the fact that their undergo large deformations. However, linear elasticity is valid for infinitesimally small deformations. To account for such large deformations, geometrically exact continuum mechanics descriptions have been applied to a variety of systems including cardiovascular mechanics or the growth of organs. In this approach, deformation is described by a function  \(x = \chi (X, t)\) mapping a reference to a deformed configuration. The deformation gradient and Green's strain tensor (nonlinear in the deformation) are defined as
+$$ F = \nabla_X \chi(X, t));\ \ \ \ E = \frac{(F^T F - I)}{2}. $$ 
+Based on these deformation measures, hyperelasticity is based on defining a strain energy function $W(E)$ from which elastic stresses can be computed as $S = \frac{\partial W}{\delta E}$.
+
+
+
+we can define an  strain  
+
+However, in certain cases like modeling cardiovascular mechanics or the growth of organs, we can rely on hyperelasticity or composite material framework \marino{[what is this composite material framework? I edit a bit the following paragraphs]}. The basic kinematics assumes a mapping, \(x = \chi (X, t)\), deformation from reference to deformed configuration. The deformation gradient and Green's strain tensor are defined. 
 $$ F = \nabla_X (\chi(X, t)));\ \ \ \ E = \frac{(F^T F - I)}{2}. $$ 
 The elastic and growth can be delineated in the deformation gradient through decomposition. \[ F = F_e F_g .\] Here, in the theoretical framework of finite elasticity, one can assume a strain energy function relates to stress. The stress-strain data extracted from the experiment allows for predicting the form of the strain energy function. \[ S = \frac{\delta W}{\delta E}.\]
 
