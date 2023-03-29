@@ -5,7 +5,10 @@ In the case of epithelial domes, \citet{latorre2018} observed a broad spectrum o
 \hypertarget{measurement-of-dome-mechanics}{%
 	\section{Measurement of dome mechanics}\label{measurement-of-dome-mechanics}}
 
-To characterize the dynamics of the domes, we focused on the midsection, assuming symmetry of spherical caps (see Figure \ref{fig_7_1}). We measured the height ($h$) and base radius ($a$) of each dome, which allowed us to calculate the radius of curvature ($R$)  as
+To characterize the dynamics of the domes, we assumed that the shape of domes closely follows a spherical cap geometry, and hence we focused on the midsection (see Figure \ref{fig_7_1}). This  approximation is reasonable for domes with circular footprint. For spherical domes  supporting a membrane state of stress, mechanical equilibrium tangential to the surface implies that tension is isotropic and uniform tension, whereas mechanical equilibrium normal to the surface is expressed by Laplace's law. 
+
+
+We measured the height ($h$) and base radius ($a$) of each dome, which allowed us to calculate the radius of curvature ($R$)  as
 \begin{equation}
 	\label{eqn:radiuscurve}
 	R = \frac{h^2 + a^2}{2h}.
@@ -47,7 +50,17 @@ We then plotted the tension-strain relationship of these domes, systematically f
 	}
 \end{figure}
 
-Our measurement of the stress-strain relation only uses mechanical equilibrium, encoded by Laplace's law, and the geometrical relations between the radius of curvature $R$ of the dome, the footprint radius $a$, the height $h$ and the areal strain. Since  
+Our measurement of the stress-strain relation only uses (1) mechanical equilibrium, encoded by Laplace's law, and (2) the geometrical relations between the radius of curvature $R$ of the dome, the footprint radius $a$, the height $h$ and the areal strain $\epsilon$. The geometric Eqs.~(\ref{eqn:radiuscurve},{eqn:arealstrain}) can be combined to find an explicit relation between radius of curvature and strain
+\begin{equation}
+	R = \frac{h^2/a^2 + 1}{2h/a^2} = a\frac{\epsilon + 1}{\sqrt{\epsilon}},
+\end{equation}
+which when plugged into Laplace's law in Eq.~(\ref{eqn:laplace}) results in 
+\begin{equation}
+	\label{eqn:isobaric}
+	\frac{\sigma}{a \Delta P} = \frac{1}{4}  \frac{\epsilon + 1}{\sqrt{\epsilon}}.
+\end{equation}
+This relation relates two non-dimensional quantities. Since in the experiments reported in Figure \ref{fig_7_3} pressure $\Delta P$ and footprint radius $a$ are constant, this relation shows that tension should be proportional to $(\epsilon + 1)/\sqrt{\epsilon}$ irrespective of the mechanical response of the tissue, as a result of geometry and mechanical equilibrium.  
+
 
 To understand these measurements, we sought to further understand the mechanics of our measurement
 
