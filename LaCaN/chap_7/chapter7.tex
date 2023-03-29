@@ -38,16 +38,18 @@ To obtain the temporal evolution of the dome’s geometry, we generated kymograp
 
 First, we systematically applied varying pressures ranging from 0-400 \unit{\pascal} to the domes. However, we observed that domes could not form at pressures lower than 50-100 \unit{\pascal} due to cell-substrate adhesion forces. Conversely, high pressures resulted in tissue delamination beyond the boundary of the patterned footprint. We determined that 200 \unit{\pascal} allowed the domes to form without delamination, falling within the previously reported pressure range \cite{choudhury2022,marin-llaurado2022}.
 
-When domes were subjected to a constant pressure of 200 \unit{\pascal}, they underwent a significant increase in areal strain during the first three to five minutes of pressure application. Following this initial increase, the areal strain reached a plateau and remained relatively constant for the next 5-10 minutes (see Figure \ref{fig_7_3} A). Notably, our measurements also indicated considerable variability in the maximum strain achieved by domes for the same pressure, with strains ranging from 50\% to 300\%. Nevertheless, the stabilization in strain across all the domes suggested that the epithelial tissue reached a mechanical steady state.
-
-We then plotted the tension-strain relationship of these domes, systematically finding a non-monotonic curve similar to the Nike "swoosh" symbol (see Figure \ref{fig_7_3} B). At low strains, the tension within the domes is very high, followed by a decline to a minimum value at an areal strain of 100\%, where the dome adopts a hemispherical shape. Tension then increases  again, but the rate of increase is slower than the rate at which tension decreases at lower strains. This non-monotonic tension-strain curve is at odds with previous measurements of tension-strain relations in spontaneously fluctuating domes \cite{latorre2018,marin-llaurado2022} or in cell monolayers subjected to uniaxial stretch \cite{duque2023}. The fact that strains and tensions strongly varied from dome to dome but the minimum of tension was achieved precisely at 100\% areal strain for all domes suggested that this behavior is related to the nature of our measurement. 
-
 \begin{figure}[b!]
 	\centering
 	\includegraphics[width=\textwidth]{chap7_constpressure.png}
 	\caption{\label{fig_7_3} \textbf{Epithelial domes at constant pressure}: Dynamic response of three representative domes at a constant pressure of 200 Pa \marino{[specify the basal radius for each dome]}: (A) Areal strain increases and reaches a steady state at around 5 minutes, and we can clearly see variability in the maximum strains. (B) The same domes produce a peculiar tension and strain curve. (representative of 12 domes)
 	}
 \end{figure}
+
+
+When domes were subjected to a constant pressure of 200 \unit{\pascal}, they underwent a significant increase in areal strain during the first three to five minutes of pressure application. Following this initial increase, the areal strain reached a plateau and remained relatively constant for the next 5-10 minutes (see Figure \ref{fig_7_3} A). Notably, our measurements also indicated considerable variability in the maximum strain achieved by domes for the same pressure, with strains ranging from 50\% to 300\%. Nevertheless, the stabilization in strain across all the domes suggested that the epithelial tissue reached a mechanical steady state.
+
+We then plotted the tension-strain relationship of these domes, systematically finding a non-monotonic curve similar to the Nike "swoosh" symbol (see Figure \ref{fig_7_3} B). At low strains, the tension within the domes is very high, followed by a decline to a minimum value at an areal strain of 100\%, where the dome adopts a hemispherical shape. Tension then increases  again, but the rate of increase is slower than the rate at which tension decreases at lower strains. This non-monotonic tension-strain curve is at odds with previous measurements of tension-strain relations in spontaneously fluctuating domes \cite{latorre2018,marin-llaurado2022} or in cell monolayers subjected to uniaxial stretch \cite{duque2023}. The fact that strains and tensions strongly varied from dome to dome but the minimum of tension was achieved precisely at 100\% areal strain for all domes suggested that this behavior is related to the nature of our measurement. 
+
 
 Our measurement of the stress-strain relation only uses (1) mechanical equilibrium, encoded by Laplace's law, and (2) the geometrical relations between the radius of curvature $R$ of the dome, the footprint radius $a$, the height $h$ and the areal strain $\epsilon$. The geometric Eqs.~(\ref{eqn:radiuscurve},{eqn:arealstrain}) can be combined to find an explicit relation between radius of curvature and strain
 \begin{equation}
@@ -65,10 +67,10 @@ This relation relates two non-dimensional quantities. Since in the experiments r
 %The tension-strain relationship of the domes can be explained by the geometric constraints imposed by the dome system and force balance. Laplace’s law implies that for a constant pressure, the tension within the dome is directly proportional to its radius of curvature. Domes with low strain are close to being flat monolayers and have a high value of the radius of curvature, which leads to a correspondingly high tension  (see Figure \ref{fig_7_4}). As the dome inflates, the radius of curvature subsequently diminishes to a minimum upon adopting a hemispherical shape. Since the dome always maintains a spherical shape, the radius of curvature, areal strain, and tension are all interconnected. The curve's expression can be derived by substituting areal strain ($\epsilon$) in the expression of radius of curvature ($R$) (Equation \ref{eqn:radiuscurve})
 
 
-The previous discussion shows that Eq.~(\ref{eqn:isobaric}) alone does not say anything about the mechanical response of the epithelial monolayer. However, the fact that domes plateau to a steady-state strain, and hence to a plateau tension according to the isobaric relation Eq.~(\ref{eqn:isobaric}), provides a measurement of a $(\epsilon, \sigma)$ pair at steady state. In the next section, we discuss how to use this principle to measure 
+The previous discussion shows that Eq.~(\ref{eqn:isobaric}) alone does not say anything about the mechanical response of the epithelial monolayer. It just characterizes the locus of tension-strain states of a spherical dome that respects the physical constraint of mechanical equilibrium. This relation also shows the non-trivial relation between our pressure-controlled mechanical ensemble and tension-controlled  or strain-controlled ensembles. Hence, the dynamics of Figure \ref{fig_7_3} A cannot be interpreted as neither stress-relaxation nor creep experiments. This figure also shows that during their trajectory along the isobaric curve, the tissue experiences a time-dependent relaxation towards a steady-state strain, and hence to a steady-state tension according to the isobaric relation Eq.~(\ref{eqn:isobaric}). Using a mechanical analogy, we can interpret that during these dynamics out-of-equilibrium (viscous) stresses relax and we are left with a pair $(\epsilon, \sigma)$ along a steady-state constitutive relation $\sigma(\epsilon)$ of the tissue. In the next section, we discuss how to use this principle to measure this constitutive relation.
 
 
-These measurements imply that when a step pressure is applied, the inflating dome undergoes a non-steady-state with out-of-equilibrium stresses while experiencing high tension related to high radius of curvature. The dome then rapidly inflates by following the tension-strain curve dictated by equation \ref{eqn:isobaric} to achieve a steady state. In this steady state, the external pressure is balanced with equilibrium tissue tension. It is evident that this tension-strain curve observed does not represent the quasi-static material response of the epithelial tissue. To determine the true tension strain relation, a different experimental strategy will be adopted in the following section.
+%These measurements imply that when a step pressure is applied, the inflating dome undergoes a non-steady-state with out-of-equilibrium stresses while experiencing high tension related to high radius of curvature. The dome then rapidly inflates by following the tension-strain curve dictated by equation \ref{eqn:isobaric} to achieve a steady state. In this steady state, the external pressure is balanced with equilibrium tissue tension. It is evident that this tension-strain curve observed does not represent the quasi-static material response of the epithelial tissue. To determine the true tension strain relation, a different experimental strategy will be adopted in the following section.
 
 \begin{figure}
 	\centering
@@ -78,8 +80,10 @@ These measurements imply that when a step pressure is applied, the inflating dom
 \end{figure}
 
 \hypertarget{constitutive-relation-of-epithelia}{%
-	\section{Constitutive relation of
+	\section{Steady-state constitutive relation of
 		epithelia}\label{constitutive-relation-of-epithelia}}
+
+Viewing the cell monolayer as a material sheet, we seek to characterize the stress-strain relation  under quasi-static or steady-state conditions using MOLI \cite{latorre2018,duque2023}. KK
 
 The constitutive relation of a material describes the relationship between its deformation and the applied forces. In conventional material testing, quasi-static strain or tension is applied to determine this relation. However, our experiments could only control pressure. Increasing pressure quasi-statically was not feasible for domes due to limited delamination at low pressures. To overcome this and obtain the tissue constitutive relation, we deflated a dome in steps, capturing steady-state tension and strain for different pressures.
 
@@ -98,6 +102,9 @@ To summarize, our experiments demonstrate that the tissue reaches a steady state
 \vspace{0cm}
 
 \hypertarget{dynamics-of-the-epithelia-domes}{\section{Dynamics of the epithelial domes}\label{dynamics-of-the-epithelial-domes}}
+
+
+
 
 In this section, we investigated the dynamic material response of the domes by conducting cyclic stretching experiments. We subjected the domes to a triangular wave of pressure with a magnitude of 200 Pa at three distinct timescales, as depicted in Figure \ref{fig_7_6} A. The selected timescales of 20s, 266s, and 2000s were based on existing literature on tissue remodeling, particularly the work of Khalilgharibi et al. (2019) and Casares et al. (2015) \cite{khalilgharibi2019, casares2015}. These studies demonstrated that stress relaxation in tissues occurs from tens of seconds to minute timescales due to F-actin remodeling and myosin-driven contractility. Additionally, in some cases, even faster deformation at timescales of a few seconds has been shown to impact cell remodeling \cite{andreu2021a}. In our device, the fastest cycle that could be probed was limited to 20s because of the microscope’s imaging speed.
 
