@@ -1,34 +1,27 @@
-This chapter focuses on investigating the dynamic material response of epithelial domes to varying strain, tension, and pressure. In morphogenetic context, reviews by Torres-Sanchez et al. and Choudhury et al. demonstrate that pressure levels can vary significantly across a wide range of magnitudes and timescales in different situations \cite{torres-sanchez2021, choudhury2022a}. For example, during blastocyst development, luminal pressure doubles, leading to changes in cortical tension and strain \cite{chan2019}.
+This chapter focuses on investigating the dynamic material response of epithelial domes to varying strain, tension, and pressure. In a morphogenetic context, pressure levels can vary significantly across a wide range of magnitudes and timescales in different situations \cite{torres-sanchez2021, choudhury2022a}. For example, during blastocyst development, luminal pressure doubles, leading to changes in cortical tension and cellular strain \cite{chan2019}.
 
-In the case of epithelial domes, Latorre et al. observed a broad spectrum of pressure levels throughout dome evolution, resulting in various cellular deformations, including active-superelastic behavior  \cite{latorre2018}. However, in this system, control is limited to the footprint of the domes, with no capability for control of pressure and tension. To address this limitation, in this chapter, we will employ the monolayer inflator (MOLI) system to subject tissues to different strain and tension regimes and characterize the material response of epithelial tissues.
+In the case of epithelial domes, \citet{latorre2018} observed a broad spectrum of pressure levels throughout dome evolution, resulting in various cellular deformations and tissue behaviors including active-superelasticity. However, in this system, control is limited to the footprint of the domes, with no capability to control pressure and tension. To address this limitation, in this chapter, we will employ the monolayer inflator (MOLI) system to subject tissues to different strain and tension regimes and characterize the material response of epithelial tissues.
 
 \hypertarget{measurement-of-dome-mechanics}{%
 	\section{Measurement of dome mechanics}\label{measurement-of-dome-mechanics}}
 
-To characterize the dynamics of the domes, we focused on the midsection, assuming symmetry of spherical caps (see Figure \ref{fig_7_1}). We measured the height ($h$) and base radius ($a$) of each dome, which allowed us to calculate the radius of curvature ($R$) using trigonometry as,
-
+To characterize the dynamics of the domes, we focused on the midsection, assuming symmetry of spherical caps (see Figure \ref{fig_7_1}). We measured the height ($h$) and base radius ($a$) of each dome, which allowed us to calculate the radius of curvature ($R$)  as
 \begin{equation}
 	\label{eqn:radiuscurve}
 	R = \frac{h^2 + a^2}{2h}.
 \end{equation}
-
-\vspace{2em}
-
-Additionally, we measured the pressure ($\Delta P$) to compute the tension ($\sigma$) using Laplace's law,
-
+Additionally, we MOLI provides a direct readout of pressure ($\Delta P$), allowing us to compute the tension ($\sigma$) using Laplace's law
 \begin{equation}
 	\label{eqn:laplace}
 	\sigma = \frac{\Delta PR }{2} .
 \end{equation}
 
-For dome strain, we utilized the areal strain measure, which is defined as the difference between the dome surface area ($A$) and the area of the footprint ($A_{0}$) normalized by the latter,
-
+To quantify dome deformation, we used the areal strain measure, which is defined as the difference between the dome surface area ($A$) and the area of the footprint ($A_{0}$) normalized by the latter, leading to
 \begin{equation}
 	\label{eqn:arealstrain}
 	\epsilon = \frac{A - A_{0}}{A_{0}} = \frac{\pi(h^2 + a^2) - \pi a^2}{\pi a^2} = \frac{h^2}{a^2} .
 \end{equation}
-
-To obtain the temporal evolution of the dome’s geometry, we generated kymographs of the top section of the domes. Using these kymographs, we computed tensions and strain.
+To obtain the temporal evolution of the dome’s geometry, we generated kymographs of the top section of the domes. These kymographs provide the time evolution of $h$. Given $a$ and the applied pressure as a function of time, we computed tensions and strain using the relations above.
 
 \begin{figure}
 	\centering
