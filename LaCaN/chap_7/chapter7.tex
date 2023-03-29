@@ -5,15 +5,14 @@ In the case of epithelial domes, \citet{latorre2018} observed a broad spectrum o
 \hypertarget{measurement-of-dome-mechanics}{%
 	\section{Measurement of dome mechanics}\label{measurement-of-dome-mechanics}}
 
-To characterize the dynamics of the domes, we assumed that the shape of domes closely follows a spherical cap geometry, and hence we focused on the midsection (see Figure \ref{fig_7_1}). This  approximation is reasonable for domes with circular footprint. For spherical domes  supporting a membrane state of stress, mechanical equilibrium tangential to the surface implies that tension is isotropic and uniform tension, whereas mechanical equilibrium normal to the surface is expressed by Laplace's law. 
+To characterize the dynamics of the domes, we assumed that the shape of domes closely follows a spherical cap geometry, and hence we focused on the midsection (see Figure \ref{fig_7_1}). This  approximation is reasonable for domes with circular footprint. For spherical domes  supporting a membrane state of stress, mechanical equilibrium tangential to the surface implies that tension is isotropic and uniform tension, whereas mechanical equilibrium normal to the surface is expressed by Laplace's law \cite{latorre2018}. However, MOLI can also be applied to map the  heterogeneous and anisotropic tension of non-spherical domes, e.g.~resulting from non-circular footprints, applying curved Monolayer Stress Microscopy \cite{marin-llaurado2022}.
 
-
-We measured the height ($h$) and base radius ($a$) of each dome, which allowed us to calculate the radius of curvature ($R$)  as
+From the cross-section, we measured the height $h$ and base radius $a$ of each dome, which allowed us to calculate the radius of curvature $R$ as
 \begin{equation}
 	\label{eqn:radiuscurve}
 	R = \frac{h^2 + a^2}{2h}.
 \end{equation}
-Additionally, we MOLI provides a direct readout of pressure ($\Delta P$), allowing us to compute the tension ($\sigma$) using Laplace's law
+Additionally, we MOLI provides a direct readout of pressure $\Delta P$, allowing us to compute the tension ($\sigma$) using Laplace's law
 \begin{equation}
 	\label{eqn:laplace}
 	\sigma = \frac{\Delta PR }{2} .
@@ -46,7 +45,7 @@ We then plotted the tension-strain relationship of these domes, systematically f
 \begin{figure}[b!]
 	\centering
 	\includegraphics[width=\textwidth]{chap7_constpressure.png}
-	\caption{\label{fig_7_3} \textbf{Epithelial domes at constant pressure}: Dynamic response of three representative domes at a constant pressure of 200 Pa: (A) Areal strain increases and reaches a steady state at around 5 minutes, and we can clearly see variability in the maximum strains. (B) The same domes produce a peculiar tension and strain curve. (representative of 12 domes)
+	\caption{\label{fig_7_3} \textbf{Epithelial domes at constant pressure}: Dynamic response of three representative domes at a constant pressure of 200 Pa \marino{[specify the basal radius for each dome]}: (A) Areal strain increases and reaches a steady state at around 5 minutes, and we can clearly see variability in the maximum strains. (B) The same domes produce a peculiar tension and strain curve. (representative of 12 domes)
 	}
 \end{figure}
 
@@ -59,26 +58,15 @@ which when plugged into Laplace's law in Eq.~(\ref{eqn:laplace}) results in
 	\label{eqn:isobaric}
 	\frac{\sigma}{a \Delta P} = \frac{1}{4}  \frac{\epsilon + 1}{\sqrt{\epsilon}}.
 \end{equation}
-This relation relates two non-dimensional quantities. Since in the experiments reported in Figure \ref{fig_7_3} pressure $\Delta P$ and footprint radius $a$ are constant, this relation shows that tension should be proportional to $(\epsilon + 1)/\sqrt{\epsilon}$ irrespective of the mechanical response of the tissue, as a result of geometry and mechanical equilibrium.  
+This relation relates two non-dimensional quantities. Since in the experiments reported in Figure \ref{fig_7_3} pressure $\Delta P$ and footprint radius $a$ are constant, this relation shows that tension should be proportional to $(\epsilon + 1)/\sqrt{\epsilon}$ irrespective of the mechanical response of the tissue, as a result of geometry and mechanical equilibrium. For small strains ($\epsilon\ll 1$), we have $\sigma \propto 1/\sqrt{\epsilon}$, whereas for large strains $\epsilon\gg 1$, we have $\sigma \propto \sqrt{\epsilon}$ in agreement with the non-monotonic measured stress-strain curves. A geometric interpretation of the isobaric curve is shown in Figure \ref{fig_7_4}, which reflects the fact that the radius of curvature of a spherical dome of fixed footprint is minimum when the dome is half sphere. When represented according to Eq.~(\ref{eqn:isobaric}), all tension-strain curves collapse to a master curve reflecting the hypotheses of the measurement \marino{[Show as inset??]}.
 
 
-To understand these measurements, we sought to further understand the mechanics of our measurement
+
+%The tension-strain relationship of the domes can be explained by the geometric constraints imposed by the dome system and force balance. Laplace’s law implies that for a constant pressure, the tension within the dome is directly proportional to its radius of curvature. Domes with low strain are close to being flat monolayers and have a high value of the radius of curvature, which leads to a correspondingly high tension  (see Figure \ref{fig_7_4}). As the dome inflates, the radius of curvature subsequently diminishes to a minimum upon adopting a hemispherical shape. Since the dome always maintains a spherical shape, the radius of curvature, areal strain, and tension are all interconnected. The curve's expression can be derived by substituting areal strain ($\epsilon$) in the expression of radius of curvature ($R$) (Equation \ref{eqn:radiuscurve})
 
 
-The tension-strain relationship of the domes can be explained by the geometric constraints imposed by the dome system and force balance. Laplace’s law implies that for a constant pressure, the tension within the dome is directly proportional to its radius of curvature. Domes with low strain are close to being flat monolayers and have a high value of the radius of curvature, which leads to a correspondingly high tension  (see Figure \ref{fig_7_4}). As the dome inflates, the radius of curvature subsequently diminishes to a minimum upon adopting a hemispherical shape. Since the dome always maintains a spherical shape, the radius of curvature, areal strain, and tension are all interconnected. The curve's expression can be derived by substituting areal strain ($\epsilon$) in the expression of radius of curvature ($R$) (Equation \ref{eqn:radiuscurve})
+The previous discussion shows that Eq.~(\ref{eqn:isobaric}) alone does not say anything about the mechanical response of the epithelial monolayer. However, the fact that domes plateau to a steady-state strain, and hence to a plateau tension according to the isobaric relation Eq.~(\ref{eqn:isobaric}), provides a measurement of a $(\epsilon, \sigma)$ pair at steady state. In the next section, we discuss how to use this principle to measure 
 
-\begin{equation}
-	R = \frac{h^2/a^2 + 1}{2h/a^2} = a\frac{\epsilon + 1}{\sqrt{\epsilon}}.
-\end{equation}
-
-Then, by substituting ($R$) in Laplace's law (Equation \ref{eqn:laplace}), we obtain the relation for the tension in terms of strain.
-
-\begin{equation}
-	\label{eqn:isobaric}
-	\frac{\sigma}{a} = \frac{\Delta P}{4} \left( \frac{\epsilon + 1}{\sqrt{\epsilon}} \right).
-\end{equation}
-
-This relationship provides a specific link between tension and strain for a given pressure and base radius.
 
 These measurements imply that when a step pressure is applied, the inflating dome undergoes a non-steady-state with out-of-equilibrium stresses while experiencing high tension related to high radius of curvature. The dome then rapidly inflates by following the tension-strain curve dictated by equation \ref{eqn:isobaric} to achieve a steady state. In this steady state, the external pressure is balanced with equilibrium tissue tension. It is evident that this tension-strain curve observed does not represent the quasi-static material response of the epithelial tissue. To determine the true tension strain relation, a different experimental strategy will be adopted in the following section.
 
