@@ -113,22 +113,25 @@ This translation stage is capable of accommodating linear velocities ranging fro
 \section{Imaging the epithelial
 domes}\label{imaging-the-epithelial-domes}}
 
-Following extensive optimization of protein patterning, cell culture conditions, and confocal microscopy techniques, we were able to generate domes in accordance with the intended pattern and exert precise control over the pressure required for their formation. To obtain images of the dome, we utilized a spinning disk confocal microscope with a 40x objective lens (NA 0.75), which allowed us to visualize the membrane (CIBN CAAX GFP) and adhesion protein (Fibrinogen) pattern in separate channels (488\unit{\nm} and 644\unit{\nm}, respectively). By incorporating a labeled adhesion protein, we were able to track the formation of the domes with greater ease and accuracy.
-
-We initially focused on characterizing the mechanics of spherical domes at constant pressure to gain insights into epithelial behavior (see fig \ref{fig_6_6}). Laplace's law was employed to calculate tension using pressure, cell shape, and tissue curvature data, which we could easily monitor. Unlike previous studies that did not control the pressure under the dome, our experimental system allowed us to inflate and deflate the domes in seconds. This forced us to monitor them by observing the base of the dome where the monolayer would intermittently come in and out of view.
-
-Acquiring images of the dome stack in a confocal microscope required three minutes using a step size of 0.5\unit{\um} (exposure 500\unit{\ms}) and a height of 100\unit{\um}, which was slower than the rate at which we could deform the dome by changing the pressure (see fig \ref{fig_6_6}). To investigate the rheology of the domes, it was necessary to monitor their dynamic response at faster pressure rates and shorter timescales while measuring dome strain and curvature. Since the dome possessed inherent symmetry, imaging the mid-section of the structure provided all the geometric information required.
-
-\begin{figure}[t!]
+\begin{figure}[b!]
 	\centering
 	\includegraphics[width=0.65\textwidth]{chap6_confocaldomes.png}
 	\caption{\\ \textbf{Epithelial dome:} Representative confocal microscopy sections of domes at 0 Pa and 200 Pa. Images in the XY plane represent the dome's maximum projection, while images in the XZ plane represent a cross section at the center plane. Three cells are highlighted with color to show the stretching during the dome inflation. Scale bar is $20 \mu m$.
 	} \label{fig_6_6}
 \end{figure}
 
+Following extensive optimization of protein patterning, cell culture conditions, and confocal microscopy techniques, we were able to generate domes in accordance with the intended pattern and exert precise control over the pressure required for their formation. To obtain images of the dome, we utilized a spinning disk confocal microscope with a 40x objective lens (NA 0.75), which allowed us to visualize the membrane (CIBN CAAX GFP) and adhesion protein (Fibrinogen) pattern in separate channels (488\unit{\nm} and 644\unit{\nm}, respectively). By incorporating a labeled adhesion protein, we were able to track the formation of the domes with greater ease and accuracy.
+
+We initially focused on characterizing the mechanics of spherical domes at constant pressure to gain insights into epithelial behavior (see fig \ref{fig_6_6}). Laplace's law was employed to calculate tension using pressure, cell shape, and tissue curvature data, which we could easily monitor. Unlike previous studies that did not control the pressure under the dome, our experimental system allowed us to inflate and deflate the domes in seconds. This forced us to monitor them by observing the base of the dome where the monolayer would intermittently come in and out of view.
+
+\vspace{2em}
+
+Acquiring images of the dome stack in a confocal microscope required three minutes using a step size of 0.5\unit{\um} (exposure 500\unit{\ms}) and a height of 100\unit{\um}, which was slower than the rate at which we could deform the dome by changing the pressure (see fig \ref{fig_6_6}). To investigate the rheology of the domes, it was necessary to monitor their dynamic response at faster pressure rates and shorter timescales while measuring dome strain and curvature. Since the dome possessed inherent symmetry, imaging the mid-section of the structure provided all the geometric information required.
+
 Using the line scanning mode of a Zeiss Airy Scan Microscope, we imaged a single line of pixels across the midsection of the dome and acquired a confocal z-stack (1024 pixel, 4.1\unit{\us/pixel} dwell time, and 1\unit{\um} step size) along the height of the dome (refer to fig 1.8). This approach allowed us to obtain a cross-sectional view of the dome in a fraction of the time required for a normal stack. By enabling piezo stage movement, we imaged a 100\unit{\um} tall dome in just 4 seconds and tracked its height evolution using a kymograph of the central part of the dome. It is important to note that this imaging method is primarily useful for tracking dome strain and curvature, and the cell images obtained are often of low quality.
 
-\begin{figure}[t!]
+
+\begin{figure}[]
 	\begin{minipage}[c]{0.6\textwidth}
 		\includegraphics[width=\textwidth]{chap6_LSM.png}
 	\end{minipage}\hfill
@@ -143,10 +146,6 @@ Using the line scanning mode of a Zeiss Airy Scan Microscope, we imaged a single
 
 We utilized a Brucker QuVi SPIM light sheet microscope to capture rapid subcellular or cellular changes. The microscope was equipped with two immersion-upright 40x objectives (NA 0.8) at 45\unit{\degree} to the horizontal plane. Drawing upon our proficiency in device fabrication, we devised a new setup that facilitated top imaging of cells and porous membranes (see fig \ref{fig_6_8}).
 
-To simplify the fabrication process, we inverted the conventional MOLI device. This necessitated only a pressure channel and a middle layer with a hole and porous membrane. The device was manufactured sufficiently thick to plug in the tubing, and given the device and channels' size, we produced the mold using a standard 3D printer, Ultimaker 3D printer. We incorporated a ridge-like protrusion to manufacture the pressure channel and cell seeding hole in one go. The device was bonded to a microscope slide using unpolymerized PDMS, and we performed PRIMO patterning of the device by flipping it upside down. In this setup, seeding cells was easier, as the cell seeding part was exposed.
-
-As expected, we were able to generate domes using the same system as before by applying pressure. The imaging technique we developed enabled us to acquire a full dome image in a mere 4 seconds, which involves using objective scan, where only one objective to scan the dome with 100 frames with step size of 1\unit{\um} at rate of 4\unit{\ms}. This allows us to observe fast-moving features that were indiscernible with other imaging techniques (see fig \ref{fig_6_9}).
-
 \begin{figure}[]
 	\centering
 	\includegraphics[width=\textwidth]{chap6_lightsheet.png}
@@ -154,9 +153,13 @@ As expected, we were able to generate domes using the same system as before by a
 	}\label{fig_6_8}
 \end{figure}
 
+To simplify the fabrication process, we inverted the conventional MOLI device. This necessitated only a pressure channel and a middle layer with a hole and porous membrane. The device was manufactured sufficiently thick to plug in the tubing, and given the device and channels' size, we produced the mold using a standard 3D printer, Ultimaker 3D printer. We incorporated a ridge-like protrusion to manufacture the pressure channel and cell seeding hole in one go. The device was bonded to a microscope slide using unpolymerized PDMS, and we performed PRIMO patterning of the device by flipping it upside down. In this setup, seeding cells was easier, as the cell seeding part was exposed.
+
+As expected, we were able to generate domes using the same system as before by applying pressure. The imaging technique we developed enabled us to acquire a full dome image in a mere 4 seconds, which involves using objective scan, where only one objective to scan the dome with 100 frames with step size of 1\unit{\um} at rate of 4\unit{\ms}. This allows us to observe fast-moving features that were indiscernible with other imaging techniques (see fig \ref{fig_6_9}).
+
 \begin{figure}[]
 	\centering
-	\includegraphics[width=\textwidth]{chap6_lightsheetdome.png}
+	\includegraphics[width=0.8\textwidth]{chap6_lightsheetdome.png}
 	\caption{ \textbf{Dome imaged with Light sheet MOLI}: Mid-section of a dome with membrane marker imaged every $2s$. Showing the shape of individual cells undergoing changes during deflation. Scale bar is $20 \mu m$.
 	}\label{fig_6_9}
 \end{figure}
