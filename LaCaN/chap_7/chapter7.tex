@@ -91,7 +91,7 @@ To implement this approach, progressively increasing pressure to track steady st
 	\centering
 	\includegraphics[width=\textwidth]{chap7_constitutivelaw.png}
 	\caption{\label{fig_7_5}
-	% \marino{[For paper, I would plot the two graphs above with the same ranges of tension/strain and with the same aspect ratio. I would also indicate the numerical value of $\Delta P$ for selected curves (or as a colorbar), and then the arrow with P is not needed, for a representative $a$, and would sketch a putative relation $\sigma^{\rm ss}(\epsilon)$ in A. In B, I assume you consider domes with different $a$, is that right?]} Nimesh's reply: AGREE, I WILL PREPARE IT FOR THE PAPER
+	% \marino{[For paper, I would plot the two graphs above with the same ranges of tension/strain and with the same aspect ratio. I would also indicate the numerical value of $\Delta P$ for selected curves (or as a colorbar), and then the arrow with P is not needed, for a representative $a$, and would sketch a putative relation $\sigma^{\rm ss}(\epsilon)$ in A. In B, I assume you consider domes with different $a$, is that right?]} Nimesh's reply: AGREE, I WILL PREPARE IT FOR THE PAPER, Yes we have different size of domes in the dataset
 	\textbf{Steady-state constitutive Relation of epithelial monolayers}: (A) We set up experiments to probe the steady state at different pressures. We will start from the highest pressure, move along the isobaric line and achieve a steady state, and then move down to the next curve, and so on.	(B) The constitutive relation between dome strain and tissue tension was experimentally obtained (n=12). The line and shaded area represent the median and standard deviation, respectively, by binning 13 points in each bin.}
 \end{figure}
 
@@ -122,6 +122,15 @@ Next, we investigated the dynamic material response of the domes by conducting c
 	\end{table}
 \end{center}
 
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{chap7_dynamic.png}
+	\caption{\label{fig_7_6} \textbf{Dynamic response of Epithelia:} (A) The XZ plane images and kymographs of domes subjected to cyclic pressure between 0 to 200 Pa with rates of 20, 1.5, and 0.2 Pa/s The kymographs generated along the midsection of the domes indicated by yellow dotted lines. These indicate the evolution of height of the domes with respect to time. (B) The strain response of domes to cyclic pressure with different rates. Magenta represents pressure and red represents strain with respect to time. For A, B, n= 7 domes for 20 Pa/s, n = 8 for 1.5 Pa/s, and n = 7 for 0.2 Pa/s. 
+	}
+\end{figure}
+
 For the fastest cycles, we observed that the maximum strain achieved by the domes in each cycle increased until they reached a steady state oscillation around 600 seconds. 
 %\marino{around 600 seconds ?? [ by the end of the experiment]}. Nimesh's reply: YES
 The experiment was conducted over 1200 seconds, equivalent to 60 cycles, during which we observed a cumulative buildup of strain over time. In the loading phase, the domes underwent stretching, while during the unloading phase, they experienced unstretching but failed to revert to zero strain after the initial cycles. In the concluding cycles, we noted that the dome oscillated between two distinct states of strain, resembling a limit cycle (see Figure \ref{fig_7_6} B top).
@@ -143,14 +152,7 @@ These experiments clearly demonstrated the rate-dependent response of the domes,
 %\cite{khalilgharibi2019} % monolayer stretch
 
 
-\begin{figure}[]
-	\centering
-	\includegraphics[width=\textwidth]{chap7_dynamic.png}
-	\caption{\label{fig_7_6} \textbf{Dynamic response of Epithelia:} (A) The XZ plane images and kymographs of domes subjected to cyclic pressure between 0 to 200 Pa with rates of 20, 1.5, and 0.2 Pa/s The kymographs generated along the midsection of the domes indicated by yellow dotted lines. These indicate the evolution of height of the domes with respect to time. (B) The strain response of domes to cyclic pressure with different rates. Magenta represents pressure and red represents strain with respect to time. For A, B, n= 7 domes for 20 Pa/s, n = 8 for 1.5 Pa/s, and n = 7 for 0.2 Pa/s. 
-	}
-\end{figure}
-
-\newpage
+%\newpage
 
 \hypertarget{active-gel-tissue-model}{%
 	\section{Active gel tissue model}\label{active-gel-tissue-model}}
@@ -205,7 +207,7 @@ Consider an example where the tissue is step stretched biaxially. The actual are
 	}
 \end{figure}
 
-However, as discussed earlier, MOLI does not naturally probe a strain-controlled mechanical ensemble. Thus,  simulations were conducted to mirror the experimental conditions. Upon subjecting the digital dome to constant pressure, consistent with our previous experimental observations, the digital dome reached a steady state strain while experiencing a reduction in tissue thickness as the cells stretched, Figures  Figure \ref{fig_7_7} A and \ref{fig_7_2} B. The remodeling of the cortex dissipates the viscoelastic stress and increases the active tension. At steady state, only the active tension remains balancing the externally applied pressure. The simulations show that the time to reach the steady state is mainly driven by the viscoelastic timescales. During such dynamics, the digital domes also produced the  non-monotonous tension-strain relations observed experimentally, Figure \ref{fig_7_7} B.
+However, as discussed earlier, MOLI does not naturally probe a strain-controlled mechanical ensemble. Thus,  simulations were conducted to mirror the experimental conditions. Upon subjecting the digital dome to constant pressure, consistent with our previous experimental observations, the digital dome reached a steady state strain while experiencing a reduction in tissue thickness as the cells stretched, Figures \ref{fig_7_7} A and \ref{fig_7_2} B. The remodeling of the cortex dissipates the viscoelastic stress and increases the active tension. At steady state, only the active tension remains balancing the externally applied pressure. The simulations show that the time to reach the steady state is mainly driven by the viscoelastic timescales. During such dynamics, the digital domes also produced the  non-monotonous tension-strain relations observed experimentally, Figure \ref{fig_7_7} B.
 
 To map the steady-state constitutive relation, we first quasi-statically increased pressure to obtain the blue curve in Figure \ref{fig_7_7} B. We then  mirrored the experimental procedure by subjecting the digital domes to pressure steps, and then letting the system reach a steady state. We found that these tension-strain pairs at steady state for different pressures retrace the blue quasi-static curve in Figure \ref{fig_7_7} B. This curve displays characteristics similar to those observed experimentally. The strain-stiffening at high strains can be attributed to the barrier mechanism introduced to limit high strains, which we did not attempt to fit to experimental measurements. 
 
@@ -216,9 +218,9 @@ To map the steady-state constitutive relation, we first quasi-statically increas
 	\caption{\label{fig_7_7} \textbf{Material response of the digital domes}: (A) When subjected to constant pressure, as in experiments, the digital dome inflated and reached a steady state. (B) These simulations also produced non-monotonic tension strain curves for different pressures, all leading to a steady state. The blue curve is the result of a quasi-static increase of pressure, which traces the locus of steady-state points obtained in long isobaric simulations. Tension reported here is non dimensional.}
 \end{figure}
 
-The effect of the remodeling timescale is particularly noticeable in cyclic stretching experiments. When digital domes are subjected to a cyclic pressure at rates that are slower than cortical dynamics, then the cortex remains close to steady state during cellular deformations. Hence, the stored elastic energy is rapidly dissipated as the strain increases, and the cortical thickness does not change significantly as turnover has time to restore the steady-state thickness. We observed that the resting area in the digital dome almost overlapped with the actual area (Figure \ref{fig_7_7} B bottom). This slow rate of 0.2 Pa/s provides cells with sufficient time to remodel and dissipate viscoelastic stresses. Viscoelastic and turnover timescales in simulations are around 10-30s, which means that over a period of 2000s, the dome stretches to considerably large strains of 250-300\% and returns to its original flat state.
+The effect of the remodeling timescale is particularly noticeable in cyclic stretching experiments. When digital domes are subjected to a cyclic pressure at rates that are slower than cortical dynamics, then the cortex remains close to steady state during cellular deformations. Hence, the stored elastic energy is rapidly dissipated as the strain increases, and the cortical thickness does not change significantly as turnover has time to restore the steady-state thickness. We observed that the resting area in the digital dome almost overlapped with the actual area (Figure \ref{fig_7_8} B bottom). This slow rate of 0.2 Pa/s provides cells with sufficient time to remodel and dissipate viscoelastic stresses. Viscoelastic and turnover timescales in simulations are around 10-30s, which means that over a period of 2000s, the dome stretches to considerably large strains of 250-300\% and returns to its original flat state.
 
-In contrast, when cells in a dome are subjected to cyclic pressure at rates faster than cortical dynamics, they accumulate strains due to insufficient time to dissipate viscoelastic stress. In this case, the actual area changes more rapidly than the viscoelastic and turnover timescales permit (Figure \ref{fig_7_7} B top). Consequently, along with the change in the actual area, the resting area also changes, but at a slower pace. During deflation, the resting area decreases but cannot decrease completely before the next inflation cycle begins, causing the tissue to stretch further in a ratcheting behavior reported in individual cell junctions \cite{clement2017}. Eventually, a limit cycle is reached, wherein cells stably oscillate between two strains, and the resting area oscillates as well, but at a smaller amplitude (Figure \ref{fig_7_7} B top).
+In contrast, when cells in a dome are subjected to cyclic pressure at rates faster than cortical dynamics, they accumulate strains due to insufficient time to dissipate viscoelastic stress. In this case, the actual area changes more rapidly than the viscoelastic and turnover timescales permit (Figure \ref{fig_7_8} B top). Consequently, along with the change in the actual area, the resting area also changes, but at a slower pace. During deflation, the resting area decreases but cannot decrease completely before the next inflation cycle begins, causing the tissue to stretch further in a ratcheting behavior reported in individual cell junctions \cite{clement2017}. Eventually, a limit cycle is reached, wherein cells stably oscillate between two strains, and the resting area oscillates as well, but at a smaller amplitude (Figure \ref{fig_7_8} B top).
 
 
 \begin{figure}
@@ -248,6 +250,7 @@ Furthermore, our measurements showed that the domes accumulated strain through t
 %\end{figure}
 
 Previous research has approached the viscoelastic rheology of cell monolayers using minimal rheological models involving springs and dashpots. One particularly interesting model was developed by \citet{khalilgharibi2019}, which characterizes the response of a suspended monolayer to stretch and demonstrates that the dynamics are similar to that of a single cell, due to the role of the actomyosin cortex. They used a model with two springs in parallel, one of which can change its resting length dynamically. The model explains the relaxation of the monolayer, as the active contractility of the cortex changes the resting length of the active spring, which closely relates to our "resting area" concept. 
+
 Another study by \citet{clement2017} found that viscoelastic dissipation could explain the shortening or elongation of cell junctions in Drosophila embryos. They demonstrated that the dissipation occurs at the minute timescale, which coincides with myosin pulses, and that actin turnover plays a key role in this dissipation. These pulses have a ratchet-like mechanical effect that drives junction shortening and causes tissue folding. This ratcheting effect is reminiscent of the cyclic stretching at faster rates, where cells stretch more and more every cycle. Similar to the authors of the study, we explain the strain accumulation by incomplete dissipation of viscoelastic stress due to deformation faster than the remodeling timescale.
 The multi-cellular model used here recovers these phenomenologies and relates them to cytoskeletal dynamics. More importantly, it is applicable to more general situations in which the cellular deformation are heterogeneous, as further discussed in the next chapter. 
 
@@ -257,10 +260,11 @@ Our experimental system focused on probing the response of suspended tissues at 
 
 \citet{latorre2018}  also demonstrated heterogeneity in cell stretching, attributed to a mechanism of  active superelasticity. However, in our experiments, we did not observe the coexistence of stretched and super-stretched cells. This might be due to the relatively shorter timescales in our experiments compared to long-term and pulsating deformation of spontaneous domes.
 
-A recently published study \cite{duque2023} shows that strain stiffening at very large strains is dependent on the strain and strain rates. The tissue stiffens at higher strains, but for higher strain rates, the stiffening is more pronounced.% at higher strains (15\%) than lower strains (120\%). [remove this because I a not sure it is correct, and this paper uses linear strains whereas you use areal strains]
-They demonstrated that this response is due to the supracellular network of intermediate filaments. Because in MOLI we do not control strain directly but rather pressure, it is not straightforward to map our results and those in this study. However, it is possible in principle to control strain and strain rate by a feedback mechanism \marino{[I am not sure if this is what you mean.]} 
+A recently published study \cite{duque2023} shows that strain stiffening at very large strains is dependent on the strain and strain rates. The tissue stiffens at higher strains, but for higher strain rates, the stiffening is more pronounced.% at higher strains (15\%) than lower strains (120\%). [remove this because I a not sure it is correct, and this paper uses linear strains whereas you use areal strains] Nimesh's reply: TRUE
+They demonstrated that this response is due to the supracellular network of intermediate filaments. Because in MOLI we do not control strain directly but rather pressure, it is not straightforward to map our results and those in this study. However, it is possible in principle to control strain and strain rate by a feedback mechanism. %\marino{[I am not sure if this is what you mean.]}  NImesh's reply: I almost meant this, I thought we could quantify the strain rates in the cyclic stretching experiments but feedback mechanism is better.
 %In our experiments, we could only control pressure and pressure rates. However, if needed, we can track the strains and quantify strain rates to explore the mechanics. 
-When plotting tension-strain curves for different pressure rates, we noticed characteristics of stiffening at higher strains and higher rates \marino{[this is not shown, I am not sure it the reader will understand]}. We further note that in the model, we did not include any rate-dependence in the strain stiffening as proposed by \citet{duque2023}, but it can be easily incorporated as mechanistic and quantitative understanding of this process becomes available.
+% When plotting tension-strain curves for different pressure rates, we noticed characteristics of stiffening at higher strains and higher rates \marino{[this is not shown, I am not sure it the reader will understand]}. 
+We further note that in the model, we did not include any rate-dependence in the strain stiffening as proposed by \citet{duque2023}, but it can be easily incorporated as mechanistic and quantitative understanding of this process becomes available.
 
 
 Having established the correspondence of our computational model and experiments in MOLI, which depicts  the epithelium as an active viscoelastic material, we will harness in the next chapter this understanding to control dome shape transformations.
