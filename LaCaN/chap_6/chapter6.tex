@@ -44,7 +44,7 @@ The primary function of the porous membrane is to enable pressure application wh
 
 The thin (10\unit{\um}) plastic sheets were easily manageable, but we encountered difficulties with bonding and experienced leakages due to membrane wrinkling. To address these difficulties, we decided to modify the middle layer by using a PDMS layer with a hole attached to a small piece of membrane, instead of whole layer being a porous membrane. This approach allowed us to achieve stronger and leak-proof bonding by sandwiching a smaller area between the two PDMS layers. The middle PDMS thin layer was constructed with a 1.2\unit{\mm} hole to expose the membrane to pressure, as this dimension is approximately the size of the field of view of a 10X objective.
 
-\begin{figure}[b!]
+\begin{figure}[]
 	\centering
 	\includegraphics[width=0.75\textwidth]{chap6_realscheme.png}
 	\caption{ \textbf{Fabrication of MOLI}: Four layers assembled together with ozone plasma cleaning. Each channels has a inlet and outlet. Only the pressure channel is connected to the tubing; one side connects to the reservoir and other is sealed. 
@@ -65,13 +65,12 @@ In the context of the spontaneous dome system, the upper surface is accessible f
 
 To ensure successful attachment of cells and formation of monolayer, a concentration of 25-30×\unit{\num{e6} cells/\ml} was seeded for one hour, followed by rigorous flushing with fresh cell culture media to wash away any unattached cells. Early experiments revealed that while cells attached to the top side of the porous membrane, there were very few dome formations upon application of pressure. Additionally, imaging through the porous membrane was poor quality, as the cells were further away from the microscope objective, and some cells were filtering through the membrane from top to bottom (see fig \ref{fig_6_4}).  
 
-\begin{figure}[h!]
+\begin{figure}[]
 	\centering
 	\includegraphics[width=0.75\textwidth]{chap6_cellsontop.png}
 	\caption{ \textbf{Cells filtering through the membrane}: (A) Images of MDCK-CiBN CAAX GFP monolayer on the both sides of the membrane. Scale bar is $80\mu m$. (B) Schematic of imaging through the porous layer.	}\label{fig_6_4}
 \end{figure}
 
-\clearpage
 
 To prevent cells from crossing the membrane, various plastic membranes with smaller pore sizes (ranging from 50 \unit{\nm} to 10 \unit{\um}) were systematically tested. Considering the flow rates and cell filtration through the membrane, a 400 \unit{\nm} pore size membrane was chosen. However, imaging the green channel (488 \unit{\nm}) through these pores was impossible. Therefore, an "upside-down" cell culture approach was implemented, where the device was flipped immediately after seeding cells in the bottom channel to ensure attachment on the membrane instead of the glass (see fig \ref{fig_6_5}). Thorough washing of the channel was necessary to prevent cell attachment to the glass, which would have obstructed the imaging of the domes.
 
@@ -113,22 +112,20 @@ This translation stage is capable of accommodating linear velocities ranging fro
 \section{Imaging the epithelial
 domes}\label{imaging-the-epithelial-domes}}
 
-\begin{figure}[b!]
-	\centering
-	\includegraphics[width=0.65\textwidth]{chap6_confocaldomes.png}
-	\caption{\\ \textbf{Epithelial dome:} Representative confocal microscopy sections of domes at 0 Pa and 200 Pa. Images in the XY plane represent the dome's maximum projection, while images in the XZ plane represent a cross section at the center plane. Three cells are highlighted with color to show the stretching during the dome inflation. Scale bar is $20 \mu m$.
-	} \label{fig_6_6}
-\end{figure}
-
 Following extensive optimization of protein patterning, cell culture conditions, and confocal microscopy techniques, we were able to generate domes in accordance with the intended pattern and exert precise control over the pressure required for their formation. To obtain images of the dome, we utilized a spinning disk confocal microscope with a 40x objective lens (NA 0.75), which allowed us to visualize the membrane (CIBN CAAX GFP) and adhesion protein (Fibrinogen) pattern in separate channels (488\unit{\nm} and 644\unit{\nm}, respectively). By incorporating a labeled adhesion protein, we were able to track the formation of the domes with greater ease and accuracy.
 
 We initially focused on characterizing the mechanics of spherical domes at constant pressure to gain insights into epithelial behavior (see fig \ref{fig_6_6}). Laplace's law was employed to calculate tension using pressure, cell shape, and tissue curvature data, which we could easily monitor. Unlike previous studies that did not control the pressure under the dome, our experimental system allowed us to inflate and deflate the domes in seconds. This forced us to monitor them by observing the base of the dome where the monolayer would intermittently come in and out of view.
 
-\vspace{2em}
+\begin{figure}[b!]
+	\centering
+	\includegraphics[width=0.8\textwidth]{chap6_confocaldomes.png}
+	\caption{\textbf{Epithelial dome:} Representative confocal microscopy sections of domes at 0 Pa and 200 Pa. Images in the XY plane represent the dome's maximum projection, while images in the XZ plane represent a cross section at the center plane. Three cells are highlighted with color to show the stretching during the dome inflation. Scale bar is $20 \mu m$.
+	} \label{fig_6_6}
+\end{figure}
 
 Acquiring images of the dome stack in a confocal microscope required three minutes using a step size of 0.5\unit{\um} (exposure 500\unit{\ms}) and a height of 100\unit{\um}, which was slower than the rate at which we could deform the dome by changing the pressure (see fig \ref{fig_6_6}). To investigate the rheology of the domes, it was necessary to monitor their dynamic response at faster pressure rates and shorter timescales while measuring dome strain and curvature. Since the dome possessed inherent symmetry, imaging the mid-section of the structure provided all the geometric information required.
 
-Using the line scanning mode of a Zeiss Airy Scan Microscope, we imaged a single line of pixels across the midsection of the dome and acquired a confocal z-stack (1024 pixel, 4.1\unit{\us/pixel} dwell time, and 1\unit{\um} step size) along the height of the dome (refer to fig 1.8). This approach allowed us to obtain a cross-sectional view of the dome in a fraction of the time required for a normal stack. By enabling piezo stage movement, we imaged a 100\unit{\um} tall dome in just 4 seconds and tracked its height evolution using a kymograph of the central part of the dome. It is important to note that this imaging method is primarily useful for tracking dome strain and curvature, and the cell images obtained are often of low quality.
+Using the line scanning mode of a Zeiss Airy Scan Microscope, we imaged a single line of pixels across the midsection of the dome and acquired a confocal z-stack (1024 pixel, 4.1\unit{\us/pixel} dwell time, and 1\unit{\um} step size) along the height of the dome (refer to fig \ref{fig_6_7}). This approach allowed us to obtain a cross-sectional view of the dome in a fraction of the time required for a normal stack. By enabling piezo stage movement, we imaged a 100\unit{\um} tall dome in just 4 seconds and tracked its height evolution using a kymograph of the central part of the dome. It is important to note that this imaging method is primarily useful for tracking dome strain and curvature, and the cell images obtained are often of low quality.
 
 
 \begin{figure}[]
@@ -163,9 +160,6 @@ As expected, we were able to generate domes using the same system as before by a
 	\caption{ \textbf{Dome imaged with Light sheet MOLI}: Mid-section of a dome with membrane marker imaged every $2s$. Showing the shape of individual cells undergoing changes during deflation. Scale bar is $20 \mu m$.
 	}\label{fig_6_9}
 \end{figure}
-
-
-\clearpage
 
 \hypertarget{summary-and-discussion}{%
 \section{Summary and Discussion}\label{summary-and-discussion}}
