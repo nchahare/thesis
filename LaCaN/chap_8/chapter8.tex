@@ -28,8 +28,6 @@ During rapid deflation, when negative pressure is applied to the positively curv
 	}
 \end{figure}
 
-\vspace{2em}
-
 To experimentally validate the simulation results, we designed experiments to identify the effect of hold and deflation timescales on buckling.  The pressure profiles were decided as follows (see Figure \ref{fig_8_2}):
 
 \begin{enumerate}
@@ -85,14 +83,13 @@ Moreover, we found that while some domes were not buckling at the tissue scale, 
 
 In summary, our observations of tissue buckling, cellular buckling, and subcellular buckling provide new insights into the mechanics of epithelial tissues. The hierarchical architecture of these biological interfaces is mirrored by a hierarchy of buckling scales. Each of these buckling scales provide distinct mechanisms to release compressive stresses in cortical surfaces. 
 
-
 \hypertarget{generating-epithelial-folds}{%
 	\section{Generating epithelial
 		folds}\label{generating-epithelial-folds}}
 
 In this section, we explored the formation of epithelial folds after deflation. During deflation, we observed the tissue making contact with the substrate in certain regions first, leading to the formation of folds in the regions where it made contact last (see Fig. \ref{fig_8_6} A-C). To investigate if there was any pattern to these folds, we examined buckling of spherical domes of different sizes. Indeed, larger domes result in more slender structures, known to exhibit more intricate buckling patterns. Our observations revealed two types of folding patterns emerging: accumulation along the periphery and folds in the middle (see Fig. \ref{fig_8_5}).
 
-\begin{figure}[]
+\begin{figure}[h!]
 	\begin{minipage}[c]{0.5\textwidth}
 		\includegraphics[width=0.8\textwidth]{chap8patternfraction.png}
 	\end{minipage}\hfill
@@ -105,22 +102,16 @@ In this section, we explored the formation of epithelial folds after deflation. 
 
 For smaller domes with a footprint diameter smaller than 110 \unit{\um}, we repeatedly observed that most of the buckling resulted in an accumulation around the periphery (see Fig. \ref{fig_8_6} A). The confocal time-lapse from the base gave the impression of an annular structure, but three-dimensional imaging of the folds revealed a crescent-shaped fold, taller on one side than the other. For larger domes with a footprint diameter greater than 300 \unit{\um}, we observed instances of domes forming a network of folds in the middle, with multiple folds connecting each other by forming junctions (see Fig. \ref{fig_8_6} C). Finally, for intermediate-sized domes, we observed a mixture of accumulation and folds, although the proportion of folds along the periphery decreased (see Fig. \ref{fig_8_5} ).
 
-We also observed the same folding patterns in the digital domes when performing the same deflation experiments (see Fig. \ref{fig_8_6} D). Larger digital domes produced more radial folds, and smaller ones formed an accumulation on the side. Intermediate-sized digital domes showed a mixture of both patterns.
-Our findings suggest that the folding patterns may be governed by the size and shape of the dome. In the next section, we will attempt to control the folds by controlling the footprint shape.
-
-%\newpage
-
-%\vspace{3cm}
-
-\begin{figure}
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=\textwidth]{chap8_bucklingfolds.png}
 	\caption{\label{fig_8_6} \textbf{Buckling patterns in spherical domes of varied size}: Representative examples of digital domes undergoing buckling with time-lapse of their basal cross-section (A-C). In the first frame, the onset of buckling is visible where the dome makes contact in the middle. Subsequent frames show more of the fold coming into view, and when the dome completely deflates, a fold is formed (indicated by the green arrow). Panel (D) shows the final outcome of buckling for digital domes of different sizes. Scale bar is $20 \mu m$	}
 \end{figure}
-
-
-
 \clearpage
+
+We also observed the same folding patterns in the digital domes when performing the same deflation experiments (see Fig. \ref{fig_8_6} D). Larger digital domes produced more radial folds, and smaller ones formed an accumulation on the side. Intermediate-sized digital domes showed a mixture of both patterns.
+Our findings suggest that the folding patterns may be governed by the size and shape of the dome. In the next section, we will attempt to control the folds by controlling the footprint shape.
+
 \hypertarget{forming-predictable-folds}{%
 	\section{Forming predictable folds}\label{forming-predictable-folds}}
 
@@ -134,7 +125,7 @@ We observed that the folds exhibited variability in terms of stability, with som
 
 Our results suggest that the MOLI system could provide a novel way of generating epithelial folds, with potential applications in tissue engineering. These results demonstrate that by controlling a few mechanical parameters such as geometry and pressure, it is possible to harness active viscoelasticity and  buckling to program epithelial folds.
 
-\begin{figure}
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=\textwidth]{chap8_pfolds.png}
 	\caption{\label{fig_8_7} \textbf{Controling the patterns of fold}: A-B Simulations show digital models of ellipsoidal and triangular domes buckled into line and Y-shaped junctions. C-D Experimental results confirm the simulation findings. E-F Confocal z-stack images show the folds in the case of a line and Y-shaped junction. Scale bar is $50\mu m$.	}

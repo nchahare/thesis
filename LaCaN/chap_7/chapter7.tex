@@ -61,7 +61,7 @@ which when plugged into Laplace's law in Eq.~(\ref{eqn:laplace}) results in
 	\label{eqn:isobaric}
 	\frac{\sigma}{a \Delta P} = \frac{1}{4}  \frac{\epsilon + 1}{\sqrt{\epsilon}}.
 \end{equation}
-This relation relates two non-dimensional quantities. Since in the experiments reported in Figure \ref{fig_7_3} pressure $\Delta P$ and footprint radius $a$ are constant, this relation shows that tension should be proportional to $(\epsilon + 1)/\sqrt{\epsilon}$ irrespective of the mechanical response of the tissue, as a result of geometry and mechanical equilibrium. For small strains ($\epsilon\ll 1$), we have $\sigma \propto 1/\sqrt{\epsilon}$, whereas for large strains $\epsilon\gg 1$, we have $\sigma \propto \sqrt{\epsilon}$ in agreement with the non-monotonic measured stress-strain curves. A geometric interpretation of the isobaric curve is shown in Figure \ref{fig_7_4}, which reflects the fact that the radius of curvature of a spherical dome of fixed footprint is minimum when the dome is half sphere. When represented according to Eq.~(\ref{eqn:isobaric}), all tension-strain curves collapse to a master curve reflecting the hypotheses of the measurement (see fig \ref{fig_7_3} B inset).
+This relation relates two non-dimensional quantities. Since in the experiments reported in Figure \ref{fig_7_3} pressure $\Delta P$ and footprint radius $a$ are constant, this relation shows that tension should be proportional to $(\epsilon + 1)/\sqrt{\epsilon}$ irrespective of the mechanical response of the tissue, as a result of geometry and mechanical equilibrium. For small strains ($\epsilon\ll 1$), we have $\sigma \propto 1/\sqrt{\epsilon}$, whereas for large strains $\epsilon\gg 1$, we have $\sigma \propto \sqrt{\epsilon}$ in agreement with the non-monotonic measured stress-strain curves. A geometric interpretation of the isobaric curve is shown in Figure \ref{fig_7_4}, which reflects the fact that the radius of curvature of a spherical dome of fixed footprint is minimum when the dome is half sphere. When represented according to Eq.~(\ref{eqn:isobaric}), all tension-strain curves collapse to a master curve reflecting the hypotheses of the measurement (see Fig. \ref{fig_7_3} B inset).
 
 \begin{figure}
 	\centering
@@ -98,17 +98,14 @@ Viewing the cell monolayer as a material sheet, we sought to characterize the st
 
 To implement this approach, progressively increasing pressure to track steady states is not feasible due to the existence of a pressure threshold for delamination. Instead, we swept pressures by deflating domes in steps. Specifically, we applied a pressure of 200 \unit{\pascal} for 5 minutes, allowing the dome to reach a steady state. We then reduced the pressure in increments of 20 \unit{\pascal}, allowing the dome to reach steady state at each step. This process continued until the dome was completely deflated. This approach allowed us to collect steady state tension-strain pairs that should lie on the curve $\sigma^{\rm ss}(\epsilon)$, hence mapping the steady-state constitutive relation of the tissue, Fig. \ref{fig_7_5} B. The resulting constitutive relation showed an initial increase in tension with strain for lower strains. For larger strains, the tension plateaued, consistent with earlier studies on MDCK domes. It is important to note the significant variability in dome-to-dome tension, with recorded tensions around 4.5 \unit{mN/m} with the same order of magnitude as those in previous studies \cite{latorre2018,marin-llaurado2022}. In summary, we show that MOLI can be used to map the steady-state constitutive relation of a tissue by stepwise pressure reduction. We probe next the dynamical material response.
 
-\vspace{0cm}
-
 \hypertarget{dynamics-of-the-epithelia-domes}{\section{Dynamics of the epithelial domes}\label{dynamics-of-the-epithelial-domes}}
 
 Next, we investigated the dynamic material response of the domes by conducting cyclic pressurization experiments. We subjected the domes to a triangular wave of pressure with a magnitude of 200 Pa at three distinct timescales, as depicted in Figure \ref{fig_7_6}. The selected timescales of 20s, 266s, and 2000s were based on existing literature on tissue remodeling, particularly the work of \citet{khalilgharibi2019} and \citet{casares2015}. These studies demonstrated that stress relaxation in tissues occurs from tens of seconds to minute timescales due to F-actin remodeling and myosin-driven contractility. Even faster deformation rates, which have been studied using different methods \cite{khalilgharibi2019}, are not accessible to the current implementation of MOLI because of the microscope’s imaging speed.
 % Additionally, in some cases, even faster deformation at timescales of a few seconds has been shown to impact cell remodeling \cite{andreu2021a} 
 %\marino{[I don't understand this sentence. Impact how? I am not sure this paper is so relevant here. Charras' studies have shown a power-law rheology of tissues at very short time-scales. Maybe, you could say, or not ``Faster deformation rates, which have been studied using different methods \cite{khalilgharibi2019}, are not accessible to the current implementation of MOLI because of the microscope’s imaging speed'']}. Nimesh's reply: I AGREE
 %In our device, the fastest cycle that could be probed was limited to 20s because of the microscope’s imaging speed.
-
 \begin{center}
-	\begin{table}[]
+	\begin{table}[h!]
 		\label{tab:hysteresis}
 		\centering
 		\begin{tabular}{c c c c}
@@ -119,19 +116,20 @@ Next, we investigated the dynamic material response of the domes by conducting c
 		\caption{Pressure rates used for cyclic stretching experiments}
 	\end{table}
 \end{center}
-
-\begin{figure}[]
-	\centering
-	\includegraphics[width=\textwidth]{chap7_dynamic.png}
-	\caption{\label{fig_7_6} \textbf{Dynamic response of Epithelia:} (A) The XZ plane images and kymographs of domes subjected to cyclic pressure between 0 to 200 Pa with rates of 20, 1.5, and 0.2 Pa/s The kymographs generated along the midsection of the domes indicated by yellow dotted lines. These indicate the evolution of height of the domes with respect to time. (B) The strain response of domes to cyclic pressure with different rates. Magenta represents pressure and red represents strain with respect to time. For A, B, n= 7 domes for 20 Pa/s, n = 8 for 1.5 Pa/s, and n = 7 for 0.2 Pa/s. 
-	}
-\end{figure}
+\vspace{-2em}
 
 For the fastest cycles, we observed that the maximum strain achieved by the domes in each cycle increased until they reached a steady state oscillation around 600 seconds.
 %\marino{around 600 seconds ?? [ by the end of the experiment]}. Nimesh's reply: YES
 The experiment was conducted over 1200 seconds, equivalent to 60 cycles, during which we observed a cumulative buildup of strain over time. In the loading phase, the domes underwent stretching, while during the unloading phase, they experienced unstretching but failed to revert to zero strain after the initial cycles. In the concluding cycles, we noted that the dome oscillated between two distinct states of strain, resembling a limit cycle (see Figure \ref{fig_7_6} B top).
 
 A similar response was observed for the moderate cycles, where the domes were stretched for five cycles of 266s each. Strain accumulated in the first two cycles, with strains reaching higher values than those observed in the fast case (see Figure \ref{fig_7_6} B middle). After the third cycle, the dome appeared to reach a stable limit cycle.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{chap7_dynamic.png}
+	\caption{\label{fig_7_6} \textbf{Dynamic response of Epithelia:} (A) The XZ plane images and kymographs of domes subjected to cyclic pressure between 0 to 200 Pa with rates of 20, 1.5, and 0.2 Pa/s The kymographs generated along the midsection of the domes indicated by yellow dotted lines. These indicate the evolution of height of the domes with respect to time. (B) The strain response of domes to cyclic pressure with different rates. Magenta represents pressure and red represents strain with respect to time. For A, B, n= 7 domes for 20 Pa/s, n = 8 for 1.5 Pa/s, and n = 7 for 0.2 Pa/s. 
+	}
+\end{figure}
 
 In the slowest loading experiments, consisting of two cycles of 2000s, we observed that the domes did not form at lower pressures. As discussed earlier, the domes remained attached until a pressure of 100-150 Pa was attained, beyond which they underwent rapid inflation, leading to high strains of 200-350\%. A clear phase-shift was visible between pressure and strain. In contrast with the previous two cases, the second cycle did not reach a higher strain as compared to the first one (see Figure \ref{fig_7_6} B bottom). In these experiments, cells were able to stretch four times their original area and return to the original size at the end of each cycle.
 
