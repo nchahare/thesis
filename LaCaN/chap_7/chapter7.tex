@@ -22,7 +22,7 @@ From the cross-section, we measured the height $h$ and base radius $a$ of each d
 	\label{eqn:radiuscurve}
 	R = \frac{h^2 + a^2}{2h}.
 \end{equation}
-Additionally, MOLI provides a direct readout of pressure $\Delta P$, allowing us to compute the tension ($\sigma$) using Laplace's law
+Additionally, MOLI provides a direct readout of pressure $\Delta P$, allowing us to compute the tension $\sigma$ using Laplace's law
 \begin{equation}
 	\label{eqn:laplace}
 	\sigma = \frac{\Delta PR }{2} .
@@ -44,7 +44,7 @@ First, we systematically applied varying pressures ranging from 0-400 \unit{\pas
 \begin{figure}[b!]
 	\centering
 	\includegraphics[width=\textwidth]{chap7_constpressure.png}
-	\caption{\label{fig_7_3} \textbf{Epithelial domes at constant pressure}: Dynamic response of three representative domes at a constant pressure of 200 Pa (Domes with base radius: red 56 $\mu m$, blue 63 $\mu m$, purple 42 $\mu m$): (A) Areal strain increases and reaches a steady state at around 5 minutes, and we can clearly see variability in the maximum strains. (B) The same domes produce a peculiar tension and strain curve. In an inset on top, all three curves collapse onto a single  master curve, when tension $\sigma$ is normalized by base radius $a$ and plotted with respect to areal strain $\epsilon$. (representative of 12 domes)
+	\caption{\label{fig_7_3} \textbf{Epithelial domes at constant pressure}: Dynamic response of three representative domes at a constant pressure of 200 Pa (Domes with base radius: red 56 $\mu m$, blue 63 $\mu m$, purple 42 $\mu m$): (A) Areal strain increases and reaches a steady state at around 5 minutes, and we can clearly see variability in the maximum strains. (B) The same domes produce a peculiar tension and strain curve. In an inset on top, all three curves collapse onto a single  master curve, when tension $\sigma$ is normalized by base radius $a$ and plotted with respect to areal strain $\epsilon$. (Representative of 12 domes)
 	}
 \end{figure}
 
@@ -52,7 +52,7 @@ When domes were subjected to a constant pressure of 200 \unit{\pascal}, they und
 
 We then plotted the tension-strain relationship of these domes, systematically finding a non-monotonic curve similar to the Nike "swoosh" symbol (see Figure \ref{fig_7_3} B). At low strains, the tension within the domes is very high, followed by a decline to a minimum value at an areal strain of 100\%, where the dome adopts a hemispherical shape. Tension then increases  again, but the rate of increase is slower than the rate at which tension decreases at lower strains. This non-monotonic tension-strain curve is at odds with previous measurements of tension-strain relations in spontaneously fluctuating domes \cite{latorre2018,marin-llaurado2022} or in cell monolayers subjected to uniaxial stretch \cite{duque2023}. The fact that strains and tensions strongly varied from dome to dome but the minimum of tension was achieved precisely at 100\% areal strain for all domes suggested that this behavior is related to the nature of our measurement. 
 
-Our measurement of the stress-strain relation only uses (1) mechanical equilibrium, encoded by Laplace's law, and (2) the geometrical relations between the radius of curvature $R$ of the dome, the footprint radius $a$, the height $h$ and the areal strain $\epsilon$. The geometric Eqs.~(\ref{eqn:radiuscurve},\ref{eqn:arealstrain}) can be combined to find an explicit relation between radius of curvature and strain
+Our measurement of the stress-strain relation only uses (1) mechanical equilibrium, encoded by Laplace's law, and (2) the geometrical relations between the radius of curvature $R$ of the dome, the footprint radius $a$, the height $h$ and the areal strain $\epsilon$. The geometric Eqs.~(\ref{eqn:radiuscurve}, \ref{eqn:arealstrain}) can be combined to find an explicit relation between radius of curvature and strain
 \begin{equation}
 	R = \frac{h^2/a^2 + 1}{2h/a^2} = a\frac{\epsilon + 1}{\sqrt{\epsilon}},
 \end{equation}
@@ -131,7 +131,7 @@ A similar response was observed for the moderate cycles, where the domes were st
 	}
 \end{figure}
 
-In the slowest loading experiments, consisting of two cycles of 2000~s, we observed that the domes did not form at lower pressures. As discussed earlier, the domes remained attached until a pressure of 100-150~Pa was attained, beyond which they underwent rapid inflation, leading to high strains of 200-350~\%. A clear phase-shift was visible between pressure and strain. In contrast with the previous two cases, the second cycle did not reach a higher strain as compared to the first one (see Fig.~\ref{fig_7_6} B bottom). In these experiments, cells were able to stretch four times their original area and return to the original size at the end of each cycle.
+In the slowest loading experiments, consisting of two cycles of 2000~s, we observed that the domes did not form at lower pressures. As discussed earlier, the domes remained attached until a pressure of 100-150~Pa was attained, beyond which they underwent rapid inflation, leading to high strains of 200-350\%. A clear phase-shift was visible between pressure and strain. In contrast with the previous two cases, the second cycle did not reach a higher strain as compared to the first one (see Fig.~\ref{fig_7_6} B bottom). In these experiments, cells were able to stretch four times their original area and return to the original size at the end of each cycle.
 
 These experiments clearly demonstrated the rate-dependent response of the domes, with faster rates resulting in lower strains and progressive strain accumulation and slower rates allowing for reversibly large deformations. Several features such the remanent strain after a cycle, its ratcheting behavior, the existence of limit cycles, or the phase-shift are suggestive of a viscoelastic material response. We further examine this response next with the help of a computational model.
 
@@ -211,13 +211,13 @@ To map the steady-state constitutive relation, we first quasi-statically increas
 	\caption{\label{fig_7_7} \textbf{Material response of the digital domes}: (A) When subjected to constant pressure, as in experiments, the digital dome inflated and reached a steady state. (B) These simulations also produced non-monotonic tension strain curves for different pressures, all leading to a steady state. The blue curve is the result of a quasi-static increase of pressure, which traces the locus of steady-state points obtained in long isobaric simulations. Tension reported here is non dimensional.}
 \end{figure}
 
-The effect of the remodeling timescale is particularly noticeable in cyclic stretching experiments. When digital domes are subjected to a cyclic pressure at rates that are slower than cortical dynamics, then the cortex remains close to steady state during cellular deformations. Hence, the stored elastic energy is rapidly dissipated as the strain increases, and the cortical thickness does not change significantly as turnover has time to restore the steady-state thickness. We observed that the resting area in the digital dome almost overlapped with the actual area (see Fig.~\ref{fig_7_8} B bottom). This slow rate of 0.2~Pa/s provides cells with sufficient time to remodel and dissipate viscoelastic stresses. Viscoelastic and turnover timescales in simulations are around 10-30~s, which means that over a period of 2000~s, the dome stretches to considerably large strains of 250-300~\% and returns to its original flat state.
+The effect of the remodeling timescale is particularly noticeable in cyclic stretching experiments. When digital domes are subjected to a cyclic pressure at rates that are slower than cortical dynamics, then the cortex remains close to steady state during cellular deformations. Hence, the stored elastic energy is rapidly dissipated as the strain increases, and the cortical thickness does not change significantly as turnover has time to restore the steady-state thickness. We observed that the resting area in the digital dome almost overlapped with the actual area (see Fig.~\ref{fig_7_8} B bottom). This slow rate of 0.2~Pa/s provides cells with sufficient time to remodel and dissipate viscoelastic stresses. Viscoelastic and turnover timescales in simulations are around 10-30~s, which means that over a period of 2000~s, the dome stretches to considerably large strains of 250-300\% and returns to its original flat state.
 
 
 \begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{chap7_area.png}
-	\caption{\label{fig_7_8} \textbf{Evolution of Resting and Actual Cell Areas in Response to Cyclic Pressure}: (A) Illustration of resting and actual cell areas in a monolayer during stretching. (B) Fold area change relative to the initial area, with three rows of panels showing the evolution of area change over normalized time. Digital domes were subjected to cycles with three different time intervals: 20 s (top), 266 s (middle), and 2000 s (bottom). (C) Inset of the last two cycles in the case of fast and moderate rates.
+	\caption{\label{fig_7_8} \textbf{Evolution of Resting and Actual Cell Areas in Response to Cyclic Pressure}: (A) Illustration of resting and actual cell areas in a monolayer during stretching. (B) Fold area change relative to the initial area, with three rows of panels showing the evolution of area change over normalized time. Digital domes were subjected to cycles with three different time intervals: 20~s (top), 266~s (middle), and 2000~s (bottom). (C) Inset of the last two cycles in the case of fast and moderate rates.
 	}
 \end{figure}
 
